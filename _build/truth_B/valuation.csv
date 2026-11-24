@@ -1,0 +1,61 @@
+part,desc,category,ta,price,source,value,status
+PRT-0001,M6 Hex Bolt - SS316 [Drawing D-1009],Fasteners,34,45.2,Xero,1536.8,OK
+PRT-0002,M8 Socket Cap Screw - A4 [Drawing D-1016],Fasteners,23,35.75,Xero,822.25,OK
+PRT-0003,M10 Nyloc Nut - SS316 [Drawing D-1023],Fasteners,14,33.97,Xero,475.58,OK
+PRT-0004,M5 Countersunk Screw - A2 [Drawing D-1032],Fasteners,34,34.04,Xero,1157.36,OK
+PRT-0005,M12 Flat Washer - SS316 [Drawing D-1035],Fasteners,0,16.04,Xero,0.0,Out of stock
+PRT-0006,M6 Eyebolt - Marine Grade [Drawing D-1046],Fasteners,4,22.1,Xero,88.4,Reorder
+PRT-0007,Self-Tapping Screw 4.8mm - A4 [Drawing D-1049],Fasteners,40,28.32,Xero,1132.8,OK
+PRT-0008,Rivet Nut M6 - Aluminium [Drawing D-1056],Fasteners,39,36.26,Purchase Log,1414.14,OK
+PRT-0009,Stud Bolt M10x60 - SS316 [Drawing D-1067],Fasteners,21,47.32,Xero,993.72,OK
+PRT-0010,Cable Gland Locknut M20 [Drawing D-1072],Fasteners,25,40.92,Xero,1023.0,OK
+PRT-0011,Carbon Fibre Sheet 2mm 1m x 1m [Drawing D-1080],Composites,0,396.9,Xero,0.0,Out of stock
+PRT-0012,Glass Fibre Mat 450gsm [Drawing D-1084],Composites,33,519.87,Xero,17155.71,OK
+PRT-0013,Epoxy Resin System 5kg [Drawing D-1095],Composites,16,447.8,Purchase Log,7164.8,OK
+PRT-0014,Kevlar Cloth 200gsm [Drawing D-1099],Composites,39,493.05,Purchase Log,19228.95,OK
+PRT-0015,Foam Core Panel 10mm [Drawing D-1106],Composites,15,185.66,Xero,2784.9,OK
+PRT-0016,Gelcoat White 2.5kg [Drawing D-1116],Composites,24,283.29,Xero,6798.96,OK
+PRT-0017,Peel Ply Roll 50m [Drawing D-1119],Composites,30,330.19,Xero,9905.7,OK
+PRT-0018,Vacuum Bagging Film 25m [Drawing D-1126],Composites,0,227.11,Wasp,0.0,Out of stock
+PRT-0019,Honeycomb Panel 15mm [Drawing D-1133],Composites,4,232.97,Purchase Log,931.88,Reorder
+PRT-0020,Radome Laminate Blank [Drawing D-1141],Composites,27,412.27,Xero,11131.29,OK
+PRT-0021,Marine GPS Receiver Module [Drawing D-1148],Electronics,0,640.29,Xero,0.0,Out of stock
+PRT-0022,IMU Sensor Board 9-axis [Drawing D-1154],Electronics,27,666.91,Purchase Log,18006.57,OK
+PRT-0023,24V DC-DC Converter [Drawing D-1163],Electronics,36,657.47,Xero,23668.92,OK
+PRT-0024,Ethernet Switch 8-port IP67 [Drawing D-1170],Electronics,4,998.99,Xero,3995.96,Reorder
+PRT-0025,Sonar Transducer 200kHz [Drawing D-1177],Electronics,17,342.26,Xero,5818.42,OK
+PRT-0026,Relay Module 4-channel [Drawing D-1185],Electronics,27,632.93,Xero,17089.11,OK
+PRT-0027,LiPo Battery Pack 14.8V [Drawing D-1189],Electronics,19,630.27,Xero,11975.13,OK
+PRT-0028,Waterproof Connector 8-pin [Drawing D-1198],Electronics,36,588.57,Xero,21188.52,OK
+PRT-0029,Camera Module 4K Marine [Drawing D-1204],Electronics,0,283.33,Xero,0.0,Out of stock
+PRT-0030,PCB Control Board Rev C [Drawing D-1210],Electronics,6,319.43,Xero,1916.58,OK
+PRT-0031,Aluminium Mounting Bracket 6082 [Drawing D-1221],Machined Parts,0,261.01,Wasp,0.0,Out of stock
+PRT-0032,Titanium Shaft 25mm [Drawing D-1228],Machined Parts,15,178.25,Xero,2673.75,OK
+PRT-0033,Stainless Flange DN50 [Drawing D-1233],Machined Parts,29,519.74,Wasp,15072.46,OK
+PRT-0034,Delrin Bearing Housing [Drawing D-1238],Machined Parts,30,778.41,Xero,23352.3,OK
+PRT-0035,Brass Bushing 20mm [Drawing D-1248],Machined Parts,6,557.99,Purchase Log,3347.94,OK
+PRT-0036,Gimbal Ring Machined 316 [Drawing D-1255],Machined Parts,17,271.09,Xero,4608.53,OK
+PRT-0037,Thruster Mount Plate [Drawing D-1260],Machined Parts,19,537.3,Wasp,10208.7,OK
+PRT-0038,Winch Drum Core 6082 [Drawing D-1270],Machined Parts,6,409.9,Purchase Log,2459.4,OK
+PRT-0039,Pod End Cap Anodised [Drawing D-1276],Machined Parts,38,237.4,Wasp,9021.2,OK
+PRT-0040,Gearbox Spacer Set [Drawing D-1282],Machined Parts,17,629.89,Wasp,10708.13,OK
+PRT-0041,Tinned Copper Cable 2.5mm 3-core [Drawing D-1290],Cables,6,111.39,Xero,668.34,OK
+PRT-0042,Cat6 Armoured Cable [Drawing D-1294],Cables,5,41.59,Xero,207.95,Reorder
+PRT-0043,Coax RG58 Marine [Drawing D-1303],Cables,16,94.36,Xero,1509.76,OK
+PRT-0044,Subsea Umbilical 12-core [Drawing D-1309],Cables,39,60.28,Purchase Log,2350.92,OK
+PRT-0045,Shielded Twisted Pair 4-pair [Drawing D-1319],Cables,40,56.26,Wasp,2250.4,OK
+PRT-0046,Power Cable 16mm Black [Drawing D-1324],Cables,20,231.07,Purchase Log,4621.4,OK
+PRT-0047,Fibre Optic Patch Lead LC-LC [Drawing D-1333],Cables,3,32.2,Xero,96.6,Reorder
+PRT-0048,Multicore Control Cable 7-core [Drawing D-1339],Cables,33,129.69,Wasp,4279.77,OK
+PRT-0049,Battery Cable 35mm Red [Drawing D-1343],Cables,40,61.09,Wasp,2443.6,OK
+PRT-0050,Sensor Cable M12 5m [Drawing D-1353],Cables,0,188.41,Purchase Log,0.0,Out of stock
+PRT-0051,Loctite 243 50ml [Drawing D-1359],Consumables,5,36.09,Wasp,180.45,Reorder
+PRT-0052,Marine Sealant 300ml [Drawing D-1368],Consumables,35,35.57,Xero,1244.95,OK
+PRT-0053,Abrasive Discs 125mm Pack [Drawing D-1372],Consumables,4,83.38,Xero,333.52,Reorder
+PRT-0054,Cable Ties 300mm Pack 100 [Drawing D-1378],Consumables,25,45.21,Xero,1130.25,OK
+PRT-0055,Heat Shrink Assorted Kit [Drawing D-1387],Consumables,29,74.11,Xero,2149.19,OK
+PRT-0056,Isopropyl Alcohol 5L [Drawing D-1394],Consumables,15,27.78,Xero,416.7,OK
+PRT-0057,Nitrile Gloves Box 100 [Drawing D-1399],Consumables,11,14.48,Xero,159.28,OK
+PRT-0058,Masking Tape 50m [Drawing D-1408],Consumables,37,26.44,Xero,978.28,OK
+PRT-0059,Solder Wire 1kg [Drawing D-1417],Consumables,1,67.9,Xero,67.9,Reorder
+PRT-0060,Cutting Fluid 5L [Drawing D-1424],Consumables,0,64.11,Xero,0.0,Out of stock

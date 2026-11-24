@@ -1,0 +1,61 @@
+Part Number,Description,Category,Default Supplier ID,Stocking Unit,Wasp Item Cost,Total Available,Total In House,On Order,Committed,Location,Site
+PRT-0001,M6 Hex Bolt - SS316 [Drawing D-1009],Fasteners,S01,Pack,49.68,34,41,15,3,E-08-03,Poole Main
+PRT-0002,M8 Socket Cap Screw - A4 [Drawing D-1016],Fasteners,S03,Pack,41.64,23,30,9,4,C-02-06,Marine Yard
+PRT-0003,M10 Nyloc Nut - SS316 [Drawing D-1023],Fasteners,S03,Each,38.87,14,16,11,2,D-01-06,Poole Main
+PRT-0004,M5 Countersunk Screw - A2 [Drawing D-1032],Fasteners,S01,Pack,31.06,34,40,20,0,A-10-04,Marine Yard
+PRT-0005,M12 Flat Washer - SS316 [Drawing D-1035],Fasteners,S02,Pack,20.32,0,1,3,1,C-10-07,Poole Main
+PRT-0006,M6 Eyebolt - Marine Grade [Drawing D-1046],Fasteners,S01,Each,25.08,4,8,24,0,F-11-01,Poole Main
+PRT-0007,Self-Tapping Screw 4.8mm - A4 [Drawing D-1049],Fasteners,S03,Pack,27.27,40,42,18,7,B-09-07,Marine Yard
+PRT-0008,Rivet Nut M6 - Aluminium [Drawing D-1056],Fasteners,S01,Pack,39.50,39,39,17,4,C-02-05,Poole Main
+PRT-0009,Stud Bolt M10x60 - SS316 [Drawing D-1067],Fasteners,S02,Each,40.73,21,29,18,7,F-03-08,Marine Yard
+PRT-0010,Cable Gland Locknut M20 [Drawing D-1072],Fasteners,S01,Pack,33.24,25,27,12,7,D-12-02,Marine Yard
+PRT-0011,Carbon Fibre Sheet 2mm 1m x 1m [Drawing D-1080],Composites,S04,Roll,375.43,0,2,21,2,A-03-01,Marine Yard
+PRT-0012,Glass Fibre Mat 450gsm [Drawing D-1084],Composites,S05,Roll,470.19,33,41,18,7,A-08-03,Poole Main
+PRT-0013,Epoxy Resin System 5kg [Drawing D-1095],Composites,S05,Sheet,515.77,16,16,22,0,B-10-03,Marine Yard
+PRT-0014,Kevlar Cloth 200gsm [Drawing D-1099],Composites,S05,Roll,534.00,39,47,13,4,B-11-05,Poole Main
+PRT-0015,Foam Core Panel 10mm [Drawing D-1106],Composites,S04,Kg,211.97,15,21,0,3,A-07-02,Poole Main
+PRT-0016,Gelcoat White 2.5kg [Drawing D-1116],Composites,S05,Kg,262.52,24,28,6,7,E-03-02,Poole Main
+PRT-0017,Peel Ply Roll 50m [Drawing D-1119],Composites,S04,Sheet,370.03,30,32,27,5,E-03-06,Poole Main
+PRT-0018,Vacuum Bagging Film 25m [Drawing D-1126],Composites,S04,Sheet,227.11,0,3,18,2,D-06-01,Poole Main
+PRT-0019,Honeycomb Panel 15mm [Drawing D-1133],Composites,S04,Sheet,200.12,4,4,24,2,D-06-07,Poole Main
+PRT-0020,Radome Laminate Blank [Drawing D-1141],Composites,S04,Kg,375.59,27,34,9,6,C-04-04,Poole Main
+PRT-0021,Marine GPS Receiver Module [Drawing D-1148],Electronics,S06,Each,563.49,0,7,2,7,A-10-02,Poole Main
+PRT-0022,IMU Sensor Board 9-axis [Drawing D-1154],Electronics,S08,Each,690.68,27,30,9,7,D-05-03,Poole Main
+PRT-0023,24V DC-DC Converter [Drawing D-1163],Electronics,S06,Each,626.15,36,43,30,7,D-09-05,Poole Main
+PRT-0024,Ethernet Switch 8-port IP67 [Drawing D-1170],Electronics,S06,Each,814.06,4,7,13,0,A-12-08,Poole Main
+PRT-0025,Sonar Transducer 200kHz [Drawing D-1177],Electronics,S08,Each,381.43,17,21,14,8,F-06-07,Marine Yard
+PRT-0026,Relay Module 4-channel [Drawing D-1185],Electronics,S08,Each,513.50,27,33,7,2,A-05-03,Poole Main
+PRT-0027,LiPo Battery Pack 14.8V [Drawing D-1189],Electronics,S06,Each,721.12,19,19,3,3,C-03-05,Poole Main
+PRT-0028,Waterproof Connector 8-pin [Drawing D-1198],Electronics,S08,Each,599.65,36,41,5,6,A-04-08,Poole Main
+PRT-0029,Camera Module 4K Marine [Drawing D-1204],Electronics,S07,Each,286.41,0,5,10,5,F-11-05,Poole Main
+PRT-0030,PCB Control Board Rev C [Drawing D-1210],Electronics,S06,Each,408.02,6,8,19,3,F-02-05,Poole Main
+PRT-0031,Aluminium Mounting Bracket 6082 [Drawing D-1221],Machined Parts,S09,Each,261.01,0,0,17,0,F-09-02,Marine Yard
+PRT-0032,Titanium Shaft 25mm [Drawing D-1228],Machined Parts,S09,Each,185.61,15,23,26,7,C-04-01,Marine Yard
+PRT-0033,Stainless Flange DN50 [Drawing D-1233],Machined Parts,S10,Each,519.74,29,36,3,4,F-07-02,Poole Main
+PRT-0034,Delrin Bearing Housing [Drawing D-1238],Machined Parts,S09,Each,632.92,30,37,14,7,F-04-08,Marine Yard
+PRT-0035,Brass Bushing 20mm [Drawing D-1248],Machined Parts,S10,Each,465.47,6,9,25,8,B-10-05,Poole Main
+PRT-0036,Gimbal Ring Machined 316 [Drawing D-1255],Machined Parts,S09,Each,283.18,17,23,0,0,D-01-07,Poole Main
+PRT-0037,Thruster Mount Plate [Drawing D-1260],Machined Parts,S11,Each,537.30,19,27,25,7,B-11-05,Poole Main
+PRT-0038,Winch Drum Core 6082 [Drawing D-1270],Machined Parts,S11,Each,436.77,6,6,14,0,C-10-08,Poole Main
+PRT-0039,Pod End Cap Anodised [Drawing D-1276],Machined Parts,S09,Each,237.40,38,43,1,2,A-04-04,Poole Main
+PRT-0040,Gearbox Spacer Set [Drawing D-1282],Machined Parts,S09,Each,629.89,17,17,27,4,D-02-02,Marine Yard
+PRT-0041,Tinned Copper Cable 2.5mm 3-core [Drawing D-1290],Cables,S13,Metre,147.08,6,11,11,6,D-12-05,Poole Main
+PRT-0042,Cat6 Armoured Cable [Drawing D-1294],Cables,S12,Roll,50.10,5,10,27,7,D-01-05,Marine Yard
+PRT-0043,Coax RG58 Marine [Drawing D-1303],Cables,S13,Roll,110.32,16,23,20,1,D-03-08,Poole Main
+PRT-0044,Subsea Umbilical 12-core [Drawing D-1309],Cables,S13,Roll,85.01,39,47,18,5,D-07-07,Poole Main
+PRT-0045,Shielded Twisted Pair 4-pair [Drawing D-1319],Cables,S13,Roll,56.26,40,40,28,3,E-11-01,Poole Main
+PRT-0046,Power Cable 16mm Black [Drawing D-1324],Cables,S12,Roll,165.13,20,26,22,0,E-05-06,Poole Main
+PRT-0047,Fibre Optic Patch Lead LC-LC [Drawing D-1333],Cables,S13,Metre,25.25,3,4,3,1,F-03-06,Poole Main
+PRT-0048,Multicore Control Cable 7-core [Drawing D-1339],Cables,S13,Metre,129.69,33,39,2,8,B-09-02,Marine Yard
+PRT-0049,Battery Cable 35mm Red [Drawing D-1343],Cables,S13,Metre,61.09,40,42,0,4,E-10-05,Marine Yard
+PRT-0050,Sensor Cable M12 5m [Drawing D-1353],Cables,S13,Metre,198.07,0,2,7,2,F-04-07,Poole Main
+PRT-0051,Loctite 243 50ml [Drawing D-1359],Consumables,S14,Each,36.09,5,10,10,1,A-11-01,Poole Main
+PRT-0052,Marine Sealant 300ml [Drawing D-1368],Consumables,S14,Each,32.13,35,40,13,8,F-01-03,Poole Main
+PRT-0053,Abrasive Discs 125mm Pack [Drawing D-1372],Consumables,S14,Pack,73.27,4,8,0,5,C-06-05,Poole Main
+PRT-0054,Cable Ties 300mm Pack 100 [Drawing D-1378],Consumables,S15,Each,57.17,25,27,3,3,B-05-06,Poole Main
+PRT-0055,Heat Shrink Assorted Kit [Drawing D-1387],Consumables,S15,Box,71.71,29,32,12,8,E-01-07,Poole Main
+PRT-0056,Isopropyl Alcohol 5L [Drawing D-1394],Consumables,S15,Each,32.33,15,16,23,8,C-12-02,Marine Yard
+PRT-0057,Nitrile Gloves Box 100 [Drawing D-1399],Consumables,S15,Box,16.31,11,13,3,7,F-06-06,Poole Main
+PRT-0058,Masking Tape 50m [Drawing D-1408],Consumables,S14,Pack,30.21,37,43,18,8,C-03-04,Poole Main
+PRT-0059,Solder Wire 1kg [Drawing D-1417],Consumables,S14,Pack,67.34,1,6,9,5,E-12-01,Poole Main
+PRT-0060,Cutting Fluid 5L [Drawing D-1424],Consumables,S14,Box,75.12,0,3,25,3,A-08-05,Marine Yard

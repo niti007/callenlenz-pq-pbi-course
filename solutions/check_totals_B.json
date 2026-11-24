@@ -1,0 +1,341 @@
+{
+  "Q3": {
+    "id": "Q3",
+    "lab": "Lab 1",
+    "question": "Clean the Wasp stock export (remove title rows, blank rows, repeated header, test/total rows; normalise part numbers; remove duplicates keeping the first). How many distinct valid parts are left?",
+    "answer": 60,
+    "unit": "parts",
+    "definition": "Rows after: Skip 2 + promote; remove blank rows; remove repeated header; keep only rows whose Item Number normalises to PRT-0000 (uppercase, remove spaces/hyphens/nbsp, strip 'PRT', pad digits to 4, prefix 'PRT-'); Remove Duplicates on normalised Item Number keeping the FIRST row.",
+    "how": "Normalise Item Number with a custom function, filter nulls, Table.Buffer then Remove Duplicates on Item Number; count rows."
+  },
+  "Q4": {
+    "id": "Q4",
+    "lab": "Lab 1",
+    "question": "After adding the Stock Status conditional column (Total Available = 0 -> Out of stock; <= 5 -> Reorder; else OK), how many parts are 'Out of stock'?",
+    "answer": 8,
+    "unit": "parts",
+    "definition": "Stock Status on the de-duplicated 60 parts using the keep-first Total Available. Counts: Out of stock 8, Reorder 8, OK 44.",
+    "how": "Add Column > Conditional Column on Total Available, then Group By / filter on Stock Status.",
+    "trap_answers": {
+      "keep_last_duplicate_instead_of_first": 7
+    }
+  },
+  "Q5": {
+    "id": "Q5",
+    "lab": "Lab 1",
+    "question": "What is the total stock value at Wasp Item Cost: the sum of Total Available × Item Cost over the 60 de-duplicated parts (keep the first row of each duplicate)? Where Item Cost is N/A or an error (#REF!), treat the cost as blank, so that part adds £0. Round to 2 dp.",
+    "answer": 258431.64,
+    "unit": "GBP",
+    "definition": "Item Cost: remove '£' and ',' and convert; 'N/A' and #REF! errors become null and contribute 0 (4 parts). Sum of Total Available x Item Cost over the 60 de-duplicated parts, rounded 2dp.",
+    "how": "Replace Errors on Item Cost, try Number.From otherwise null, add Total Available * Item Cost (null -> 0), sum.",
+    "trap_answers": {
+      "keep_last_duplicate_instead_of_first": 243918.9
+    }
+  },
+  "Q10": {
+    "id": "Q10",
+    "lab": "Lab 3",
+    "question": "After cleaning the Xero payable invoice detail (fix dates, prices and item codes; remove - do not net off - the 3 credit-note lines and remove the near-duplicate lines, keeping the first), what is the total invoice value ex VAT, i.e. the sum of Quantity × Unit Price (ex), to 2 dp?",
+    "answer": 1318886.68,
+    "unit": "GBP",
+    "definition": "Cleaned Xero lines = 150 (credit notes removed, duplicates removed on Reference + normalised Item Code, keep first). Value = sum(Quantity x Unit Price (ex)).",
+    "how": "Skip 4 rows, filter Source <> Payable Credit Note, normalise codes/dates/prices, Remove Duplicates, add Quantity*Unit Price, sum.",
+    "trap_answers": {
+      "credit_notes_netted_off_instead_of_removed": 1317095.21,
+      "near_duplicates_kept": 1358871.85
+    }
+  },
+  "Q11": {
+    "id": "Q11",
+    "lab": "Lab 3",
+    "question": "Using KR's valuation rule, what is the total stock valuation across the 60 parts, to 2 dp? Price = the latest Xero invoice Unit Price (by Invoice Date, credit notes excluded); else the latest Purchase Log Net Unit Price (by Date, cancelled lines excluded); else the Wasp Item Cost. Stock Value = Total Available × Price.",
+    "answer": 293947.12,
+    "unit": "GBP",
+    "definition": "Price = latest Xero Unit Price (Invoice Date, credit notes excluded) else latest Purchase Log Net Unit Price (Date, CANCELLED excluded) else Wasp Item Cost. Ties on date broken by higher Reference/PO number. Stock Value = Total Available x Price (2dp each), summed over 60 parts.",
+    "how": "Wasp_Clean + latest-per-part from Xero_Clean and PurchaseLog_Clean via Table.Sort/Table.Distinct, left joins, waterfall conditional columns, sum Stock Value.",
+    "trap_answers": {
+      "credit_notes_kept": 291781.48,
+      "cancelled_lines_kept": 303342.3
+    }
+  },
+  "Q12": {
+    "id": "Q12",
+    "lab": "Lab 3",
+    "question": "(a) What unit price (2 dp) does the valuation use for PRT-0015? (b) Which source does it come from, and why is it not the price on the most recent Xero line for that part?",
+    "answer": "185.66 | Xero",
+    "unit": "text",
+    "answer_price": 185.66,
+    "answer_source": "Xero",
+    "trap_answer_price_if_credit_notes_kept": 148.53,
+    "definition": "PRT-0015 has a later credit note in Xero (unit price 148.53, dated after its latest invoice). The credit note is excluded, so the latest invoice line dated 06/02/2026 sets the price. Answer format: price | source.",
+    "how": "Filter out the credit note, take the latest dated invoice line for the part; it exists in Xero so the source is Xero.",
+    "trap_answers": {
+      "credit_notes_kept_price": 148.53
+    }
+  },
+  "Q13": {
+    "id": "Q13",
+    "lab": "Lab 4",
+    "question": "After removing duplicate receipts (same Ref, keep the first) and treating the (150.00) refund as a negative amount, what is the total of ALL Q1 receipts, including the two receipts from non-customers, to 2 dp?",
+    "answer": 390768.42,
+    "unit": "GBP",
+    "definition": "123 receipts after Remove Duplicates on Ref (keep first). Amounts: '£' text and '(150.00)' brackets parsed (refund = -150.00). Sum of Amount.",
+    "how": "ParseAmount, dedupe on Ref, sum Amount.",
+    "trap_answers": {
+      "duplicates_kept": 409071.03,
+      "refund_ignored": 390918.42
+    }
+  },
+  "Q14": {
+    "id": "Q14",
+    "lab": "Lab 4",
+    "question": "How much did Flintwood Marine Ltd pay in Q1 (net of its refund), and how many payments is that? Count only positive receipts as payments; the refund reduces the total but is not a payment.",
+    "answer": "42759.67 / 13 payments",
+    "unit": "text",
+    "definition": "Receipts matched to Flintwood Marine Ltd via ExtractPayer + Fuzzy_Transform_Table, after de-duplication. £ paid = net sum including the (150.00) refund; # payments = count of positive receipts (refund not counted).",
+    "how": "Extract payer, fuzzy join with transformation table, group by customer: sum Amount and count positive amounts."
+  },
+  "Q15": {
+    "id": "Q15",
+    "lab": "Lab 4",
+    "question": "After matching with the supplied Fuzzy_Transform_Table, which receipts (Ref numbers) remain unmatched to any customer?",
+    "answer": "10131, 10132",
+    "unit": "text",
+    "definition": "Refs whose extracted payer text is not a customer and not in Fuzzy_Transform_Table: 10131 (CASH DEPOSIT) and 10132 (J SMITH BUILDERS); combined value 3375.50. Fuzzy matching at 0.8 alone without the table is approximate - confirm on the day.",
+    "how": "After the fuzzy join, filter Customer Matched = null (UNMATCHED)."
+  },
+  "L1_rows_after_promote": {
+    "lab": "Lab 1",
+    "value": 72,
+    "definition": "Data rows after Remove Top Rows (2) + Use First Row as Headers (includes blank, repeated-header, test and Total rows)"
+  },
+  "L1_rows_after_remove_blank": {
+    "lab": "Lab 1",
+    "value": 68,
+    "definition": "Rows after Remove Blank Rows"
+  },
+  "L1_rows_after_remove_repeated_header": {
+    "lab": "Lab 1",
+    "value": 67,
+    "definition": "Rows after removing the repeated header row"
+  },
+  "L1_rows_after_filter_valid_parts": {
+    "lab": "Lab 1",
+    "value": 64,
+    "definition": "Rows after normalising Item Number and dropping non-PRT rows (4 duplicates still present)"
+  },
+  "L1_rows_after_dedupe": {
+    "lab": "Lab 1",
+    "value": 60,
+    "definition": "Rows after Remove Duplicates on normalised Item Number (keep first) = distinct parts"
+  },
+  "L1_status_counts": {
+    "lab": "Lab 1",
+    "value": {
+      "Out of stock": 8,
+      "Reorder": 8,
+      "OK": 44
+    },
+    "definition": "Stock Status counts after dedupe"
+  },
+  "L1_unusable_item_cost_parts": {
+    "lab": "Lab 1",
+    "value": [
+      "PRT-0003",
+      "PRT-0013",
+      "PRT-0023",
+      "PRT-0047"
+    ],
+    "definition": "Parts whose Item Cost is N/A or #REF! (null -> 0 in Q5); all have a Xero or PO price so the valuation is unaffected"
+  },
+  "L1_total_available_units": {
+    "lab": "Lab 1",
+    "value": 1135,
+    "definition": "Sum of Total Available after dedupe (keep first)"
+  },
+  "L3_xero_rows_after_promote": {
+    "lab": "Lab 3",
+    "value": 158,
+    "definition": "Xero rows after Remove Top Rows (4) + promote headers (includes blank row and Total footer)"
+  },
+  "L3_xero_rows_after_remove_blank_total": {
+    "lab": "Lab 3",
+    "value": 156,
+    "definition": "Xero rows after removing blank row and Total footer (Item Code not null)"
+  },
+  "L3_xero_credit_note_lines": {
+    "lab": "Lab 3",
+    "value": 3,
+    "definition": "Xero credit-note lines (Source = Payable Credit Note)"
+  },
+  "L3_xero_rows_after_remove_credit_notes": {
+    "lab": "Lab 3",
+    "value": 153,
+    "definition": "Xero rows after removing credit notes (3 near-duplicates still present)"
+  },
+  "L3_xero_rows_after_dedupe": {
+    "lab": "Lab 3",
+    "value": 150,
+    "definition": "Xero rows after Remove Duplicates on Reference + Item Code (keep first) = invoice lines"
+  },
+  "L3_pl_rows_after_promote": {
+    "lab": "Lab 3",
+    "value": 204,
+    "definition": "Purchase Log data rows after promoting headers (includes 4 cancelled lines)"
+  },
+  "L3_pl_cancelled_lines": {
+    "lab": "Lab 3",
+    "value": 4,
+    "definition": "Purchase Log lines whose Notes contain CANCELLED (any case)"
+  },
+  "L3_pl_rows_after_remove_cancelled": {
+    "lab": "Lab 3",
+    "value": 200,
+    "definition": "Purchase Log lines after removing cancelled = PO lines"
+  },
+  "L3_pl_total_value_ex_cancelled": {
+    "lab": "Lab 3",
+    "value": 2104847.74,
+    "definition": "Sum of Qty x Net Unit Price over the 200 cleaned Purchase Log lines (equals clean PO truth)"
+  },
+  "L3_parts_by_source": {
+    "lab": "Lab 3",
+    "value": {
+      "Xero": 40,
+      "Purchase Log": 10,
+      "Wasp": 10
+    },
+    "definition": "Price Source counts across the 60 parts"
+  },
+  "L3_traps": {
+    "lab": "Lab 3",
+    "value": {
+      "cancelled_line_changes_price_or_source_for": [
+        "PRT-0008",
+        "PRT-0013",
+        "PRT-0022",
+        "PRT-0051"
+      ],
+      "credit_note_changes_price_for": [
+        "PRT-0015",
+        "PRT-0016",
+        "PRT-0052"
+      ]
+    },
+    "definition": "Parts whose price/source changes if the mess is mishandled"
+  },
+  "L3_valuation_table": {
+    "lab": "Lab 3",
+    "value": {
+      "count": 60,
+      "total_stock_value": 293947.12,
+      "by_source": {
+        "Xero": 40,
+        "Purchase Log": 10,
+        "Wasp": 10
+      },
+      "value_by_source": {
+        "Purchase Log": 59526.0,
+        "Wasp": 54164.71,
+        "Xero": 180256.41
+      }
+    },
+    "definition": "Summary of the final Stock_Valuation table (full table in _build/truth_B/valuation.csv)"
+  },
+  "L4_rows_after_promote": {
+    "lab": "Lab 4",
+    "value": 126,
+    "definition": "Receipt rows in the bank export (includes 3 duplicates, 1 refund, 2 unmatched payers)"
+  },
+  "L4_rows_after_dedupe": {
+    "lab": "Lab 4",
+    "value": 123,
+    "definition": "Receipt rows after Remove Duplicates on Ref (keep first)"
+  },
+  "L4_matched_rows": {
+    "lab": "Lab 4",
+    "value": 121,
+    "definition": "Receipts matched to a customer after dedupe"
+  },
+  "L4_unmatched_total": {
+    "lab": "Lab 4",
+    "value": 3375.5,
+    "definition": "Value of the 2 unmatched receipts"
+  },
+  "L4_matched_total": {
+    "lab": "Lab 4",
+    "value": 387392.92,
+    "definition": "Net total of matched receipts"
+  },
+  "L4_transform_table_rows": {
+    "lab": "Lab 4",
+    "value": 35,
+    "definition": "Rows in Fuzzy_Transform_Table"
+  },
+  "L4_customer_summary": {
+    "lab": "Lab 4",
+    "value": {
+      "Bramblecombe Aerospace": {
+        "paid": 20239.71,
+        "n": 4
+      },
+      "Cobblestone Marine Ltd": {
+        "paid": 17263.76,
+        "n": 5
+      },
+      "Duckworth Defence Systems": {
+        "paid": 31267.89,
+        "n": 9
+      },
+      "Flintwood Marine Ltd": {
+        "paid": 42759.67,
+        "n": 13
+      },
+      "Gooseberry Subsea Ltd": {
+        "paid": 16253.87,
+        "n": 9
+      },
+      "Haddockson Fisheries Tech": {
+        "paid": 23628.95,
+        "n": 7
+      },
+      "Ironbridge Maritime Ltd": {
+        "paid": 23427.3,
+        "n": 6
+      },
+      "Mulberry Harbour Systems": {
+        "paid": 15265.01,
+        "n": 7
+      },
+      "Pennywhistle Offshore Ltd": {
+        "paid": 688.08,
+        "n": 1
+      },
+      "Peppercorn Defence Ltd": {
+        "paid": 30778.98,
+        "n": 8
+      },
+      "Rabbitson Engineering": {
+        "paid": 19163.58,
+        "n": 5
+      },
+      "Saltmarsh Propulsion Ltd": {
+        "paid": 16139.55,
+        "n": 5
+      },
+      "Thistlewood Naval Ltd": {
+        "paid": 23840.48,
+        "n": 8
+      },
+      "Tumbleweed Dynamics": {
+        "paid": 53919.38,
+        "n": 16
+      },
+      "Wigglesworth Robotics": {
+        "paid": 52756.71,
+        "n": 17
+      }
+    },
+    "definition": "Net £ paid and # payments per customer (fills Customer_List)"
+  }
+}

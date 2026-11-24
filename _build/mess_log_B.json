@@ -1,0 +1,1442 @@
+[
+  {
+    "file": "data/01_Wasp_Stock/Wasp_Stock_Export.xlsx",
+    "sheet": "Stock",
+    "location": "A1:X1",
+    "mess_type": "title_row",
+    "description": "Two export title rows above the real header (row 3).",
+    "teaching_fix": "Home > Remove Rows > Remove Top Rows = 2, then Use First Row as Headers.",
+    "lab": "Lab 1"
+  },
+  {
+    "file": "data/01_Wasp_Stock/Wasp_Stock_Export.xlsx",
+    "sheet": "Stock",
+    "location": "A2:X2",
+    "mess_type": "title_row",
+    "description": "Two export title rows above the real header (row 3).",
+    "teaching_fix": "Home > Remove Rows > Remove Top Rows = 2, then Use First Row as Headers.",
+    "lab": "Lab 1"
+  },
+  {
+    "file": "data/01_Wasp_Stock/Wasp_Stock_Export.xlsx",
+    "sheet": "Stock",
+    "location": "A7",
+    "mess_type": "part_number_variant",
+    "description": "Part number typed several ways (prt-12, PRT12, PRT-012, PRT 0012, trailing space, nbsp...). [41 instances in file; first 5 logged]",
+    "teaching_fix": "Custom normalise: Text.Clean, replace CHAR(160), remove spaces/hyphens, Upper, strip 'PRT', Text.PadStart(digits,4,\"0\"), prefix 'PRT-'.",
+    "lab": "Lab 1"
+  },
+  {
+    "file": "data/01_Wasp_Stock/Wasp_Stock_Export.xlsx",
+    "sheet": "Stock",
+    "location": "A8",
+    "mess_type": "part_number_variant",
+    "description": "Part number typed several ways (prt-12, PRT12, PRT-012, PRT 0012, trailing space, nbsp...). [41 instances in file; first 5 logged]",
+    "teaching_fix": "Custom normalise: Text.Clean, replace CHAR(160), remove spaces/hyphens, Upper, strip 'PRT', Text.PadStart(digits,4,\"0\"), prefix 'PRT-'.",
+    "lab": "Lab 1"
+  },
+  {
+    "file": "data/01_Wasp_Stock/Wasp_Stock_Export.xlsx",
+    "sheet": "Stock",
+    "location": "A11",
+    "mess_type": "part_number_variant",
+    "description": "Part number typed several ways (prt-12, PRT12, PRT-012, PRT 0012, trailing space, nbsp...). [41 instances in file; first 5 logged]",
+    "teaching_fix": "Custom normalise: Text.Clean, replace CHAR(160), remove spaces/hyphens, Upper, strip 'PRT', Text.PadStart(digits,4,\"0\"), prefix 'PRT-'.",
+    "lab": "Lab 1"
+  },
+  {
+    "file": "data/01_Wasp_Stock/Wasp_Stock_Export.xlsx",
+    "sheet": "Stock",
+    "location": "A12",
+    "mess_type": "part_number_variant",
+    "description": "Part number typed several ways (prt-12, PRT12, PRT-012, PRT 0012, trailing space, nbsp...). [41 instances in file; first 5 logged]",
+    "teaching_fix": "Custom normalise: Text.Clean, replace CHAR(160), remove spaces/hyphens, Upper, strip 'PRT', Text.PadStart(digits,4,\"0\"), prefix 'PRT-'.",
+    "lab": "Lab 1"
+  },
+  {
+    "file": "data/01_Wasp_Stock/Wasp_Stock_Export.xlsx",
+    "sheet": "Stock",
+    "location": "A13",
+    "mess_type": "part_number_variant",
+    "description": "Part number typed several ways (prt-12, PRT12, PRT-012, PRT 0012, trailing space, nbsp...). [41 instances in file; first 5 logged]",
+    "teaching_fix": "Custom normalise: Text.Clean, replace CHAR(160), remove spaces/hyphens, Upper, strip 'PRT', Text.PadStart(digits,4,\"0\"), prefix 'PRT-'.",
+    "lab": "Lab 1"
+  },
+  {
+    "file": "data/01_Wasp_Stock/Wasp_Stock_Export.xlsx",
+    "sheet": "Stock",
+    "location": "J11",
+    "mess_type": "gbp_text",
+    "description": "Item Cost stored as text with a pound sign. [10 instances in file; first 3 logged]",
+    "teaching_fix": "Replace '£' and ',' with nothing then change type to Decimal (done inside try ... otherwise null).",
+    "lab": "Lab 1"
+  },
+  {
+    "file": "data/01_Wasp_Stock/Wasp_Stock_Export.xlsx",
+    "sheet": "Stock",
+    "location": "J22",
+    "mess_type": "gbp_text",
+    "description": "Item Cost stored as text with a pound sign. [10 instances in file; first 3 logged]",
+    "teaching_fix": "Replace '£' and ',' with nothing then change type to Decimal (done inside try ... otherwise null).",
+    "lab": "Lab 1"
+  },
+  {
+    "file": "data/01_Wasp_Stock/Wasp_Stock_Export.xlsx",
+    "sheet": "Stock",
+    "location": "J26",
+    "mess_type": "gbp_text",
+    "description": "Item Cost stored as text with a pound sign. [10 instances in file; first 3 logged]",
+    "teaching_fix": "Replace '£' and ',' with nothing then change type to Decimal (done inside try ... otherwise null).",
+    "lab": "Lab 1"
+  },
+  {
+    "file": "data/01_Wasp_Stock/Wasp_Stock_Export.xlsx",
+    "sheet": "Stock",
+    "location": "J10",
+    "mess_type": "na_value",
+    "description": "Item Cost is the text N/A.",
+    "teaching_fix": "try Number.From(...) otherwise null (unusable cost = null; counts as 0 in Q5).",
+    "lab": "Lab 1"
+  },
+  {
+    "file": "data/01_Wasp_Stock/Wasp_Stock_Export.xlsx",
+    "sheet": "Stock",
+    "location": "J33",
+    "mess_type": "na_value",
+    "description": "Item Cost is the text N/A.",
+    "teaching_fix": "try Number.From(...) otherwise null (unusable cost = null; counts as 0 in Q5).",
+    "lab": "Lab 1"
+  },
+  {
+    "file": "data/01_Wasp_Stock/Wasp_Stock_Export.xlsx",
+    "sheet": "Stock",
+    "location": "J40",
+    "mess_type": "na_value",
+    "description": "Item Cost is the text N/A.",
+    "teaching_fix": "try Number.From(...) otherwise null (unusable cost = null; counts as 0 in Q5).",
+    "lab": "Lab 1"
+  },
+  {
+    "file": "data/01_Wasp_Stock/Wasp_Stock_Export.xlsx",
+    "sheet": "Stock",
+    "location": "J46",
+    "mess_type": "na_value",
+    "description": "Item Cost is the text N/A.",
+    "teaching_fix": "try Number.From(...) otherwise null (unusable cost = null; counts as 0 in Q5).",
+    "lab": "Lab 1"
+  },
+  {
+    "file": "data/01_Wasp_Stock/Wasp_Stock_Export.xlsx",
+    "sheet": "Stock",
+    "location": "J17",
+    "mess_type": "ref_error",
+    "description": "Item Cost is an Excel #REF! error value.",
+    "teaching_fix": "Transform > Replace Errors (Table.ReplaceErrorValues) -> null, BEFORE any row filtering.",
+    "lab": "Lab 1"
+  },
+  {
+    "file": "data/01_Wasp_Stock/Wasp_Stock_Export.xlsx",
+    "sheet": "Stock",
+    "location": "J52",
+    "mess_type": "ref_error",
+    "description": "Item Cost is an Excel #REF! error value.",
+    "teaching_fix": "Transform > Replace Errors (Table.ReplaceErrorValues) -> null, BEFORE any row filtering.",
+    "lab": "Lab 1"
+  },
+  {
+    "file": "data/01_Wasp_Stock/Wasp_Stock_Export.xlsx",
+    "sheet": "Stock",
+    "location": "C8",
+    "mess_type": "line_break",
+    "description": "Embedded line break inside Description (Alt+Enter). [12 instances in file; first 3 logged]",
+    "teaching_fix": "Replace #(lf) with a space, then Trim.",
+    "lab": "Lab 1"
+  },
+  {
+    "file": "data/01_Wasp_Stock/Wasp_Stock_Export.xlsx",
+    "sheet": "Stock",
+    "location": "C15",
+    "mess_type": "line_break",
+    "description": "Embedded line break inside Description (Alt+Enter). [12 instances in file; first 3 logged]",
+    "teaching_fix": "Replace #(lf) with a space, then Trim.",
+    "lab": "Lab 1"
+  },
+  {
+    "file": "data/01_Wasp_Stock/Wasp_Stock_Export.xlsx",
+    "sheet": "Stock",
+    "location": "C19",
+    "mess_type": "line_break",
+    "description": "Embedded line break inside Description (Alt+Enter). [12 instances in file; first 3 logged]",
+    "teaching_fix": "Replace #(lf) with a space, then Trim.",
+    "lab": "Lab 1"
+  },
+  {
+    "file": "data/01_Wasp_Stock/Wasp_Stock_Export.xlsx",
+    "sheet": "Stock",
+    "location": "C18",
+    "mess_type": "nbsp",
+    "description": "Non-breaking space CHAR(160) inside Description. [7 instances in file; first 3 logged]",
+    "teaching_fix": "Replace #(00A0) with a normal space, then Trim.",
+    "lab": "Lab 1"
+  },
+  {
+    "file": "data/01_Wasp_Stock/Wasp_Stock_Export.xlsx",
+    "sheet": "Stock",
+    "location": "C22",
+    "mess_type": "nbsp",
+    "description": "Non-breaking space CHAR(160) inside Description. [7 instances in file; first 3 logged]",
+    "teaching_fix": "Replace #(00A0) with a normal space, then Trim.",
+    "lab": "Lab 1"
+  },
+  {
+    "file": "data/01_Wasp_Stock/Wasp_Stock_Export.xlsx",
+    "sheet": "Stock",
+    "location": "C30",
+    "mess_type": "nbsp",
+    "description": "Non-breaking space CHAR(160) inside Description. [7 instances in file; first 3 logged]",
+    "teaching_fix": "Replace #(00A0) with a normal space, then Trim.",
+    "lab": "Lab 1"
+  },
+  {
+    "file": "data/01_Wasp_Stock/Wasp_Stock_Export.xlsx",
+    "sheet": "Stock",
+    "location": "C9",
+    "mess_type": "trailing_space",
+    "description": "Leading/trailing spaces on Description. [6 instances in file; first 3 logged]",
+    "teaching_fix": "Transform > Format > Trim.",
+    "lab": "Lab 1"
+  },
+  {
+    "file": "data/01_Wasp_Stock/Wasp_Stock_Export.xlsx",
+    "sheet": "Stock",
+    "location": "C17",
+    "mess_type": "trailing_space",
+    "description": "Leading/trailing spaces on Description. [6 instances in file; first 3 logged]",
+    "teaching_fix": "Transform > Format > Trim.",
+    "lab": "Lab 1"
+  },
+  {
+    "file": "data/01_Wasp_Stock/Wasp_Stock_Export.xlsx",
+    "sheet": "Stock",
+    "location": "C25",
+    "mess_type": "trailing_space",
+    "description": "Leading/trailing spaces on Description. [6 instances in file; first 3 logged]",
+    "teaching_fix": "Transform > Format > Trim.",
+    "lab": "Lab 1"
+  },
+  {
+    "file": "data/01_Wasp_Stock/Wasp_Stock_Export.xlsx",
+    "sheet": "Stock",
+    "location": "Q5",
+    "mess_type": "blank_category_fill_down",
+    "description": "Category only typed on the first row of each group (merged-cell style); other rows blank. [58 instances in file; first 4 logged]",
+    "teaching_fix": "Remove blank rows and repeated header FIRST, then Transform > Fill > Down on Category.",
+    "lab": "Lab 1"
+  },
+  {
+    "file": "data/01_Wasp_Stock/Wasp_Stock_Export.xlsx",
+    "sheet": "Stock",
+    "location": "Q6",
+    "mess_type": "blank_category_fill_down",
+    "description": "Category only typed on the first row of each group (merged-cell style); other rows blank. [58 instances in file; first 4 logged]",
+    "teaching_fix": "Remove blank rows and repeated header FIRST, then Transform > Fill > Down on Category.",
+    "lab": "Lab 1"
+  },
+  {
+    "file": "data/01_Wasp_Stock/Wasp_Stock_Export.xlsx",
+    "sheet": "Stock",
+    "location": "Q7",
+    "mess_type": "blank_category_fill_down",
+    "description": "Category only typed on the first row of each group (merged-cell style); other rows blank. [58 instances in file; first 4 logged]",
+    "teaching_fix": "Remove blank rows and repeated header FIRST, then Transform > Fill > Down on Category.",
+    "lab": "Lab 1"
+  },
+  {
+    "file": "data/01_Wasp_Stock/Wasp_Stock_Export.xlsx",
+    "sheet": "Stock",
+    "location": "Q8",
+    "mess_type": "blank_category_fill_down",
+    "description": "Category only typed on the first row of each group (merged-cell style); other rows blank. [58 instances in file; first 4 logged]",
+    "teaching_fix": "Remove blank rows and repeated header FIRST, then Transform > Fill > Down on Category.",
+    "lab": "Lab 1"
+  },
+  {
+    "file": "data/01_Wasp_Stock/Wasp_Stock_Export.xlsx",
+    "sheet": "Stock",
+    "location": "A20",
+    "mess_type": "junk_row",
+    "description": "Test/sample item that is not a real PRT part.",
+    "teaching_fix": "After normalising Item Number these become null: filter Item Number is not null.",
+    "lab": "Lab 1"
+  },
+  {
+    "file": "data/01_Wasp_Stock/Wasp_Stock_Export.xlsx",
+    "sheet": "Stock",
+    "location": "A53",
+    "mess_type": "junk_row",
+    "description": "Test/sample item that is not a real PRT part.",
+    "teaching_fix": "After normalising Item Number these become null: filter Item Number is not null.",
+    "lab": "Lab 1"
+  },
+  {
+    "file": "data/01_Wasp_Stock/Wasp_Stock_Export.xlsx",
+    "sheet": "Stock",
+    "location": "A75",
+    "mess_type": "subtotal_row",
+    "description": "'Total' footer row with a unit total.",
+    "teaching_fix": "Removed by the same 'not a valid PRT part' filter.",
+    "lab": "Lab 1"
+  },
+  {
+    "file": "data/01_Wasp_Stock/Wasp_Stock_Export.xlsx",
+    "sheet": "Stock",
+    "location": "A14:X14",
+    "mess_type": "blank_row",
+    "description": "Completely blank row.",
+    "teaching_fix": "Home > Remove Rows > Remove Blank Rows.",
+    "lab": "Lab 1"
+  },
+  {
+    "file": "data/01_Wasp_Stock/Wasp_Stock_Export.xlsx",
+    "sheet": "Stock",
+    "location": "A49:X49",
+    "mess_type": "blank_row",
+    "description": "Completely blank row.",
+    "teaching_fix": "Home > Remove Rows > Remove Blank Rows.",
+    "lab": "Lab 1"
+  },
+  {
+    "file": "data/01_Wasp_Stock/Wasp_Stock_Export.xlsx",
+    "sheet": "Stock",
+    "location": "A57:X57",
+    "mess_type": "blank_row",
+    "description": "Completely blank row.",
+    "teaching_fix": "Home > Remove Rows > Remove Blank Rows.",
+    "lab": "Lab 1"
+  },
+  {
+    "file": "data/01_Wasp_Stock/Wasp_Stock_Export.xlsx",
+    "sheet": "Stock",
+    "location": "A74:X74",
+    "mess_type": "blank_row",
+    "description": "Completely blank row.",
+    "teaching_fix": "Home > Remove Rows > Remove Blank Rows.",
+    "lab": "Lab 1"
+  },
+  {
+    "file": "data/01_Wasp_Stock/Wasp_Stock_Export.xlsx",
+    "sheet": "Stock",
+    "location": "A31:X31",
+    "mess_type": "repeated_header",
+    "description": "Header row repeated in the middle of the data (page break in the export).",
+    "teaching_fix": "Filter Item Number <> \"Item Number\".",
+    "lab": "Lab 1"
+  },
+  {
+    "file": "data/01_Wasp_Stock/Wasp_Stock_Export.xlsx",
+    "sheet": "Stock",
+    "location": "A33:X33",
+    "mess_type": "duplicate_row",
+    "description": "Same part appears again with different case/spacing and a stale Total Available.",
+    "teaching_fix": "Normalise Item Number, then Table.Buffer + Remove Duplicates on Item Number (keep first).",
+    "lab": "Lab 1"
+  },
+  {
+    "file": "data/01_Wasp_Stock/Wasp_Stock_Export.xlsx",
+    "sheet": "Stock",
+    "location": "A46:X46",
+    "mess_type": "duplicate_row",
+    "description": "Same part appears again with different case/spacing and a stale Total Available.",
+    "teaching_fix": "Normalise Item Number, then Table.Buffer + Remove Duplicates on Item Number (keep first).",
+    "lab": "Lab 1"
+  },
+  {
+    "file": "data/01_Wasp_Stock/Wasp_Stock_Export.xlsx",
+    "sheet": "Stock",
+    "location": "A59:X59",
+    "mess_type": "duplicate_row",
+    "description": "Same part appears again with different case/spacing and a stale Total Available.",
+    "teaching_fix": "Normalise Item Number, then Table.Buffer + Remove Duplicates on Item Number (keep first).",
+    "lab": "Lab 1"
+  },
+  {
+    "file": "data/01_Wasp_Stock/Wasp_Stock_Export.xlsx",
+    "sheet": "Stock",
+    "location": "A67:X67",
+    "mess_type": "duplicate_row",
+    "description": "Same part appears again with different case/spacing and a stale Total Available.",
+    "teaching_fix": "Normalise Item Number, then Table.Buffer + Remove Duplicates on Item Number (keep first).",
+    "lab": "Lab 1"
+  },
+  {
+    "file": "data/03_Valuation/Xero_Payable_Invoice_Detail.xlsx",
+    "sheet": "Xero",
+    "location": "A1:H1",
+    "mess_type": "title_row",
+    "description": "Three report title lines plus one blank row (4 rows) above the header on row 5.",
+    "teaching_fix": "Remove Top Rows = 4, then Use First Row as Headers.",
+    "lab": "Lab 3"
+  },
+  {
+    "file": "data/03_Valuation/Xero_Payable_Invoice_Detail.xlsx",
+    "sheet": "Xero",
+    "location": "A2:H2",
+    "mess_type": "title_row",
+    "description": "Three report title lines plus one blank row (4 rows) above the header on row 5.",
+    "teaching_fix": "Remove Top Rows = 4, then Use First Row as Headers.",
+    "lab": "Lab 3"
+  },
+  {
+    "file": "data/03_Valuation/Xero_Payable_Invoice_Detail.xlsx",
+    "sheet": "Xero",
+    "location": "A3:H3",
+    "mess_type": "title_row",
+    "description": "Three report title lines plus one blank row (4 rows) above the header on row 5.",
+    "teaching_fix": "Remove Top Rows = 4, then Use First Row as Headers.",
+    "lab": "Lab 3"
+  },
+  {
+    "file": "data/03_Valuation/Xero_Payable_Invoice_Detail.xlsx",
+    "sheet": "Xero",
+    "location": "A65",
+    "mess_type": "text_date",
+    "description": "A block of invoice dates is stored as UK dd/mm/yyyy text; the rest are real dates. [37 instances in file; first 4 logged]",
+    "teaching_fix": "Custom step: if value is text then Date.FromText(v,[Culture=\"en-GB\"]) else Date.From(v) (or Change Type > Using Locale > English (UK)).",
+    "lab": "Lab 3"
+  },
+  {
+    "file": "data/03_Valuation/Xero_Payable_Invoice_Detail.xlsx",
+    "sheet": "Xero",
+    "location": "A66",
+    "mess_type": "text_date",
+    "description": "A block of invoice dates is stored as UK dd/mm/yyyy text; the rest are real dates. [37 instances in file; first 4 logged]",
+    "teaching_fix": "Custom step: if value is text then Date.FromText(v,[Culture=\"en-GB\"]) else Date.From(v) (or Change Type > Using Locale > English (UK)).",
+    "lab": "Lab 3"
+  },
+  {
+    "file": "data/03_Valuation/Xero_Payable_Invoice_Detail.xlsx",
+    "sheet": "Xero",
+    "location": "A67",
+    "mess_type": "text_date",
+    "description": "A block of invoice dates is stored as UK dd/mm/yyyy text; the rest are real dates. [37 instances in file; first 4 logged]",
+    "teaching_fix": "Custom step: if value is text then Date.FromText(v,[Culture=\"en-GB\"]) else Date.From(v) (or Change Type > Using Locale > English (UK)).",
+    "lab": "Lab 3"
+  },
+  {
+    "file": "data/03_Valuation/Xero_Payable_Invoice_Detail.xlsx",
+    "sheet": "Xero",
+    "location": "A68",
+    "mess_type": "text_date",
+    "description": "A block of invoice dates is stored as UK dd/mm/yyyy text; the rest are real dates. [37 instances in file; first 4 logged]",
+    "teaching_fix": "Custom step: if value is text then Date.FromText(v,[Culture=\"en-GB\"]) else Date.From(v) (or Change Type > Using Locale > English (UK)).",
+    "lab": "Lab 3"
+  },
+  {
+    "file": "data/03_Valuation/Xero_Payable_Invoice_Detail.xlsx",
+    "sheet": "Xero",
+    "location": "H14",
+    "mess_type": "gbp_text",
+    "description": "Unit Price stored as '£' text. [8 instances in file; first 4 logged]",
+    "teaching_fix": "Replace '£' and ',' then change type to Decimal (custom ParseMoney).",
+    "lab": "Lab 3"
+  },
+  {
+    "file": "data/03_Valuation/Xero_Payable_Invoice_Detail.xlsx",
+    "sheet": "Xero",
+    "location": "H35",
+    "mess_type": "gbp_text",
+    "description": "Unit Price stored as '£' text. [8 instances in file; first 4 logged]",
+    "teaching_fix": "Replace '£' and ',' then change type to Decimal (custom ParseMoney).",
+    "lab": "Lab 3"
+  },
+  {
+    "file": "data/03_Valuation/Xero_Payable_Invoice_Detail.xlsx",
+    "sheet": "Xero",
+    "location": "H38",
+    "mess_type": "gbp_text",
+    "description": "Unit Price stored as '£' text. [8 instances in file; first 4 logged]",
+    "teaching_fix": "Replace '£' and ',' then change type to Decimal (custom ParseMoney).",
+    "lab": "Lab 3"
+  },
+  {
+    "file": "data/03_Valuation/Xero_Payable_Invoice_Detail.xlsx",
+    "sheet": "Xero",
+    "location": "H41",
+    "mess_type": "gbp_text",
+    "description": "Unit Price stored as '£' text. [8 instances in file; first 4 logged]",
+    "teaching_fix": "Replace '£' and ',' then change type to Decimal (custom ParseMoney).",
+    "lab": "Lab 3"
+  },
+  {
+    "file": "data/03_Valuation/Xero_Payable_Invoice_Detail.xlsx",
+    "sheet": "Xero",
+    "location": "E6",
+    "mess_type": "part_number_variant",
+    "description": "Item Code typed several ways (prt-12, PRT 0012, trailing space...). [106 instances in file; first 4 logged]",
+    "teaching_fix": "Same NormPart function as Lab 1.",
+    "lab": "Lab 3"
+  },
+  {
+    "file": "data/03_Valuation/Xero_Payable_Invoice_Detail.xlsx",
+    "sheet": "Xero",
+    "location": "E8",
+    "mess_type": "part_number_variant",
+    "description": "Item Code typed several ways (prt-12, PRT 0012, trailing space...). [106 instances in file; first 4 logged]",
+    "teaching_fix": "Same NormPart function as Lab 1.",
+    "lab": "Lab 3"
+  },
+  {
+    "file": "data/03_Valuation/Xero_Payable_Invoice_Detail.xlsx",
+    "sheet": "Xero",
+    "location": "E9",
+    "mess_type": "part_number_variant",
+    "description": "Item Code typed several ways (prt-12, PRT 0012, trailing space...). [106 instances in file; first 4 logged]",
+    "teaching_fix": "Same NormPart function as Lab 1.",
+    "lab": "Lab 3"
+  },
+  {
+    "file": "data/03_Valuation/Xero_Payable_Invoice_Detail.xlsx",
+    "sheet": "Xero",
+    "location": "E10",
+    "mess_type": "part_number_variant",
+    "description": "Item Code typed several ways (prt-12, PRT 0012, trailing space...). [106 instances in file; first 4 logged]",
+    "teaching_fix": "Same NormPart function as Lab 1.",
+    "lab": "Lab 3"
+  },
+  {
+    "file": "data/03_Valuation/Xero_Payable_Invoice_Detail.xlsx",
+    "sheet": "Xero",
+    "location": "B6",
+    "mess_type": "supplier_variant",
+    "description": "Contact uses supplier name variants (Ltd / Limited / Ltd. / typos / CAPS / truncated). [99 instances in file; first 4 logged]",
+    "teaching_fix": "Trim/Clean then Merge with Supplier_Name_Map (From -> To) to get the standard name.",
+    "lab": "Lab 3"
+  },
+  {
+    "file": "data/03_Valuation/Xero_Payable_Invoice_Detail.xlsx",
+    "sheet": "Xero",
+    "location": "B8",
+    "mess_type": "supplier_variant",
+    "description": "Contact uses supplier name variants (Ltd / Limited / Ltd. / typos / CAPS / truncated). [99 instances in file; first 4 logged]",
+    "teaching_fix": "Trim/Clean then Merge with Supplier_Name_Map (From -> To) to get the standard name.",
+    "lab": "Lab 3"
+  },
+  {
+    "file": "data/03_Valuation/Xero_Payable_Invoice_Detail.xlsx",
+    "sheet": "Xero",
+    "location": "B10",
+    "mess_type": "supplier_variant",
+    "description": "Contact uses supplier name variants (Ltd / Limited / Ltd. / typos / CAPS / truncated). [99 instances in file; first 4 logged]",
+    "teaching_fix": "Trim/Clean then Merge with Supplier_Name_Map (From -> To) to get the standard name.",
+    "lab": "Lab 3"
+  },
+  {
+    "file": "data/03_Valuation/Xero_Payable_Invoice_Detail.xlsx",
+    "sheet": "Xero",
+    "location": "B11",
+    "mess_type": "supplier_variant",
+    "description": "Contact uses supplier name variants (Ltd / Limited / Ltd. / typos / CAPS / truncated). [99 instances in file; first 4 logged]",
+    "teaching_fix": "Trim/Clean then Merge with Supplier_Name_Map (From -> To) to get the standard name.",
+    "lab": "Lab 3"
+  },
+  {
+    "file": "data/03_Valuation/Xero_Payable_Invoice_Detail.xlsx",
+    "sheet": "Xero",
+    "location": "B9",
+    "mess_type": "trailing_space",
+    "description": "Contact/Description has trailing space. [15 instances in file; first 3 logged]",
+    "teaching_fix": "CleanText: replace CHAR(160), collapse spaces, Trim.",
+    "lab": "Lab 3"
+  },
+  {
+    "file": "data/03_Valuation/Xero_Payable_Invoice_Detail.xlsx",
+    "sheet": "Xero",
+    "location": "B47",
+    "mess_type": "trailing_space",
+    "description": "Contact/Description has trailing space. [15 instances in file; first 3 logged]",
+    "teaching_fix": "CleanText: replace CHAR(160), collapse spaces, Trim.",
+    "lab": "Lab 3"
+  },
+  {
+    "file": "data/03_Valuation/Xero_Payable_Invoice_Detail.xlsx",
+    "sheet": "Xero",
+    "location": "B53",
+    "mess_type": "trailing_space",
+    "description": "Contact/Description has trailing space. [15 instances in file; first 3 logged]",
+    "teaching_fix": "CleanText: replace CHAR(160), collapse spaces, Trim.",
+    "lab": "Lab 3"
+  },
+  {
+    "file": "data/03_Valuation/Xero_Payable_Invoice_Detail.xlsx",
+    "sheet": "Xero",
+    "location": "B78",
+    "mess_type": "double_space",
+    "description": "Contact/Description has double space.",
+    "teaching_fix": "CleanText: replace CHAR(160), collapse spaces, Trim.",
+    "lab": "Lab 3"
+  },
+  {
+    "file": "data/03_Valuation/Xero_Payable_Invoice_Detail.xlsx",
+    "sheet": "Xero",
+    "location": "B112",
+    "mess_type": "double_space",
+    "description": "Contact/Description has double space.",
+    "teaching_fix": "CleanText: replace CHAR(160), collapse spaces, Trim.",
+    "lab": "Lab 3"
+  },
+  {
+    "file": "data/03_Valuation/Xero_Payable_Invoice_Detail.xlsx",
+    "sheet": "Xero",
+    "location": "F6",
+    "mess_type": "nbsp",
+    "description": "Contact/Description has nbsp. [9 instances in file; first 3 logged]",
+    "teaching_fix": "CleanText: replace CHAR(160), collapse spaces, Trim.",
+    "lab": "Lab 3"
+  },
+  {
+    "file": "data/03_Valuation/Xero_Payable_Invoice_Detail.xlsx",
+    "sheet": "Xero",
+    "location": "F21",
+    "mess_type": "nbsp",
+    "description": "Contact/Description has nbsp. [9 instances in file; first 3 logged]",
+    "teaching_fix": "CleanText: replace CHAR(160), collapse spaces, Trim.",
+    "lab": "Lab 3"
+  },
+  {
+    "file": "data/03_Valuation/Xero_Payable_Invoice_Detail.xlsx",
+    "sheet": "Xero",
+    "location": "F43",
+    "mess_type": "nbsp",
+    "description": "Contact/Description has nbsp. [9 instances in file; first 3 logged]",
+    "teaching_fix": "CleanText: replace CHAR(160), collapse spaces, Trim.",
+    "lab": "Lab 3"
+  },
+  {
+    "file": "data/03_Valuation/Xero_Payable_Invoice_Detail.xlsx",
+    "sheet": "Xero",
+    "location": "D13",
+    "mess_type": "case_or_space_variant",
+    "description": "Reference in lower case or with trailing space. [8 instances in file; first 3 logged]",
+    "teaching_fix": "Text.Upper(CleanText(Reference)).",
+    "lab": "Lab 3"
+  },
+  {
+    "file": "data/03_Valuation/Xero_Payable_Invoice_Detail.xlsx",
+    "sheet": "Xero",
+    "location": "D34",
+    "mess_type": "case_or_space_variant",
+    "description": "Reference in lower case or with trailing space. [8 instances in file; first 3 logged]",
+    "teaching_fix": "Text.Upper(CleanText(Reference)).",
+    "lab": "Lab 3"
+  },
+  {
+    "file": "data/03_Valuation/Xero_Payable_Invoice_Detail.xlsx",
+    "sheet": "Xero",
+    "location": "D55",
+    "mess_type": "case_or_space_variant",
+    "description": "Reference in lower case or with trailing space. [8 instances in file; first 3 logged]",
+    "teaching_fix": "Text.Upper(CleanText(Reference)).",
+    "lab": "Lab 3"
+  },
+  {
+    "file": "data/03_Valuation/Xero_Payable_Invoice_Detail.xlsx",
+    "sheet": "Xero",
+    "location": "D33",
+    "mess_type": "case_or_space_variant",
+    "description": "Reference in lower case or with trailing space. [8 instances in file; first 3 logged]",
+    "teaching_fix": "Text.Upper(CleanText(Reference)).",
+    "lab": "Lab 3"
+  },
+  {
+    "file": "data/03_Valuation/Xero_Payable_Invoice_Detail.xlsx",
+    "sheet": "Xero",
+    "location": "D71",
+    "mess_type": "case_or_space_variant",
+    "description": "Reference in lower case or with trailing space. [8 instances in file; first 3 logged]",
+    "teaching_fix": "Text.Upper(CleanText(Reference)).",
+    "lab": "Lab 3"
+  },
+  {
+    "file": "data/03_Valuation/Xero_Payable_Invoice_Detail.xlsx",
+    "sheet": "Xero",
+    "location": "D81",
+    "mess_type": "case_or_space_variant",
+    "description": "Reference in lower case or with trailing space. [8 instances in file; first 3 logged]",
+    "teaching_fix": "Text.Upper(CleanText(Reference)).",
+    "lab": "Lab 3"
+  },
+  {
+    "file": "data/03_Valuation/Xero_Payable_Invoice_Detail.xlsx",
+    "sheet": "Xero",
+    "location": "A58:H58",
+    "mess_type": "near_duplicate_row",
+    "description": "Invoice line imported twice with different case/spacing in Item Code, Contact, Reference.",
+    "teaching_fix": "Normalise Item Code + Reference, then Remove Duplicates on [Reference, Item Code] (keep first).",
+    "lab": "Lab 3"
+  },
+  {
+    "file": "data/03_Valuation/Xero_Payable_Invoice_Detail.xlsx",
+    "sheet": "Xero",
+    "location": "A74:H74",
+    "mess_type": "near_duplicate_row",
+    "description": "Invoice line imported twice with different case/spacing in Item Code, Contact, Reference.",
+    "teaching_fix": "Normalise Item Code + Reference, then Remove Duplicates on [Reference, Item Code] (keep first).",
+    "lab": "Lab 3"
+  },
+  {
+    "file": "data/03_Valuation/Xero_Payable_Invoice_Detail.xlsx",
+    "sheet": "Xero",
+    "location": "A113:H113",
+    "mess_type": "near_duplicate_row",
+    "description": "Invoice line imported twice with different case/spacing in Item Code, Contact, Reference.",
+    "teaching_fix": "Normalise Item Code + Reference, then Remove Duplicates on [Reference, Item Code] (keep first).",
+    "lab": "Lab 3"
+  },
+  {
+    "file": "data/03_Valuation/Xero_Payable_Invoice_Detail.xlsx",
+    "sheet": "Xero",
+    "location": "A82:H82",
+    "mess_type": "credit_note",
+    "description": "Credit note line (Source = Payable Credit Note, negative Quantity) dated AFTER the latest invoice for that part.",
+    "teaching_fix": "Filter Source <> \"Payable Credit Note\" BEFORE choosing the latest price.",
+    "lab": "Lab 3"
+  },
+  {
+    "file": "data/03_Valuation/Xero_Payable_Invoice_Detail.xlsx",
+    "sheet": "Xero",
+    "location": "A127:H127",
+    "mess_type": "credit_note",
+    "description": "Credit note line (Source = Payable Credit Note, negative Quantity) dated AFTER the latest invoice for that part.",
+    "teaching_fix": "Filter Source <> \"Payable Credit Note\" BEFORE choosing the latest price.",
+    "lab": "Lab 3"
+  },
+  {
+    "file": "data/03_Valuation/Xero_Payable_Invoice_Detail.xlsx",
+    "sheet": "Xero",
+    "location": "A149:H149",
+    "mess_type": "credit_note",
+    "description": "Credit note line (Source = Payable Credit Note, negative Quantity) dated AFTER the latest invoice for that part.",
+    "teaching_fix": "Filter Source <> \"Payable Credit Note\" BEFORE choosing the latest price.",
+    "lab": "Lab 3"
+  },
+  {
+    "file": "data/03_Valuation/Xero_Payable_Invoice_Detail.xlsx",
+    "sheet": "Xero",
+    "location": "A163:H163",
+    "mess_type": "subtotal_row",
+    "description": "'Total' footer row.",
+    "teaching_fix": "Filter Item Code is not null.",
+    "lab": "Lab 3"
+  },
+  {
+    "file": "data/03_Valuation/Xero_Payable_Invoice_Detail.xlsx",
+    "sheet": "Xero",
+    "location": "A162:H162",
+    "mess_type": "blank_row",
+    "description": "Blank row before the footer.",
+    "teaching_fix": "Remove Blank Rows.",
+    "lab": "Lab 3"
+  },
+  {
+    "file": "data/03_Valuation/Purchase_Log.xlsx",
+    "sheet": "Purchase Log",
+    "location": "H1",
+    "mess_type": "blank_header_column",
+    "description": "Five completely blank columns with blank headers (become Column8, Column16 ... after promoting headers).",
+    "teaching_fix": "Remove columns whose name starts with \"Column\" (all are empty), or just Choose Columns.",
+    "lab": "Lab 3"
+  },
+  {
+    "file": "data/03_Valuation/Purchase_Log.xlsx",
+    "sheet": "Purchase Log",
+    "location": "P1",
+    "mess_type": "blank_header_column",
+    "description": "Five completely blank columns with blank headers (become Column8, Column16 ... after promoting headers).",
+    "teaching_fix": "Remove columns whose name starts with \"Column\" (all are empty), or just Choose Columns.",
+    "lab": "Lab 3"
+  },
+  {
+    "file": "data/03_Valuation/Purchase_Log.xlsx",
+    "sheet": "Purchase Log",
+    "location": "Z1",
+    "mess_type": "blank_header_column",
+    "description": "Five completely blank columns with blank headers (become Column8, Column16 ... after promoting headers).",
+    "teaching_fix": "Remove columns whose name starts with \"Column\" (all are empty), or just Choose Columns.",
+    "lab": "Lab 3"
+  },
+  {
+    "file": "data/03_Valuation/Purchase_Log.xlsx",
+    "sheet": "Purchase Log",
+    "location": "AI1",
+    "mess_type": "blank_header_column",
+    "description": "Five completely blank columns with blank headers (become Column8, Column16 ... after promoting headers).",
+    "teaching_fix": "Remove columns whose name starts with \"Column\" (all are empty), or just Choose Columns.",
+    "lab": "Lab 3"
+  },
+  {
+    "file": "data/03_Valuation/Purchase_Log.xlsx",
+    "sheet": "Purchase Log",
+    "location": "AR1",
+    "mess_type": "blank_header_column",
+    "description": "Five completely blank columns with blank headers (become Column8, Column16 ... after promoting headers).",
+    "teaching_fix": "Remove columns whose name starts with \"Column\" (all are empty), or just Choose Columns.",
+    "lab": "Lab 3"
+  },
+  {
+    "file": "data/03_Valuation/Purchase_Log.xlsx",
+    "sheet": "Purchase Log",
+    "location": "D1",
+    "mess_type": "line_break_header",
+    "description": "Headers contain line breaks (Ord'd/By, Required/By ...). [12 instances in file; first 4 logged]",
+    "teaching_fix": "Table.TransformColumnNames: replace #(lf) with space and Trim.",
+    "lab": "Lab 3"
+  },
+  {
+    "file": "data/03_Valuation/Purchase_Log.xlsx",
+    "sheet": "Purchase Log",
+    "location": "E1",
+    "mess_type": "line_break_header",
+    "description": "Headers contain line breaks (Ord'd/By, Required/By ...). [12 instances in file; first 4 logged]",
+    "teaching_fix": "Table.TransformColumnNames: replace #(lf) with space and Trim.",
+    "lab": "Lab 3"
+  },
+  {
+    "file": "data/03_Valuation/Purchase_Log.xlsx",
+    "sheet": "Purchase Log",
+    "location": "J1",
+    "mess_type": "line_break_header",
+    "description": "Headers contain line breaks (Ord'd/By, Required/By ...). [12 instances in file; first 4 logged]",
+    "teaching_fix": "Table.TransformColumnNames: replace #(lf) with space and Trim.",
+    "lab": "Lab 3"
+  },
+  {
+    "file": "data/03_Valuation/Purchase_Log.xlsx",
+    "sheet": "Purchase Log",
+    "location": "W1",
+    "mess_type": "line_break_header",
+    "description": "Headers contain line breaks (Ord'd/By, Required/By ...). [12 instances in file; first 4 logged]",
+    "teaching_fix": "Table.TransformColumnNames: replace #(lf) with space and Trim.",
+    "lab": "Lab 3"
+  },
+  {
+    "file": "data/03_Valuation/Purchase_Log.xlsx",
+    "sheet": "Purchase Log",
+    "location": "K1",
+    "mess_type": "trailing_space_header",
+    "description": "Headers with trailing spaces ('Part Number ', 'Net Unit Price ', 'Manufactured Part Numbers ').",
+    "teaching_fix": "Table.TransformColumnNames with Text.Trim.",
+    "lab": "Lab 3"
+  },
+  {
+    "file": "data/03_Valuation/Purchase_Log.xlsx",
+    "sheet": "Purchase Log",
+    "location": "L1",
+    "mess_type": "trailing_space_header",
+    "description": "Headers with trailing spaces ('Part Number ', 'Net Unit Price ', 'Manufactured Part Numbers ').",
+    "teaching_fix": "Table.TransformColumnNames with Text.Trim.",
+    "lab": "Lab 3"
+  },
+  {
+    "file": "data/03_Valuation/Purchase_Log.xlsx",
+    "sheet": "Purchase Log",
+    "location": "Q1",
+    "mess_type": "trailing_space_header",
+    "description": "Headers with trailing spaces ('Part Number ', 'Net Unit Price ', 'Manufactured Part Numbers ').",
+    "teaching_fix": "Table.TransformColumnNames with Text.Trim.",
+    "lab": "Lab 3"
+  },
+  {
+    "file": "data/03_Valuation/Purchase_Log.xlsx",
+    "sheet": "Purchase Log",
+    "location": "Q2",
+    "mess_type": "gbp_text",
+    "description": "Net Unit Price stored as '£1,234.50' text in ~40% of rows. [99 instances in file; first 4 logged]",
+    "teaching_fix": "ParseMoney: remove '£' and ',' then type Decimal.",
+    "lab": "Lab 3"
+  },
+  {
+    "file": "data/03_Valuation/Purchase_Log.xlsx",
+    "sheet": "Purchase Log",
+    "location": "Q8",
+    "mess_type": "gbp_text",
+    "description": "Net Unit Price stored as '£1,234.50' text in ~40% of rows. [99 instances in file; first 4 logged]",
+    "teaching_fix": "ParseMoney: remove '£' and ',' then type Decimal.",
+    "lab": "Lab 3"
+  },
+  {
+    "file": "data/03_Valuation/Purchase_Log.xlsx",
+    "sheet": "Purchase Log",
+    "location": "Q10",
+    "mess_type": "gbp_text",
+    "description": "Net Unit Price stored as '£1,234.50' text in ~40% of rows. [99 instances in file; first 4 logged]",
+    "teaching_fix": "ParseMoney: remove '£' and ',' then type Decimal.",
+    "lab": "Lab 3"
+  },
+  {
+    "file": "data/03_Valuation/Purchase_Log.xlsx",
+    "sheet": "Purchase Log",
+    "location": "Q11",
+    "mess_type": "gbp_text",
+    "description": "Net Unit Price stored as '£1,234.50' text in ~40% of rows. [99 instances in file; first 4 logged]",
+    "teaching_fix": "ParseMoney: remove '£' and ',' then type Decimal.",
+    "lab": "Lab 3"
+  },
+  {
+    "file": "data/03_Valuation/Purchase_Log.xlsx",
+    "sheet": "Purchase Log",
+    "location": "C2",
+    "mess_type": "text_date",
+    "description": "Date typed as UK dd/mm/yyyy text. [59 instances in file; first 3 logged]",
+    "teaching_fix": "ToDate: Date.FromText(v,[Culture=\"en-GB\"]) when value is text.",
+    "lab": "Lab 3"
+  },
+  {
+    "file": "data/03_Valuation/Purchase_Log.xlsx",
+    "sheet": "Purchase Log",
+    "location": "C3",
+    "mess_type": "text_date",
+    "description": "Date typed as UK dd/mm/yyyy text. [59 instances in file; first 3 logged]",
+    "teaching_fix": "ToDate: Date.FromText(v,[Culture=\"en-GB\"]) when value is text.",
+    "lab": "Lab 3"
+  },
+  {
+    "file": "data/03_Valuation/Purchase_Log.xlsx",
+    "sheet": "Purchase Log",
+    "location": "C5",
+    "mess_type": "text_date",
+    "description": "Date typed as UK dd/mm/yyyy text. [59 instances in file; first 3 logged]",
+    "teaching_fix": "ToDate: Date.FromText(v,[Culture=\"en-GB\"]) when value is text.",
+    "lab": "Lab 3"
+  },
+  {
+    "file": "data/03_Valuation/Purchase_Log.xlsx",
+    "sheet": "Purchase Log",
+    "location": "C4",
+    "mess_type": "text_date",
+    "description": "Date typed as dd-Mon-yyyy text (e.g. 06-Jan-2025). [42 instances in file; first 3 logged]",
+    "teaching_fix": "Same ToDate function (en-GB handles both text styles).",
+    "lab": "Lab 3"
+  },
+  {
+    "file": "data/03_Valuation/Purchase_Log.xlsx",
+    "sheet": "Purchase Log",
+    "location": "C6",
+    "mess_type": "text_date",
+    "description": "Date typed as dd-Mon-yyyy text (e.g. 06-Jan-2025). [42 instances in file; first 3 logged]",
+    "teaching_fix": "Same ToDate function (en-GB handles both text styles).",
+    "lab": "Lab 3"
+  },
+  {
+    "file": "data/03_Valuation/Purchase_Log.xlsx",
+    "sheet": "Purchase Log",
+    "location": "C10",
+    "mess_type": "text_date",
+    "description": "Date typed as dd-Mon-yyyy text (e.g. 06-Jan-2025). [42 instances in file; first 3 logged]",
+    "teaching_fix": "Same ToDate function (en-GB handles both text styles).",
+    "lab": "Lab 3"
+  },
+  {
+    "file": "data/03_Valuation/Purchase_Log.xlsx",
+    "sheet": "Purchase Log",
+    "location": "AQ2",
+    "mess_type": "composite_notes",
+    "description": "Notes holds 'PO-55123 / Jira CL-2231 / urgent' in one cell. [204 instances in file; first 3 logged]",
+    "teaching_fix": "PO = Text.BeforeDelimiter(Notes, \" / \"); Jira = Text.BetweenDelimiters(Notes, \"Jira \", \" / \").",
+    "lab": "Lab 3"
+  },
+  {
+    "file": "data/03_Valuation/Purchase_Log.xlsx",
+    "sheet": "Purchase Log",
+    "location": "AQ3",
+    "mess_type": "composite_notes",
+    "description": "Notes holds 'PO-55123 / Jira CL-2231 / urgent' in one cell. [204 instances in file; first 3 logged]",
+    "teaching_fix": "PO = Text.BeforeDelimiter(Notes, \" / \"); Jira = Text.BetweenDelimiters(Notes, \"Jira \", \" / \").",
+    "lab": "Lab 3"
+  },
+  {
+    "file": "data/03_Valuation/Purchase_Log.xlsx",
+    "sheet": "Purchase Log",
+    "location": "AQ4",
+    "mess_type": "composite_notes",
+    "description": "Notes holds 'PO-55123 / Jira CL-2231 / urgent' in one cell. [204 instances in file; first 3 logged]",
+    "teaching_fix": "PO = Text.BeforeDelimiter(Notes, \" / \"); Jira = Text.BetweenDelimiters(Notes, \"Jira \", \" / \").",
+    "lab": "Lab 3"
+  },
+  {
+    "file": "data/03_Valuation/Purchase_Log.xlsx",
+    "sheet": "Purchase Log",
+    "location": "B8",
+    "mess_type": "blank_po_number",
+    "description": "PO Number column left blank on ~20% of rows. [44 instances in file; first 3 logged]",
+    "teaching_fix": "Ignore the column; derive PO Number from Notes for every row.",
+    "lab": "Lab 3"
+  },
+  {
+    "file": "data/03_Valuation/Purchase_Log.xlsx",
+    "sheet": "Purchase Log",
+    "location": "B12",
+    "mess_type": "blank_po_number",
+    "description": "PO Number column left blank on ~20% of rows. [44 instances in file; first 3 logged]",
+    "teaching_fix": "Ignore the column; derive PO Number from Notes for every row.",
+    "lab": "Lab 3"
+  },
+  {
+    "file": "data/03_Valuation/Purchase_Log.xlsx",
+    "sheet": "Purchase Log",
+    "location": "B19",
+    "mess_type": "blank_po_number",
+    "description": "PO Number column left blank on ~20% of rows. [44 instances in file; first 3 logged]",
+    "teaching_fix": "Ignore the column; derive PO Number from Notes for every row.",
+    "lab": "Lab 3"
+  },
+  {
+    "file": "data/03_Valuation/Purchase_Log.xlsx",
+    "sheet": "Purchase Log",
+    "location": "AQ160",
+    "mess_type": "cancelled_line",
+    "description": "Line cancelled (Notes contain CANCELLED in any case).",
+    "teaching_fix": "Filter out rows where Text.Contains(Notes, \"CANCELLED\", Comparer.OrdinalIgnoreCase).",
+    "lab": "Lab 3"
+  },
+  {
+    "file": "data/03_Valuation/Purchase_Log.xlsx",
+    "sheet": "Purchase Log",
+    "location": "AQ165",
+    "mess_type": "cancelled_line",
+    "description": "Line cancelled (Notes contain CANCELLED in any case).",
+    "teaching_fix": "Filter out rows where Text.Contains(Notes, \"CANCELLED\", Comparer.OrdinalIgnoreCase).",
+    "lab": "Lab 3"
+  },
+  {
+    "file": "data/03_Valuation/Purchase_Log.xlsx",
+    "sheet": "Purchase Log",
+    "location": "AQ191",
+    "mess_type": "cancelled_line",
+    "description": "Line cancelled (Notes contain CANCELLED in any case).",
+    "teaching_fix": "Filter out rows where Text.Contains(Notes, \"CANCELLED\", Comparer.OrdinalIgnoreCase).",
+    "lab": "Lab 3"
+  },
+  {
+    "file": "data/03_Valuation/Purchase_Log.xlsx",
+    "sheet": "Purchase Log",
+    "location": "AQ202",
+    "mess_type": "cancelled_line",
+    "description": "Line cancelled (Notes contain CANCELLED in any case).",
+    "teaching_fix": "Filter out rows where Text.Contains(Notes, \"CANCELLED\", Comparer.OrdinalIgnoreCase).",
+    "lab": "Lab 3"
+  },
+  {
+    "file": "data/03_Valuation/Purchase_Log.xlsx",
+    "sheet": "Purchase Log",
+    "location": "I2",
+    "mess_type": "supplier_variant",
+    "description": "Supplier uses name variants. [143 instances in file; first 4 logged]",
+    "teaching_fix": "CleanText then Merge to Supplier_Name_Map.",
+    "lab": "Lab 3"
+  },
+  {
+    "file": "data/03_Valuation/Purchase_Log.xlsx",
+    "sheet": "Purchase Log",
+    "location": "I6",
+    "mess_type": "supplier_variant",
+    "description": "Supplier uses name variants. [143 instances in file; first 4 logged]",
+    "teaching_fix": "CleanText then Merge to Supplier_Name_Map.",
+    "lab": "Lab 3"
+  },
+  {
+    "file": "data/03_Valuation/Purchase_Log.xlsx",
+    "sheet": "Purchase Log",
+    "location": "I7",
+    "mess_type": "supplier_variant",
+    "description": "Supplier uses name variants. [143 instances in file; first 4 logged]",
+    "teaching_fix": "CleanText then Merge to Supplier_Name_Map.",
+    "lab": "Lab 3"
+  },
+  {
+    "file": "data/03_Valuation/Purchase_Log.xlsx",
+    "sheet": "Purchase Log",
+    "location": "I8",
+    "mess_type": "supplier_variant",
+    "description": "Supplier uses name variants. [143 instances in file; first 4 logged]",
+    "teaching_fix": "CleanText then Merge to Supplier_Name_Map.",
+    "lab": "Lab 3"
+  },
+  {
+    "file": "data/03_Valuation/Purchase_Log.xlsx",
+    "sheet": "Purchase Log",
+    "location": "K2",
+    "mess_type": "part_number_variant",
+    "description": "Part Number typed several ways. [149 instances in file; first 4 logged]",
+    "teaching_fix": "NormPart.",
+    "lab": "Lab 3"
+  },
+  {
+    "file": "data/03_Valuation/Purchase_Log.xlsx",
+    "sheet": "Purchase Log",
+    "location": "K3",
+    "mess_type": "part_number_variant",
+    "description": "Part Number typed several ways. [149 instances in file; first 4 logged]",
+    "teaching_fix": "NormPart.",
+    "lab": "Lab 3"
+  },
+  {
+    "file": "data/03_Valuation/Purchase_Log.xlsx",
+    "sheet": "Purchase Log",
+    "location": "K4",
+    "mess_type": "part_number_variant",
+    "description": "Part Number typed several ways. [149 instances in file; first 4 logged]",
+    "teaching_fix": "NormPart.",
+    "lab": "Lab 3"
+  },
+  {
+    "file": "data/03_Valuation/Purchase_Log.xlsx",
+    "sheet": "Purchase Log",
+    "location": "K6",
+    "mess_type": "part_number_variant",
+    "description": "Part Number typed several ways. [149 instances in file; first 4 logged]",
+    "teaching_fix": "NormPart.",
+    "lab": "Lab 3"
+  },
+  {
+    "file": "data/03_Valuation/Purchase_Log.xlsx",
+    "sheet": "Purchase Log",
+    "location": "G2",
+    "mess_type": "project_code_variant",
+    "description": "Project Code like cl-p101, CL P101, CLP101. [78 instances in file; first 4 logged]",
+    "teaching_fix": "NormProject: remove spaces/hyphens, Upper, rebuild as CL-Pnnn.",
+    "lab": "Lab 3"
+  },
+  {
+    "file": "data/03_Valuation/Purchase_Log.xlsx",
+    "sheet": "Purchase Log",
+    "location": "G4",
+    "mess_type": "project_code_variant",
+    "description": "Project Code like cl-p101, CL P101, CLP101. [78 instances in file; first 4 logged]",
+    "teaching_fix": "NormProject: remove spaces/hyphens, Upper, rebuild as CL-Pnnn.",
+    "lab": "Lab 3"
+  },
+  {
+    "file": "data/03_Valuation/Purchase_Log.xlsx",
+    "sheet": "Purchase Log",
+    "location": "G5",
+    "mess_type": "project_code_variant",
+    "description": "Project Code like cl-p101, CL P101, CLP101. [78 instances in file; first 4 logged]",
+    "teaching_fix": "NormProject: remove spaces/hyphens, Upper, rebuild as CL-Pnnn.",
+    "lab": "Lab 3"
+  },
+  {
+    "file": "data/03_Valuation/Purchase_Log.xlsx",
+    "sheet": "Purchase Log",
+    "location": "G7",
+    "mess_type": "project_code_variant",
+    "description": "Project Code like cl-p101, CL P101, CLP101. [78 instances in file; first 4 logged]",
+    "teaching_fix": "NormProject: remove spaces/hyphens, Upper, rebuild as CL-Pnnn.",
+    "lab": "Lab 3"
+  },
+  {
+    "file": "data/04_Receipts/Bank_Receipts_Q1.xlsx",
+    "sheet": "Receipts",
+    "location": "C2",
+    "mess_type": "noise_prefix",
+    "description": "Description starts with 'Recd from ' or 'BACS ' (bank narrative noise). [48 instances in file; first 4 logged]",
+    "teaching_fix": "Custom ExtractPayer: strip the prefix case-insensitively.",
+    "lab": "Lab 4"
+  },
+  {
+    "file": "data/04_Receipts/Bank_Receipts_Q1.xlsx",
+    "sheet": "Receipts",
+    "location": "C12",
+    "mess_type": "noise_prefix",
+    "description": "Description starts with 'Recd from ' or 'BACS ' (bank narrative noise). [48 instances in file; first 4 logged]",
+    "teaching_fix": "Custom ExtractPayer: strip the prefix case-insensitively.",
+    "lab": "Lab 4"
+  },
+  {
+    "file": "data/04_Receipts/Bank_Receipts_Q1.xlsx",
+    "sheet": "Receipts",
+    "location": "C14",
+    "mess_type": "noise_prefix",
+    "description": "Description starts with 'Recd from ' or 'BACS ' (bank narrative noise). [48 instances in file; first 4 logged]",
+    "teaching_fix": "Custom ExtractPayer: strip the prefix case-insensitively.",
+    "lab": "Lab 4"
+  },
+  {
+    "file": "data/04_Receipts/Bank_Receipts_Q1.xlsx",
+    "sheet": "Receipts",
+    "location": "C17",
+    "mess_type": "noise_prefix",
+    "description": "Description starts with 'Recd from ' or 'BACS ' (bank narrative noise). [48 instances in file; first 4 logged]",
+    "teaching_fix": "Custom ExtractPayer: strip the prefix case-insensitively.",
+    "lab": "Lab 4"
+  },
+  {
+    "file": "data/04_Receipts/Bank_Receipts_Q1.xlsx",
+    "sheet": "Receipts",
+    "location": "C2",
+    "mess_type": "noise_suffix",
+    "description": "Description ends with ' - INV 2231' (invoice reference noise). [34 instances in file; first 4 logged]",
+    "teaching_fix": "Take the text before ' - ' (Text.BeforeDelimiter / Split Column by Delimiter ' - ', keep first).",
+    "lab": "Lab 4"
+  },
+  {
+    "file": "data/04_Receipts/Bank_Receipts_Q1.xlsx",
+    "sheet": "Receipts",
+    "location": "C3",
+    "mess_type": "noise_suffix",
+    "description": "Description ends with ' - INV 2231' (invoice reference noise). [34 instances in file; first 4 logged]",
+    "teaching_fix": "Take the text before ' - ' (Text.BeforeDelimiter / Split Column by Delimiter ' - ', keep first).",
+    "lab": "Lab 4"
+  },
+  {
+    "file": "data/04_Receipts/Bank_Receipts_Q1.xlsx",
+    "sheet": "Receipts",
+    "location": "C4",
+    "mess_type": "noise_suffix",
+    "description": "Description ends with ' - INV 2231' (invoice reference noise). [34 instances in file; first 4 logged]",
+    "teaching_fix": "Take the text before ' - ' (Text.BeforeDelimiter / Split Column by Delimiter ' - ', keep first).",
+    "lab": "Lab 4"
+  },
+  {
+    "file": "data/04_Receipts/Bank_Receipts_Q1.xlsx",
+    "sheet": "Receipts",
+    "location": "C11",
+    "mess_type": "noise_suffix",
+    "description": "Description ends with ' - INV 2231' (invoice reference noise). [34 instances in file; first 4 logged]",
+    "teaching_fix": "Take the text before ' - ' (Text.BeforeDelimiter / Split Column by Delimiter ' - ', keep first).",
+    "lab": "Lab 4"
+  },
+  {
+    "file": "data/04_Receipts/Bank_Receipts_Q1.xlsx",
+    "sheet": "Receipts",
+    "location": "C35",
+    "mess_type": "case_variant",
+    "description": "Description in lower case. [9 instances in file; first 3 logged]",
+    "teaching_fix": "IgnoreCase=true in the fuzzy join (or Text.Upper).",
+    "lab": "Lab 4"
+  },
+  {
+    "file": "data/04_Receipts/Bank_Receipts_Q1.xlsx",
+    "sheet": "Receipts",
+    "location": "C36",
+    "mess_type": "case_variant",
+    "description": "Description in lower case. [9 instances in file; first 3 logged]",
+    "teaching_fix": "IgnoreCase=true in the fuzzy join (or Text.Upper).",
+    "lab": "Lab 4"
+  },
+  {
+    "file": "data/04_Receipts/Bank_Receipts_Q1.xlsx",
+    "sheet": "Receipts",
+    "location": "C53",
+    "mess_type": "case_variant",
+    "description": "Description in lower case. [9 instances in file; first 3 logged]",
+    "teaching_fix": "IgnoreCase=true in the fuzzy join (or Text.Upper).",
+    "lab": "Lab 4"
+  },
+  {
+    "file": "data/04_Receipts/Bank_Receipts_Q1.xlsx",
+    "sheet": "Receipts",
+    "location": "C9",
+    "mess_type": "trailing_space",
+    "description": "Description has trailing space. [21 instances in file; first 3 logged]",
+    "teaching_fix": "CleanText: nbsp->space, collapse spaces, Trim.",
+    "lab": "Lab 4"
+  },
+  {
+    "file": "data/04_Receipts/Bank_Receipts_Q1.xlsx",
+    "sheet": "Receipts",
+    "location": "C15",
+    "mess_type": "trailing_space",
+    "description": "Description has trailing space. [21 instances in file; first 3 logged]",
+    "teaching_fix": "CleanText: nbsp->space, collapse spaces, Trim.",
+    "lab": "Lab 4"
+  },
+  {
+    "file": "data/04_Receipts/Bank_Receipts_Q1.xlsx",
+    "sheet": "Receipts",
+    "location": "C16",
+    "mess_type": "trailing_space",
+    "description": "Description has trailing space. [21 instances in file; first 3 logged]",
+    "teaching_fix": "CleanText: nbsp->space, collapse spaces, Trim.",
+    "lab": "Lab 4"
+  },
+  {
+    "file": "data/04_Receipts/Bank_Receipts_Q1.xlsx",
+    "sheet": "Receipts",
+    "location": "C7",
+    "mess_type": "double_space",
+    "description": "Description has double space. [15 instances in file; first 3 logged]",
+    "teaching_fix": "CleanText: nbsp->space, collapse spaces, Trim.",
+    "lab": "Lab 4"
+  },
+  {
+    "file": "data/04_Receipts/Bank_Receipts_Q1.xlsx",
+    "sheet": "Receipts",
+    "location": "C8",
+    "mess_type": "double_space",
+    "description": "Description has double space. [15 instances in file; first 3 logged]",
+    "teaching_fix": "CleanText: nbsp->space, collapse spaces, Trim.",
+    "lab": "Lab 4"
+  },
+  {
+    "file": "data/04_Receipts/Bank_Receipts_Q1.xlsx",
+    "sheet": "Receipts",
+    "location": "C24",
+    "mess_type": "double_space",
+    "description": "Description has double space. [15 instances in file; first 3 logged]",
+    "teaching_fix": "CleanText: nbsp->space, collapse spaces, Trim.",
+    "lab": "Lab 4"
+  },
+  {
+    "file": "data/04_Receipts/Bank_Receipts_Q1.xlsx",
+    "sheet": "Receipts",
+    "location": "D2",
+    "mess_type": "gbp_text",
+    "description": "Amount stored as '£1,250.00' text. [16 instances in file; first 4 logged]",
+    "teaching_fix": "ParseAmount: remove '£' and ',' then Decimal.",
+    "lab": "Lab 4"
+  },
+  {
+    "file": "data/04_Receipts/Bank_Receipts_Q1.xlsx",
+    "sheet": "Receipts",
+    "location": "D6",
+    "mess_type": "gbp_text",
+    "description": "Amount stored as '£1,250.00' text. [16 instances in file; first 4 logged]",
+    "teaching_fix": "ParseAmount: remove '£' and ',' then Decimal.",
+    "lab": "Lab 4"
+  },
+  {
+    "file": "data/04_Receipts/Bank_Receipts_Q1.xlsx",
+    "sheet": "Receipts",
+    "location": "D10",
+    "mess_type": "gbp_text",
+    "description": "Amount stored as '£1,250.00' text. [16 instances in file; first 4 logged]",
+    "teaching_fix": "ParseAmount: remove '£' and ',' then Decimal.",
+    "lab": "Lab 4"
+  },
+  {
+    "file": "data/04_Receipts/Bank_Receipts_Q1.xlsx",
+    "sheet": "Receipts",
+    "location": "D11",
+    "mess_type": "gbp_text",
+    "description": "Amount stored as '£1,250.00' text. [16 instances in file; first 4 logged]",
+    "teaching_fix": "ParseAmount: remove '£' and ',' then Decimal.",
+    "lab": "Lab 4"
+  },
+  {
+    "file": "data/04_Receipts/Bank_Receipts_Q1.xlsx",
+    "sheet": "Receipts",
+    "location": "D62",
+    "mess_type": "bracket_negative",
+    "description": "Refund Amount shown as text '(150.00)'.",
+    "teaching_fix": "ParseAmount: brackets -> negative number (net it against the customer).",
+    "lab": "Lab 4"
+  },
+  {
+    "file": "data/04_Receipts/Bank_Receipts_Q1.xlsx",
+    "sheet": "Receipts",
+    "location": "A6",
+    "mess_type": "text_date",
+    "description": "Date typed as UK dd/mm/yyyy text. [8 instances in file; first 3 logged]",
+    "teaching_fix": "Date.FromText(v,[Culture=\"en-GB\"]).",
+    "lab": "Lab 4"
+  },
+  {
+    "file": "data/04_Receipts/Bank_Receipts_Q1.xlsx",
+    "sheet": "Receipts",
+    "location": "A23",
+    "mess_type": "text_date",
+    "description": "Date typed as UK dd/mm/yyyy text. [8 instances in file; first 3 logged]",
+    "teaching_fix": "Date.FromText(v,[Culture=\"en-GB\"]).",
+    "lab": "Lab 4"
+  },
+  {
+    "file": "data/04_Receipts/Bank_Receipts_Q1.xlsx",
+    "sheet": "Receipts",
+    "location": "A43",
+    "mess_type": "text_date",
+    "description": "Date typed as UK dd/mm/yyyy text. [8 instances in file; first 3 logged]",
+    "teaching_fix": "Date.FromText(v,[Culture=\"en-GB\"]).",
+    "lab": "Lab 4"
+  },
+  {
+    "file": "data/04_Receipts/Bank_Receipts_Q1.xlsx",
+    "sheet": "Receipts",
+    "location": "A21:D21",
+    "mess_type": "duplicate_row",
+    "description": "Same Ref imported twice (exact duplicate receipt).",
+    "teaching_fix": "Remove Duplicates on Ref (keep first).",
+    "lab": "Lab 4"
+  },
+  {
+    "file": "data/04_Receipts/Bank_Receipts_Q1.xlsx",
+    "sheet": "Receipts",
+    "location": "A30:D30",
+    "mess_type": "duplicate_row",
+    "description": "Same Ref imported twice (exact duplicate receipt).",
+    "teaching_fix": "Remove Duplicates on Ref (keep first).",
+    "lab": "Lab 4"
+  },
+  {
+    "file": "data/04_Receipts/Bank_Receipts_Q1.xlsx",
+    "sheet": "Receipts",
+    "location": "A34:D34",
+    "mess_type": "duplicate_row",
+    "description": "Same Ref imported twice (exact duplicate receipt).",
+    "teaching_fix": "Remove Duplicates on Ref (keep first).",
+    "lab": "Lab 4"
+  },
+  {
+    "file": "data/04_Receipts/Bank_Receipts_Q1.xlsx",
+    "sheet": "Receipts",
+    "location": "A62:D62",
+    "mess_type": "refund",
+    "description": "Refund line (negative) for Flintwood Marine.",
+    "teaching_fix": "Keep it; net it in the customer total.",
+    "lab": "Lab 4"
+  },
+  {
+    "file": "data/04_Receipts/Bank_Receipts_Q1.xlsx",
+    "sheet": "Receipts",
+    "location": "C71",
+    "mess_type": "unmatched_payer",
+    "description": "Payer that is not a customer (CASH DEPOSIT / unknown builder).",
+    "teaching_fix": "Fuzzy join returns null -> label UNMATCHED and report to the trainer/AR team.",
+    "lab": "Lab 4"
+  },
+  {
+    "file": "data/04_Receipts/Bank_Receipts_Q1.xlsx",
+    "sheet": "Receipts",
+    "location": "C95",
+    "mess_type": "unmatched_payer",
+    "description": "Payer that is not a customer (CASH DEPOSIT / unknown builder).",
+    "teaching_fix": "Fuzzy join returns null -> label UNMATCHED and report to the trainer/AR team.",
+    "lab": "Lab 4"
+  },
+  {
+    "file": "data/04_Receipts/Customer_List.xlsx",
+    "sheet": "Customers",
+    "location": "A5",
+    "mess_type": "trailing_space",
+    "description": "Customer name with trailing space.",
+    "teaching_fix": "Trim before the join.",
+    "lab": "Lab 4"
+  },
+  {
+    "file": "data/04_Receipts/Customer_List.xlsx",
+    "sheet": "Customers",
+    "location": "A11",
+    "mess_type": "trailing_space",
+    "description": "Customer name with trailing space.",
+    "teaching_fix": "Trim before the join.",
+    "lab": "Lab 4"
+  },
+  {
+    "file": "data/04_Receipts/Fuzzy_Transform_Table.xlsx",
+    "sheet": "Transform",
+    "location": "A2:B2",
+    "mess_type": "transform_table",
+    "description": "Hand-built From/To table: every payer abbreviation or typo -> standard Customer name.",
+    "teaching_fix": "Pass as TransformationTable in Table.FuzzyNestedJoin (Fuzzy Matching options > Transformation table).",
+    "lab": "Lab 4"
+  }
+]

@@ -1,0 +1,1732 @@
+[
+  {
+    "file": "data/02_Timesheets/Timesheet_2026-01.csv",
+    "sheet": "",
+    "location": "lines 2, 3, 4, 5, 6, 7, 8, 9, ... (448 rows)",
+    "mess_type": "hours_text_hrs",
+    "description": "Hours stored as text with ' hrs' suffix (e.g. '7.5 hrs', January file).",
+    "teaching_fix": "Text.Select keeping digits and '.', then change type to Decimal Number.",
+    "lab": "Lab 2",
+    "evidence": "02/01/2026,E006,Callum Reid,CL-P102,Admin,12.5 hrs"
+  },
+  {
+    "file": "data/02_Timesheets/Timesheet_2026-01.csv",
+    "sheet": "",
+    "location": "lines 3, 80, 189, 193, 218, 246, 247, 301, ... (15 rows)",
+    "mess_type": "lowercase_project_code",
+    "description": "Project code in lower case (cl-p101).",
+    "teaching_fix": "Text.Upper then standardise (fnProjectCode).",
+    "lab": "Lab 2",
+    "evidence": "02/01/2026,E006,Callum Reid,cl-p102,Design,13.0 hrs"
+  },
+  {
+    "file": "data/02_Timesheets/Timesheet_2026-01.csv",
+    "sheet": "",
+    "location": "lines 5, 6, 12, 22, 32, 48, 71, 84, ... (42 rows)",
+    "mess_type": "task_case",
+    "description": "Task in lower or upper case.",
+    "teaching_fix": "Transform > Format > Capitalize Each Word.",
+    "lab": "Lab 2",
+    "evidence": "02/01/2026,E006,Callum Reid,CL-P108,design,8.5 hrs"
+  },
+  {
+    "file": "data/02_Timesheets/Timesheet_2026-01.csv",
+    "sheet": "",
+    "location": "lines 7, 13, 34, 36, 77, 103, 124, 128, ... (16 rows)",
+    "mess_type": "spaced_project_code",
+    "description": "Project code with a space instead of hyphen (CL P101).",
+    "teaching_fix": "Remove spaces/hyphens, rebuild as CL-Pnnn.",
+    "lab": "Lab 2",
+    "evidence": "02/01/2026,E007,Oliver Hartley,CL P103,Design,10.5 hrs"
+  },
+  {
+    "file": "data/02_Timesheets/Timesheet_2026-01.csv",
+    "sheet": "",
+    "location": "lines 8, 27, 33, 54, 60, 83, 85, 88, ... (34 rows)",
+    "mess_type": "name_extra_spaces",
+    "description": "Employee Name with trailing or double spaces.",
+    "teaching_fix": "Transform > Format > Trim, collapse double spaces (or take the name from Employees).",
+    "lab": "Lab 2",
+    "evidence": "02/01/2026,E007,Oliver Hartley ,CL-P106,Design,11.0 hrs"
+  },
+  {
+    "file": "data/02_Timesheets/Timesheet_2026-01.csv",
+    "sheet": "",
+    "location": "lines 21, 112, 120, 127, 152, 176, 205, 221, ... (17 rows)",
+    "mess_type": "no_hyphen_project_code",
+    "description": "Project code with no hyphen (CLP101).",
+    "teaching_fix": "Remove spaces/hyphens, rebuild as CL-Pnnn.",
+    "lab": "Lab 2",
+    "evidence": "02/01/2026,E010,Emily Chen,CLP107,Design,10.0 hrs"
+  },
+  {
+    "file": "data/02_Timesheets/Timesheet_2026-01.csv",
+    "sheet": "",
+    "location": "lines 28, 83, 85, 126, 202, 252, 298, 317, ... (12 rows)",
+    "mess_type": "employee_id_case_space",
+    "description": "Employee ID in lower case or with a trailing space.",
+    "teaching_fix": "Trim + Upper.",
+    "lab": "Lab 2",
+    "evidence": "02/01/2026,E012 ,Aisha Rahman,CL-P101,Admin,7.5 hrs"
+  },
+  {
+    "file": "data/02_Timesheets/Timesheet_2026-01.csv",
+    "sheet": "",
+    "location": "lines 33, 47, 83, 113, 135, 139, 157, 171, ... (10 rows)",
+    "mess_type": "leading_space_project_code",
+    "description": "Project code with leading space.",
+    "teaching_fix": "Transform > Format > Trim.",
+    "lab": "Lab 2",
+    "evidence": "02/01/2026,E013,Ben  Thornton, CL-P102,Admin,11.5 hrs"
+  },
+  {
+    "file": "data/02_Timesheets/Timesheet_2026-01.csv",
+    "sheet": "",
+    "location": "lines 39, 64, 76, 79, 114, 186, 225, 300, ... (15 rows)",
+    "mess_type": "mixedcase_project_code",
+    "description": "Project code in mixed case (Cl-P101).",
+    "teaching_fix": "Text.Upper then standardise.",
+    "lab": "Lab 2",
+    "evidence": "02/01/2026,E014,Chloe Davies,Cl-P107,Admin,9.0 hrs"
+  },
+  {
+    "file": "data/02_Timesheets/Timesheet_2026-01.csv",
+    "sheet": "",
+    "location": "lines 48, 73, 85, 90, 129, 200, 220, 238, ... (19 rows)",
+    "mess_type": "trailing_space_project_code",
+    "description": "Project code with trailing space.",
+    "teaching_fix": "Transform > Format > Trim.",
+    "lab": "Lab 2",
+    "evidence": "02/01/2026,E016,Karen Fox,CL-P108 ,build,10.0 hrs"
+  },
+  {
+    "file": "data/02_Timesheets/Timesheet_2026-01.csv",
+    "sheet": "",
+    "location": "line 178",
+    "mess_type": "exact_duplicate_row",
+    "description": "An entire booking line appears twice (identical text).",
+    "teaching_fix": "Home > Remove Rows > Remove Duplicates (after cleaning).",
+    "lab": "Lab 2",
+    "evidence": "09/01/2026,E025,Yasmin Qureshi,CL-P104,Test,9.0 hrs"
+  },
+  {
+    "file": "data/02_Timesheets/Timesheet_2026-01.csv",
+    "sheet": "",
+    "location": "lines 250, 294, 455 (3 rows)",
+    "mess_type": "blank_line",
+    "description": "Completely blank line inside the data.",
+    "teaching_fix": "Remove Rows > Remove Blank Rows, or filter Week Ending <> ''.",
+    "lab": "Lab 2",
+    "evidence": ""
+  },
+  {
+    "file": "data/02_Timesheets/Timesheet_2026-01.csv",
+    "sheet": "",
+    "location": "line 289",
+    "mess_type": "near_duplicate_row",
+    "description": "Same booking appears twice but one copy has a lower-case code and trailing space in the name.",
+    "teaching_fix": "Clean (trim / upper) first, THEN Remove Duplicates so the near-duplicate becomes an exact one.",
+    "lab": "Lab 2",
+    "evidence": "16/01/2026,E022,Marcus Lowe ,cl-p103,Install,7.0 hrs"
+  },
+  {
+    "file": "data/02_Timesheets/Timesheet_2026-01.csv",
+    "sheet": "",
+    "location": "line 302",
+    "mess_type": "comma_only_line",
+    "description": "Line containing only commas (empty row).",
+    "teaching_fix": "Remove Blank Rows / filter empty Week Ending.",
+    "lab": "Lab 2",
+    "evidence": ",,,,,"
+  },
+  {
+    "file": "data/02_Timesheets/Timesheet_2026-01.csv",
+    "sheet": "",
+    "location": "line 456",
+    "mess_type": "total_row",
+    "description": "Footer row labelled 'Total' with a hours sum at the bottom of the file.",
+    "teaching_fix": "Filter out rows where Week Ending = 'Total'.",
+    "lab": "Lab 2",
+    "evidence": "Total,,,,,3743.0"
+  },
+  {
+    "file": "data/02_Timesheets/Timesheet_2026-02.csv",
+    "sheet": "",
+    "location": "lines 2, 25, 74, 94, 103, 118, 124, 131, ... (17 rows)",
+    "mess_type": "no_hyphen_project_code",
+    "description": "Project code with no hyphen (CLP101).",
+    "teaching_fix": "Remove spaces/hyphens, rebuild as CL-Pnnn.",
+    "lab": "Lab 2",
+    "evidence": "06/02/2026,E006,Callum Reid,CLP102,Test,10.5"
+  },
+  {
+    "file": "data/02_Timesheets/Timesheet_2026-02.csv",
+    "sheet": "",
+    "location": "lines 3, 78, 86, 183, 187, 247, 286, 299, ... (9 rows)",
+    "mess_type": "lowercase_project_code",
+    "description": "Project code in lower case (cl-p101).",
+    "teaching_fix": "Text.Upper then standardise (fnProjectCode).",
+    "lab": "Lab 2",
+    "evidence": "06/02/2026,E006,Callum Reid,cl-p106,Design,8.5"
+  },
+  {
+    "file": "data/02_Timesheets/Timesheet_2026-02.csv",
+    "sheet": "",
+    "location": "lines 5, 36, 83, 116, 133, 135, 138, 144, ... (16 rows)",
+    "mess_type": "mixedcase_project_code",
+    "description": "Project code in mixed case (Cl-P101).",
+    "teaching_fix": "Text.Upper then standardise.",
+    "lab": "Lab 2",
+    "evidence": "06/02/2026,E006,Callum Reid,Cl-P108,Design,11.5"
+  },
+  {
+    "file": "data/02_Timesheets/Timesheet_2026-02.csv",
+    "sheet": "",
+    "location": "lines 6, 13, 15, 18, 50, 57, 60, 94, ... (25 rows)",
+    "mess_type": "name_extra_spaces",
+    "description": "Employee Name with trailing or double spaces.",
+    "teaching_fix": "Transform > Format > Trim, collapse double spaces (or take the name from Employees).",
+    "lab": "Lab 2",
+    "evidence": "06/02/2026,E007,Oliver  Hartley,CL-P102,design,10.5"
+  },
+  {
+    "file": "data/02_Timesheets/Timesheet_2026-02.csv",
+    "sheet": "",
+    "location": "lines 6, 18, 21, 31, 41, 50, 54, 61, ... (26 rows)",
+    "mess_type": "task_case",
+    "description": "Task in lower or upper case.",
+    "teaching_fix": "Transform > Format > Capitalize Each Word.",
+    "lab": "Lab 2",
+    "evidence": "06/02/2026,E007,Oliver  Hartley,CL-P102,design,10.5"
+  },
+  {
+    "file": "data/02_Timesheets/Timesheet_2026-02.csv",
+    "sheet": "",
+    "location": "lines 7, 114, 121, 164, 175, 179, 180, 195, ... (18 rows)",
+    "mess_type": "spaced_project_code",
+    "description": "Project code with a space instead of hyphen (CL P101).",
+    "teaching_fix": "Remove spaces/hyphens, rebuild as CL-Pnnn.",
+    "lab": "Lab 2",
+    "evidence": "06/02/2026,E007,Oliver Hartley,CL P103,Build,5.5"
+  },
+  {
+    "file": "data/02_Timesheets/Timesheet_2026-02.csv",
+    "sheet": "",
+    "location": "lines 11, 68, 89, 92, 142, 167, 206, 224, ... (13 rows)",
+    "mess_type": "trailing_space_project_code",
+    "description": "Project code with trailing space.",
+    "teaching_fix": "Transform > Format > Trim.",
+    "lab": "Lab 2",
+    "evidence": "06/02/2026,E008,Sophie Marsh,CL-P107 ,Admin,4.5"
+  },
+  {
+    "file": "data/02_Timesheets/Timesheet_2026-02.csv",
+    "sheet": "",
+    "location": "lines 15, 48, 54, 72, 118, 135, 146, 147, ... (21 rows)",
+    "mess_type": "employee_id_case_space",
+    "description": "Employee ID in lower case or with a trailing space.",
+    "teaching_fix": "Trim + Upper.",
+    "lab": "Lab 2",
+    "evidence": "06/02/2026,e009,Daniel  Okafor, CL-P104,Admin,7.0"
+  },
+  {
+    "file": "data/02_Timesheets/Timesheet_2026-02.csv",
+    "sheet": "",
+    "location": "lines 15, 20, 55, 123, 137, 260, 281, 295, ... (12 rows)",
+    "mess_type": "leading_space_project_code",
+    "description": "Project code with leading space.",
+    "teaching_fix": "Transform > Format > Trim.",
+    "lab": "Lab 2",
+    "evidence": "06/02/2026,e009,Daniel  Okafor, CL-P104,Admin,7.0"
+  },
+  {
+    "file": "data/02_Timesheets/Timesheet_2026-02.csv",
+    "sheet": "",
+    "location": "lines 58, 110, 359 (3 rows)",
+    "mess_type": "blank_line",
+    "description": "Completely blank line inside the data.",
+    "teaching_fix": "Remove Rows > Remove Blank Rows, or filter Week Ending <> ''.",
+    "lab": "Lab 2",
+    "evidence": ""
+  },
+  {
+    "file": "data/02_Timesheets/Timesheet_2026-02.csv",
+    "sheet": "",
+    "location": "lines 76, 80, 106, 111, 173, 316 (6 rows)",
+    "mess_type": "unknown_project_code",
+    "description": "Booking against a project code that is not in Projects.xlsx (CL-P199 / CL-P100).",
+    "teaching_fix": "Merge with Projects using Left Anti to list them; Inner join (or filter) to remove them.",
+    "lab": "Lab 2",
+    "evidence": "20/02/2026,E017,Dean Hollis,cl-p100,Admin,1.0"
+  },
+  {
+    "file": "data/02_Timesheets/Timesheet_2026-02.csv",
+    "sheet": "",
+    "location": "line 172",
+    "mess_type": "comma_only_line",
+    "description": "Line containing only commas (empty row).",
+    "teaching_fix": "Remove Blank Rows / filter empty Week Ending.",
+    "lab": "Lab 2",
+    "evidence": ",,,,,"
+  },
+  {
+    "file": "data/02_Timesheets/Timesheet_2026-02.csv",
+    "sheet": "",
+    "location": "line 249",
+    "mess_type": "exact_duplicate_row",
+    "description": "An entire booking line appears twice (identical text).",
+    "teaching_fix": "Home > Remove Rows > Remove Duplicates (after cleaning).",
+    "lab": "Lab 2",
+    "evidence": "20/02/2026,E015,Steve Mallory,CL-P107,Design,11.0"
+  },
+  {
+    "file": "data/02_Timesheets/Timesheet_2026-02.csv",
+    "sheet": "",
+    "location": "line 360",
+    "mess_type": "total_row",
+    "description": "Footer row labelled 'Total' with a hours sum at the bottom of the file.",
+    "teaching_fix": "Filter out rows where Week Ending = 'Total'.",
+    "lab": "Lab 2",
+    "evidence": "Total,,,,,3017.5"
+  },
+  {
+    "file": "data/02_Timesheets/Timesheet_2026-03.csv",
+    "sheet": "",
+    "location": "line 1",
+    "mess_type": "renamed_column",
+    "description": "Column header is 'Proj Code' instead of 'Project Code' in the March file (breaks the combine).",
+    "teaching_fix": "Rename the column to 'Project Code' inside the Transform Sample File function (MissingField.Ignore) so all files align.",
+    "lab": "Lab 2",
+    "evidence": "Week Ending,Employee ID,Employee Name,Proj Code,Task,Hours"
+  },
+  {
+    "file": "data/02_Timesheets/Timesheet_2026-03.csv",
+    "sheet": "",
+    "location": "lines 2, 12, 36, 38, 42, 52, 68, 114, ... (16 rows)",
+    "mess_type": "trailing_space_project_code",
+    "description": "Project code with trailing space.",
+    "teaching_fix": "Transform > Format > Trim.",
+    "lab": "Lab 2",
+    "evidence": "06/03/2026,E006,Callum Reid,CL-P106 ,Admin,6.5"
+  },
+  {
+    "file": "data/02_Timesheets/Timesheet_2026-03.csv",
+    "sheet": "",
+    "location": "lines 4, 24, 70, 263, 272, 321 (6 rows)",
+    "mess_type": "leading_space_project_code",
+    "description": "Project code with leading space.",
+    "teaching_fix": "Transform > Format > Trim.",
+    "lab": "Lab 2",
+    "evidence": "06/03/2026,E006,Callum Reid, CL-P106,Test,9.5"
+  },
+  {
+    "file": "data/02_Timesheets/Timesheet_2026-03.csv",
+    "sheet": "",
+    "location": "lines 11, 17, 26, 54, 67, 73, 125, 143, ... (16 rows)",
+    "mess_type": "mixedcase_project_code",
+    "description": "Project code in mixed case (Cl-P101).",
+    "teaching_fix": "Text.Upper then standardise.",
+    "lab": "Lab 2",
+    "evidence": "06/03/2026,E007,Oliver Hartley,Cl-P108,Test,7.0"
+  },
+  {
+    "file": "data/02_Timesheets/Timesheet_2026-03.csv",
+    "sheet": "",
+    "location": "lines 13, 28, 62, 63, 71, 93, 104, 111, ... (28 rows)",
+    "mess_type": "task_case",
+    "description": "Task in lower or upper case.",
+    "teaching_fix": "Transform > Format > Capitalize Each Word.",
+    "lab": "Lab 2",
+    "evidence": "06/03/2026,E008,Sophie Marsh,CL-P101,DESIGN,7.5"
+  },
+  {
+    "file": "data/02_Timesheets/Timesheet_2026-03.csv",
+    "sheet": "",
+    "location": "lines 22, 25, 115, 146, 187, 190, 253, 301 (8 rows)",
+    "mess_type": "no_hyphen_project_code",
+    "description": "Project code with no hyphen (CLP101).",
+    "teaching_fix": "Remove spaces/hyphens, rebuild as CL-Pnnn.",
+    "lab": "Lab 2",
+    "evidence": "06/03/2026,E010,Emily Chen,CLP102,Test,7.5"
+  },
+  {
+    "file": "data/02_Timesheets/Timesheet_2026-03.csv",
+    "sheet": "",
+    "location": "lines 31, 43, 95, 101, 171, 225, 236, 258, ... (11 rows)",
+    "mess_type": "spaced_project_code",
+    "description": "Project code with a space instead of hyphen (CL P101).",
+    "teaching_fix": "Remove spaces/hyphens, rebuild as CL-Pnnn.",
+    "lab": "Lab 2",
+    "evidence": "06/03/2026,E012,Aisha Rahman,CL P103,Admin,8.0"
+  },
+  {
+    "file": "data/02_Timesheets/Timesheet_2026-03.csv",
+    "sheet": "",
+    "location": "lines 33, 34, 46, 49, 86, 148, 150, 165, ... (16 rows)",
+    "mess_type": "lowercase_project_code",
+    "description": "Project code in lower case (cl-p101).",
+    "teaching_fix": "Text.Upper then standardise (fnProjectCode).",
+    "lab": "Lab 2",
+    "evidence": "06/03/2026,E012,Aisha Rahman,cl-p107,Test,9.5"
+  },
+  {
+    "file": "data/02_Timesheets/Timesheet_2026-03.csv",
+    "sheet": "",
+    "location": "lines 36, 54, 87, 95, 113, 119, 121, 139, ... (28 rows)",
+    "mess_type": "name_extra_spaces",
+    "description": "Employee Name with trailing or double spaces.",
+    "teaching_fix": "Transform > Format > Trim, collapse double spaces (or take the name from Employees).",
+    "lab": "Lab 2",
+    "evidence": "06/03/2026,E013,Ben  Thornton,CL-P101 ,Test,9.5"
+  },
+  {
+    "file": "data/02_Timesheets/Timesheet_2026-03.csv",
+    "sheet": "",
+    "location": "lines 38, 79, 111, 185, 224, 252, 267, 293, ... (10 rows)",
+    "mess_type": "employee_id_case_space",
+    "description": "Employee ID in lower case or with a trailing space.",
+    "teaching_fix": "Trim + Upper.",
+    "lab": "Lab 2",
+    "evidence": "06/03/2026,E013 ,Ben Thornton,CL-P106 ,Test,4.5"
+  },
+  {
+    "file": "data/02_Timesheets/Timesheet_2026-03.csv",
+    "sheet": "",
+    "location": "line 126",
+    "mess_type": "exact_duplicate_row",
+    "description": "An entire booking line appears twice (identical text).",
+    "teaching_fix": "Home > Remove Rows > Remove Duplicates (after cleaning).",
+    "lab": "Lab 2",
+    "evidence": "13/03/2026,E012,Aisha Rahman,CL-P101,Admin,7.0"
+  },
+  {
+    "file": "data/02_Timesheets/Timesheet_2026-03.csv",
+    "sheet": "",
+    "location": "lines 188, 307, 366 (3 rows)",
+    "mess_type": "blank_line",
+    "description": "Completely blank line inside the data.",
+    "teaching_fix": "Remove Rows > Remove Blank Rows, or filter Week Ending <> ''.",
+    "lab": "Lab 2",
+    "evidence": ""
+  },
+  {
+    "file": "data/02_Timesheets/Timesheet_2026-03.csv",
+    "sheet": "",
+    "location": "line 344",
+    "mess_type": "comma_only_line",
+    "description": "Line containing only commas (empty row).",
+    "teaching_fix": "Remove Blank Rows / filter empty Week Ending.",
+    "lab": "Lab 2",
+    "evidence": ",,,,,"
+  },
+  {
+    "file": "data/02_Timesheets/Timesheet_2026-03.csv",
+    "sheet": "",
+    "location": "line 367",
+    "mess_type": "total_row",
+    "description": "Footer row labelled 'Total' with a hours sum at the bottom of the file.",
+    "teaching_fix": "Filter out rows where Week Ending = 'Total'.",
+    "lab": "Lab 2",
+    "evidence": "Total,,,,,3044.0"
+  },
+  {
+    "file": "data/02_Timesheets/Timesheet_2026-04.csv",
+    "sheet": "",
+    "location": "lines 2, 3, 4, 5, 6, 7, 8, 9, ... (355 rows)",
+    "mess_type": "us_date_text",
+    "description": "Week Ending stored as US month/day/year text (April file only); UK files use day/month/year.",
+    "teaching_fix": "Change Type > Using Locale > Date, English (United States) for April only (in the file function, choose culture by file).",
+    "lab": "Lab 2",
+    "evidence": "04/03/2026,E006,Callum Reid,Cl-P102,Build,13.5"
+  },
+  {
+    "file": "data/02_Timesheets/Timesheet_2026-04.csv",
+    "sheet": "",
+    "location": "lines 2, 4, 12, 21, 31, 39, 44, 64, ... (17 rows)",
+    "mess_type": "mixedcase_project_code",
+    "description": "Project code in mixed case (Cl-P101).",
+    "teaching_fix": "Text.Upper then standardise.",
+    "lab": "Lab 2",
+    "evidence": "04/03/2026,E006,Callum Reid,Cl-P102,Build,13.5"
+  },
+  {
+    "file": "data/02_Timesheets/Timesheet_2026-04.csv",
+    "sheet": "",
+    "location": "lines 3, 15, 17, 29, 36, 46, 61, 100, ... (17 rows)",
+    "mess_type": "no_hyphen_project_code",
+    "description": "Project code with no hyphen (CLP101).",
+    "teaching_fix": "Remove spaces/hyphens, rebuild as CL-Pnnn.",
+    "lab": "Lab 2",
+    "evidence": "04/03/2026,E006,Callum Reid,CLP106,TEST,12.5"
+  },
+  {
+    "file": "data/02_Timesheets/Timesheet_2026-04.csv",
+    "sheet": "",
+    "location": "lines 3, 14, 19, 25, 29, 34, 47, 49, ... (36 rows)",
+    "mess_type": "task_case",
+    "description": "Task in lower or upper case.",
+    "teaching_fix": "Transform > Format > Capitalize Each Word.",
+    "lab": "Lab 2",
+    "evidence": "04/03/2026,E006,Callum Reid,CLP106,TEST,12.5"
+  },
+  {
+    "file": "data/02_Timesheets/Timesheet_2026-04.csv",
+    "sheet": "",
+    "location": "lines 5, 9, 18, 24, 38, 74, 77, 78, ... (27 rows)",
+    "mess_type": "name_extra_spaces",
+    "description": "Employee Name with trailing or double spaces.",
+    "teaching_fix": "Transform > Format > Trim, collapse double spaces (or take the name from Employees).",
+    "lab": "Lab 2",
+    "evidence": "04/03/2026,E006,Callum Reid ,CL-P107,Design,10.5"
+  },
+  {
+    "file": "data/02_Timesheets/Timesheet_2026-04.csv",
+    "sheet": "",
+    "location": "lines 10, 25, 27, 33, 52, 56, 73, 81, ... (23 rows)",
+    "mess_type": "lowercase_project_code",
+    "description": "Project code in lower case (cl-p101).",
+    "teaching_fix": "Text.Upper then standardise (fnProjectCode).",
+    "lab": "Lab 2",
+    "evidence": "04/03/2026,E008,Sophie Marsh,cl-p101,Install,11.5"
+  },
+  {
+    "file": "data/02_Timesheets/Timesheet_2026-04.csv",
+    "sheet": "",
+    "location": "lines 23, 27, 40, 81, 116, 155, 173, 214, ... (11 rows)",
+    "mess_type": "employee_id_case_space",
+    "description": "Employee ID in lower case or with a trailing space.",
+    "teaching_fix": "Trim + Upper.",
+    "lab": "Lab 2",
+    "evidence": "04/03/2026,E011 ,Liam Garside,CL-P101,Design,10.0"
+  },
+  {
+    "file": "data/02_Timesheets/Timesheet_2026-04.csv",
+    "sheet": "",
+    "location": "lines 24, 42, 60, 118, 215, 227, 253, 261, ... (12 rows)",
+    "mess_type": "leading_space_project_code",
+    "description": "Project code with leading space.",
+    "teaching_fix": "Transform > Format > Trim.",
+    "lab": "Lab 2",
+    "evidence": "04/03/2026,E011,Liam Garside , CL-P104,Design,12.5"
+  },
+  {
+    "file": "data/02_Timesheets/Timesheet_2026-04.csv",
+    "sheet": "",
+    "location": "lines 41, 191, 209, 285, 301, 328 (6 rows)",
+    "mess_type": "spaced_project_code",
+    "description": "Project code with a space instead of hyphen (CL P101).",
+    "teaching_fix": "Remove spaces/hyphens, rebuild as CL-Pnnn.",
+    "lab": "Lab 2",
+    "evidence": "04/03/2026,E015,Steve Mallory,CL P102,Build,11.5"
+  },
+  {
+    "file": "data/02_Timesheets/Timesheet_2026-04.csv",
+    "sheet": "",
+    "location": "line 53",
+    "mess_type": "exact_duplicate_row",
+    "description": "An entire booking line appears twice (identical text).",
+    "teaching_fix": "Home > Remove Rows > Remove Duplicates (after cleaning).",
+    "lab": "Lab 2",
+    "evidence": "04/03/2026,E011,Liam Garside,cl-p104,test,9.5"
+  },
+  {
+    "file": "data/02_Timesheets/Timesheet_2026-04.csv",
+    "sheet": "",
+    "location": "lines 125, 163, 166, 229, 234, 237, 239, 244, ... (13 rows)",
+    "mess_type": "trailing_space_project_code",
+    "description": "Project code with trailing space.",
+    "teaching_fix": "Transform > Format > Trim.",
+    "lab": "Lab 2",
+    "evidence": "04/10/2026,E014,Chloe Davies,CL-P104 ,Design,13.0"
+  },
+  {
+    "file": "data/02_Timesheets/Timesheet_2026-04.csv",
+    "sheet": "",
+    "location": "line 143",
+    "mess_type": "comma_only_line",
+    "description": "Line containing only commas (empty row).",
+    "teaching_fix": "Remove Blank Rows / filter empty Week Ending.",
+    "lab": "Lab 2",
+    "evidence": ",,,,,"
+  },
+  {
+    "file": "data/02_Timesheets/Timesheet_2026-04.csv",
+    "sheet": "",
+    "location": "lines 198, 267, 361 (3 rows)",
+    "mess_type": "blank_line",
+    "description": "Completely blank line inside the data.",
+    "teaching_fix": "Remove Rows > Remove Blank Rows, or filter Week Ending <> ''.",
+    "lab": "Lab 2",
+    "evidence": ""
+  },
+  {
+    "file": "data/02_Timesheets/Timesheet_2026-04.csv",
+    "sheet": "",
+    "location": "line 362",
+    "mess_type": "total_row",
+    "description": "Footer row labelled 'Total' with a hours sum at the bottom of the file.",
+    "teaching_fix": "Filter out rows where Week Ending = 'Total'.",
+    "lab": "Lab 2",
+    "evidence": "Total,,,,,3034.0"
+  },
+  {
+    "file": "data/02_Timesheets/Timesheet_2026-05.csv",
+    "sheet": "",
+    "location": "lines 2, 3, 4, 5, 6, 7, 8, 9, ... (451 rows)",
+    "mess_type": "numeric_employee_id",
+    "description": "Employee ID is a bare number (7) instead of text E007 (May file).",
+    "teaching_fix": "Add prefix 'E' and pad to 3 digits (Text.PadStart) so it matches Employees.xlsx.",
+    "lab": "Lab 2",
+    "evidence": "01/05/2026,6,Callum Reid,CL-P106 ,Admin,7.0"
+  },
+  {
+    "file": "data/02_Timesheets/Timesheet_2026-05.csv",
+    "sheet": "",
+    "location": "lines 2, 18, 19, 38, 41, 51, 52, 54, ... (21 rows)",
+    "mess_type": "trailing_space_project_code",
+    "description": "Project code with trailing space.",
+    "teaching_fix": "Transform > Format > Trim.",
+    "lab": "Lab 2",
+    "evidence": "01/05/2026,6,Callum Reid,CL-P106 ,Admin,7.0"
+  },
+  {
+    "file": "data/02_Timesheets/Timesheet_2026-05.csv",
+    "sheet": "",
+    "location": "lines 3, 14, 131, 145, 187, 213, 289, 308, ... (15 rows)",
+    "mess_type": "lowercase_project_code",
+    "description": "Project code in lower case (cl-p101).",
+    "teaching_fix": "Text.Upper then standardise (fnProjectCode).",
+    "lab": "Lab 2",
+    "evidence": "01/05/2026,6,Callum Reid,cl-p106,Build,8.5"
+  },
+  {
+    "file": "data/02_Timesheets/Timesheet_2026-05.csv",
+    "sheet": "",
+    "location": "lines 8, 20, 24, 74, 115, 118, 147, 155, ... (23 rows)",
+    "mess_type": "spaced_project_code",
+    "description": "Project code with a space instead of hyphen (CL P101).",
+    "teaching_fix": "Remove spaces/hyphens, rebuild as CL-Pnnn.",
+    "lab": "Lab 2",
+    "evidence": "01/05/2026,7,Oliver Hartley,CL P106,Admin,7.5"
+  },
+  {
+    "file": "data/02_Timesheets/Timesheet_2026-05.csv",
+    "sheet": "",
+    "location": "lines 17, 28, 35, 39, 58, 68, 94, 107, ... (15 rows)",
+    "mess_type": "no_hyphen_project_code",
+    "description": "Project code with no hyphen (CLP101).",
+    "teaching_fix": "Remove spaces/hyphens, rebuild as CL-Pnnn.",
+    "lab": "Lab 2",
+    "evidence": "01/05/2026,9,Daniel Okafor,CLP104,Install,5.5"
+  },
+  {
+    "file": "data/02_Timesheets/Timesheet_2026-05.csv",
+    "sheet": "",
+    "location": "lines 22, 42, 48, 62, 72, 73, 74, 77, ... (34 rows)",
+    "mess_type": "name_extra_spaces",
+    "description": "Employee Name with trailing or double spaces.",
+    "teaching_fix": "Transform > Format > Trim, collapse double spaces (or take the name from Employees).",
+    "lab": "Lab 2",
+    "evidence": "01/05/2026,10,Emily  Chen,CL-P107,Test,12.5"
+  },
+  {
+    "file": "data/02_Timesheets/Timesheet_2026-05.csv",
+    "sheet": "",
+    "location": "lines 27, 28, 34, 78, 99, 113, 114, 123, ... (41 rows)",
+    "mess_type": "task_case",
+    "description": "Task in lower or upper case.",
+    "teaching_fix": "Transform > Format > Capitalize Each Word.",
+    "lab": "Lab 2",
+    "evidence": "01/05/2026,12,Aisha Rahman,CL-P102,DESIGN,7.0"
+  },
+  {
+    "file": "data/02_Timesheets/Timesheet_2026-05.csv",
+    "sheet": "",
+    "location": "lines 46, 53, 61, 80, 93, 114, 137, 212, ... (21 rows)",
+    "mess_type": "leading_space_project_code",
+    "description": "Project code with leading space.",
+    "teaching_fix": "Transform > Format > Trim.",
+    "lab": "Lab 2",
+    "evidence": "01/05/2026,16,Karen Fox, CL-P102,Test,8.0"
+  },
+  {
+    "file": "data/02_Timesheets/Timesheet_2026-05.csv",
+    "sheet": "",
+    "location": "lines 78, 79, 92, 116, 142, 152, 218, 253, ... (15 rows)",
+    "mess_type": "mixedcase_project_code",
+    "description": "Project code in mixed case (Cl-P101).",
+    "teaching_fix": "Text.Upper then standardise.",
+    "lab": "Lab 2",
+    "evidence": "01/05/2026,23,Ellie Hargreaves,Cl-P105,INSTALL,7.5"
+  },
+  {
+    "file": "data/02_Timesheets/Timesheet_2026-05.csv",
+    "sheet": "",
+    "location": "line 144",
+    "mess_type": "exact_duplicate_row",
+    "description": "An entire booking line appears twice (identical text).",
+    "teaching_fix": "Home > Remove Rows > Remove Duplicates (after cleaning).",
+    "lab": "Lab 2",
+    "evidence": "08/05/2026,12,Aisha Rahman,Cl-P101,Build,9.0"
+  },
+  {
+    "file": "data/02_Timesheets/Timesheet_2026-05.csv",
+    "sheet": "",
+    "location": "line 148",
+    "mess_type": "year_typo_2062",
+    "description": "Week Ending typed with year 2062 instead of 2026.",
+    "teaching_fix": "Replace year 2062 with 2026 (Date.Year test + #date).",
+    "lab": "Lab 2",
+    "evidence": "08/05/2062,18,Jamie Walsh,CL-P105,Test,8.0"
+  },
+  {
+    "file": "data/02_Timesheets/Timesheet_2026-05.csv",
+    "sheet": "",
+    "location": "lines 180, 445, 457 (3 rows)",
+    "mess_type": "blank_line",
+    "description": "Completely blank line inside the data.",
+    "teaching_fix": "Remove Rows > Remove Blank Rows, or filter Week Ending <> ''.",
+    "lab": "Lab 2",
+    "evidence": ""
+  },
+  {
+    "file": "data/02_Timesheets/Timesheet_2026-05.csv",
+    "sheet": "",
+    "location": "line 281",
+    "mess_type": "comma_only_line",
+    "description": "Line containing only commas (empty row).",
+    "teaching_fix": "Remove Blank Rows / filter empty Week Ending.",
+    "lab": "Lab 2",
+    "evidence": ",,,,,"
+  },
+  {
+    "file": "data/02_Timesheets/Timesheet_2026-05.csv",
+    "sheet": "",
+    "location": "line 458",
+    "mess_type": "total_row",
+    "description": "Footer row labelled 'Total' with a hours sum at the bottom of the file.",
+    "teaching_fix": "Filter out rows where Week Ending = 'Total'.",
+    "lab": "Lab 2",
+    "evidence": "Total,,,,,3691.5"
+  },
+  {
+    "file": "data/02_Timesheets/_Later/Timesheet_2026-06.csv",
+    "sheet": "",
+    "location": "lines 2, 31, 39, 49, 84, 137, 150, 158, ... (20 rows)",
+    "mess_type": "name_extra_spaces",
+    "description": "Employee Name with trailing or double spaces.",
+    "teaching_fix": "Transform > Format > Trim, collapse double spaces (or take the name from Employees).",
+    "lab": "Lab 2",
+    "evidence": "05/06/2026,E006,Callum  Reid,CL-P102,Install,9.0"
+  },
+  {
+    "file": "data/02_Timesheets/_Later/Timesheet_2026-06.csv",
+    "sheet": "",
+    "location": "lines 6, 7, 76, 84, 117, 124, 148, 198, ... (11 rows)",
+    "mess_type": "lowercase_project_code",
+    "description": "Project code in lower case (cl-p101).",
+    "teaching_fix": "Text.Upper then standardise (fnProjectCode).",
+    "lab": "Lab 2",
+    "evidence": "05/06/2026,E006,Callum Reid,cl-p107,Install,8.0"
+  },
+  {
+    "file": "data/02_Timesheets/_Later/Timesheet_2026-06.csv",
+    "sheet": "",
+    "location": "lines 10, 62, 85, 168, 209, 239, 286, 288 (8 rows)",
+    "mess_type": "leading_space_project_code",
+    "description": "Project code with leading space.",
+    "teaching_fix": "Transform > Format > Trim.",
+    "lab": "Lab 2",
+    "evidence": "05/06/2026,E007,Oliver Hartley, CL-P106,Design,8.0"
+  },
+  {
+    "file": "data/02_Timesheets/_Later/Timesheet_2026-06.csv",
+    "sheet": "",
+    "location": "lines 14, 34, 119, 181, 213, 279 (6 rows)",
+    "mess_type": "employee_id_case_space",
+    "description": "Employee ID in lower case or with a trailing space.",
+    "teaching_fix": "Trim + Upper.",
+    "lab": "Lab 2",
+    "evidence": "05/06/2026,e008,Sophie Marsh,CL-P107,Design,8.5"
+  },
+  {
+    "file": "data/02_Timesheets/_Later/Timesheet_2026-06.csv",
+    "sheet": "",
+    "location": "lines 15, 33, 34, 37, 39, 106, 108, 109, ... (30 rows)",
+    "mess_type": "task_case",
+    "description": "Task in lower or upper case.",
+    "teaching_fix": "Transform > Format > Capitalize Each Word.",
+    "lab": "Lab 2",
+    "evidence": "05/06/2026,E009,Daniel Okafor,CL-P104,build,5.5"
+  },
+  {
+    "file": "data/02_Timesheets/_Later/Timesheet_2026-06.csv",
+    "sheet": "",
+    "location": "lines 16, 53, 66, 88, 102, 119, 122, 211, ... (18 rows)",
+    "mess_type": "trailing_space_project_code",
+    "description": "Project code with trailing space.",
+    "teaching_fix": "Transform > Format > Trim.",
+    "lab": "Lab 2",
+    "evidence": "05/06/2026,E009,Daniel Okafor,CL-P104 ,Design,7.5"
+  },
+  {
+    "file": "data/02_Timesheets/_Later/Timesheet_2026-06.csv",
+    "sheet": "",
+    "location": "lines 17, 49, 68, 70, 86, 115, 162, 165, ... (17 rows)",
+    "mess_type": "mixedcase_project_code",
+    "description": "Project code in mixed case (Cl-P101).",
+    "teaching_fix": "Text.Upper then standardise.",
+    "lab": "Lab 2",
+    "evidence": "05/06/2026,E009,Daniel Okafor,Cl-P104,Install,7.0"
+  },
+  {
+    "file": "data/02_Timesheets/_Later/Timesheet_2026-06.csv",
+    "sheet": "",
+    "location": "lines 18, 33, 63, 94, 111, 136, 167, 169, ... (18 rows)",
+    "mess_type": "spaced_project_code",
+    "description": "Project code with a space instead of hyphen (CL P101).",
+    "teaching_fix": "Remove spaces/hyphens, rebuild as CL-Pnnn.",
+    "lab": "Lab 2",
+    "evidence": "05/06/2026,E009,Daniel Okafor,CL P105,Admin,7.0"
+  },
+  {
+    "file": "data/02_Timesheets/_Later/Timesheet_2026-06.csv",
+    "sheet": "",
+    "location": "lines 22, 176, 182, 187, 194, 197, 218, 248, ... (14 rows)",
+    "mess_type": "no_hyphen_project_code",
+    "description": "Project code with no hyphen (CLP101).",
+    "teaching_fix": "Remove spaces/hyphens, rebuild as CL-Pnnn.",
+    "lab": "Lab 2",
+    "evidence": "05/06/2026,E010,Emily Chen,CLP107,Admin,6.0"
+  },
+  {
+    "file": "data/02_Timesheets/_Later/Timesheet_2026-06.csv",
+    "sheet": "",
+    "location": "line 56",
+    "mess_type": "near_duplicate_row",
+    "description": "Same booking appears twice but one copy has a lower-case code and trailing space in the name.",
+    "teaching_fix": "Clean (trim / upper) first, THEN Remove Duplicates so the near-duplicate becomes an exact one.",
+    "lab": "Lab 2",
+    "evidence": "05/06/2026,E011,Liam Garside ,cl-p106,Design,6.0"
+  },
+  {
+    "file": "data/02_Timesheets/_Later/Timesheet_2026-06.csv",
+    "sheet": "",
+    "location": "lines 132, 263, 365 (3 rows)",
+    "mess_type": "blank_line",
+    "description": "Completely blank line inside the data.",
+    "teaching_fix": "Remove Rows > Remove Blank Rows, or filter Week Ending <> ''.",
+    "lab": "Lab 2",
+    "evidence": ""
+  },
+  {
+    "file": "data/02_Timesheets/_Later/Timesheet_2026-06.csv",
+    "sheet": "",
+    "location": "line 330",
+    "mess_type": "comma_only_line",
+    "description": "Line containing only commas (empty row).",
+    "teaching_fix": "Remove Blank Rows / filter empty Week Ending.",
+    "lab": "Lab 2",
+    "evidence": ",,,,,"
+  },
+  {
+    "file": "data/02_Timesheets/_Later/Timesheet_2026-06.csv",
+    "sheet": "",
+    "location": "line 366",
+    "mess_type": "total_row",
+    "description": "Footer row labelled 'Total' with a hours sum at the bottom of the file.",
+    "teaching_fix": "Filter out rows where Week Ending = 'Total'.",
+    "lab": "Lab 2",
+    "evidence": "Total,,,,,2993.5"
+  },
+  {
+    "file": "data/02_Timesheets/Control_Totals.xlsx",
+    "sheet": "Control",
+    "location": "A1",
+    "mess_type": "title_rows_above_header",
+    "description": "Two title/source rows and a blank row sit above the header (header on row 4).",
+    "teaching_fix": "Remove Top Rows (3) then Use First Row as Headers.",
+    "lab": "Lab 2",
+    "evidence": "Timesheet system - control totals (hours booked to valid projects, after system de-duplication)"
+  },
+  {
+    "file": "data/05_Budget_Assets/Project_Budget_2026.xlsx",
+    "sheet": "Budget",
+    "location": "F9",
+    "mess_type": "number_stored_as_text",
+    "description": "A budget cell holds the number as text ('45,000.00' style) so SUM/Unpivot see text.",
+    "teaching_fix": "Replace commas and Change Type to Decimal Number (or Number.FromText) after unpivot.",
+    "lab": "Lab 5",
+    "evidence": "35,630.00"
+  },
+  {
+    "file": "data/05_Budget_Assets/Project_Budget_2026.xlsx",
+    "sheet": "Budget",
+    "location": "A1",
+    "mess_type": "title_rows_above_header",
+    "description": "Title and subtitle rows above the header (header on row 4).",
+    "teaching_fix": "Remove Top Rows (3), Use First Row as Headers.",
+    "lab": "Lab 5",
+    "evidence": "Callen-Lenz Associates Limited - Project Budget 2026"
+  },
+  {
+    "file": "data/05_Budget_Assets/Project_Budget_2026.xlsx",
+    "sheet": "Budget",
+    "location": "C4",
+    "mess_type": "blank_column",
+    "description": "Blank spacer column C with no header (becomes Column3).",
+    "teaching_fix": "Remove Columns (Column3).",
+    "lab": "Lab 5",
+    "evidence": "<blank>"
+  },
+  {
+    "file": "data/05_Budget_Assets/Project_Budget_2026.xlsx",
+    "sheet": "Budget",
+    "location": "D4",
+    "mess_type": "month_header_text",
+    "description": "Month headers are text like 'Jan-26' (wide layout).",
+    "teaching_fix": "Unpivot Other Columns, then convert 'Jan-26' text to a date.",
+    "lab": "Lab 5",
+    "evidence": "Jan-26"
+  },
+  {
+    "file": "data/05_Budget_Assets/Project_Budget_2026.xlsx",
+    "sheet": "Budget",
+    "location": "P4",
+    "mess_type": "total_column",
+    "description": "Total column at the right of the month columns.",
+    "teaching_fix": "Remove the Total column BEFORE unpivoting (else it becomes a 'month').",
+    "lab": "Lab 5",
+    "evidence": "Total"
+  },
+  {
+    "file": "data/05_Budget_Assets/Project_Budget_2026.xlsx",
+    "sheet": "Budget",
+    "location": "A13",
+    "mess_type": "total_row",
+    "description": "Total row at the bottom of the data.",
+    "teaching_fix": "Filter out rows where Project Code does not start with CL-P.",
+    "lab": "Lab 5",
+    "evidence": "Total"
+  },
+  {
+    "file": "data/05_Budget_Assets/Project_Budget_2026.xlsx",
+    "sheet": "Budget",
+    "location": "A15",
+    "mess_type": "footnote_row",
+    "description": "Footnote row under the totals.",
+    "teaching_fix": "Filter out with the Total row (keep only CL-P codes).",
+    "lab": "Lab 5",
+    "evidence": "* CL-P108 closed 31 Mar 2026 - budget retained for reporting only"
+  },
+  {
+    "file": "data/05_Budget_Assets/Project_Budget_2026.xlsx",
+    "sheet": "Budget",
+    "location": "A8",
+    "mess_type": "lowercase_project_code",
+    "description": "Project code in lower case (cl-p104).",
+    "teaching_fix": "Transform > Format > UPPERCASE.",
+    "lab": "Lab 5",
+    "evidence": "cl-p104"
+  },
+  {
+    "file": "data/05_Budget_Assets/Project_Budget_2026.xlsx",
+    "sheet": "Budget",
+    "location": "A10",
+    "mess_type": "trailing_space_project_code",
+    "description": "Project code with trailing space (CL-P106 ).",
+    "teaching_fix": "Transform > Format > Trim.",
+    "lab": "Lab 5",
+    "evidence": "CL-P106 "
+  },
+  {
+    "file": "data/05_Budget_Assets/Asset_Movements_2026.xlsx",
+    "sheet": "Movements",
+    "location": "E10",
+    "mess_type": "currency_symbol_text",
+    "description": "Write Offs value stored as text with a £ sign and comma ('£1,500.00').",
+    "teaching_fix": "Remove £ and commas (Replace Values) then Change Type to Decimal Number.",
+    "lab": "Lab 5",
+    "evidence": "£1,500.00"
+  },
+  {
+    "file": "data/05_Budget_Assets/Asset_Movements_2026.xlsx",
+    "sheet": "Movements",
+    "location": "A15",
+    "mess_type": "subtotal_row_inside_data",
+    "description": "Subtotal row 'Total Plant & Machinery' sits inside the data block (no Period).",
+    "teaching_fix": "Filter out rows where Period is null (after Fill Down).",
+    "lab": "Lab 5",
+    "evidence": "Total Plant & Machinery"
+  },
+  {
+    "file": "data/05_Budget_Assets/Asset_Movements_2026.xlsx",
+    "sheet": "Movements",
+    "location": "A26",
+    "mess_type": "subtotal_row_inside_data",
+    "description": "Subtotal row 'Total Vehicles' sits inside the data block (no Period).",
+    "teaching_fix": "Filter out rows where Period is null (after Fill Down).",
+    "lab": "Lab 5",
+    "evidence": "Total Vehicles"
+  },
+  {
+    "file": "data/05_Budget_Assets/Asset_Movements_2026.xlsx",
+    "sheet": "Movements",
+    "location": "A37",
+    "mess_type": "subtotal_row_inside_data",
+    "description": "Subtotal row 'Total IT Equipment' sits inside the data block (no Period).",
+    "teaching_fix": "Filter out rows where Period is null (after Fill Down).",
+    "lab": "Lab 5",
+    "evidence": "Total IT Equipment"
+  },
+  {
+    "file": "data/05_Budget_Assets/Asset_Movements_2026.xlsx",
+    "sheet": "Movements",
+    "location": "A48",
+    "mess_type": "subtotal_row_inside_data",
+    "description": "Subtotal row 'Total Fixtures & Fittings' sits inside the data block (no Period).",
+    "teaching_fix": "Filter out rows where Period is null (after Fill Down).",
+    "lab": "Lab 5",
+    "evidence": "Total Fixtures & Fittings"
+  },
+  {
+    "file": "data/05_Budget_Assets/Asset_Movements_2026.xlsx",
+    "sheet": "Movements",
+    "location": "A49",
+    "mess_type": "grand_total_row",
+    "description": "Grand Total row at the bottom of the sheet.",
+    "teaching_fix": "Filter out rows where Period is null.",
+    "lab": "Lab 5",
+    "evidence": "Grand Total"
+  },
+  {
+    "file": "data/05_Budget_Assets/Asset_Movements_2026.xlsx",
+    "sheet": "Movements",
+    "location": "A1",
+    "mess_type": "title_rows_above_header",
+    "description": "Title and source rows above the header (header on row 4).",
+    "teaching_fix": "Remove Top Rows (3) and promote headers.",
+    "lab": "Lab 5",
+    "evidence": "Callen-Lenz Associates Limited - Fixed Asset Register: cost movements 2026"
+  },
+  {
+    "file": "data/05_Budget_Assets/Asset_Movements_2026.xlsx",
+    "sheet": "Movements",
+    "location": "F4",
+    "mess_type": "blank_column",
+    "description": "Empty spacer column F between data and Comment.",
+    "teaching_fix": "Select only the 5 needed columns.",
+    "lab": "Lab 5",
+    "evidence": "<blank>"
+  },
+  {
+    "file": "data/05_Budget_Assets/Asset_Movements_2026.xlsx",
+    "sheet": "Movements",
+    "location": "A6",
+    "mess_type": "merged_cell_blank_class",
+    "description": "Asset Class only shown on the first row of each class (merged-cell style); the rest are blank.",
+    "teaching_fix": "Transform > Fill > Down on Asset Class.",
+    "lab": "Lab 5",
+    "evidence": "<blank>"
+  },
+  {
+    "file": "data/05_Budget_Assets/Asset_Movements_2026.xlsx",
+    "sheet": "Movements",
+    "location": "D25",
+    "mess_type": "brackets_negative_text",
+    "description": "Disposals stored as text in brackets, e.g. '(25,000.00)'.",
+    "teaching_fix": "Replace '(' ')' ',' then negate / Number.Abs; Change Type to number.",
+    "lab": "Lab 5",
+    "evidence": "(25,000.00)"
+  },
+  {
+    "file": "data/05_Budget_Assets/Asset_Movements_2026.xlsx",
+    "sheet": "Movements",
+    "location": "C29",
+    "mess_type": "blank_month_no_values",
+    "description": "One month (IT Equipment, Period 3) has Period but completely blank amounts (blank, not 0).",
+    "teaching_fix": "Replace Values null -> 0 before summing.",
+    "lab": "Lab 5",
+    "evidence": "<blank>"
+  },
+  {
+    "file": "data/05_Budget_Assets/Asset_Movements_2026.xlsx",
+    "sheet": "Movements",
+    "location": "D6",
+    "mess_type": "dash_for_zero",
+    "description": "Zero disposals shown as '-' text instead of 0.",
+    "teaching_fix": "Replace '-' with 0 / treat as 0 (fnNum).",
+    "lab": "Lab 5",
+    "evidence": "-"
+  },
+  {
+    "file": "data/05_Budget_Assets/Asset_Movements_2026.xlsx",
+    "sheet": "Movements",
+    "location": "C5",
+    "mess_type": "blank_vs_zero_mixed",
+    "description": "Zero additions appear as 0 on some rows and as blank cells on others.",
+    "teaching_fix": "Replace null with 0 on Additions / Disposals / Write Offs.",
+    "lab": "Lab 5",
+    "evidence": "0"
+  },
+  {
+    "file": "data/05_Budget_Assets/Asset_Movements_2026.xlsx",
+    "sheet": "Opening_Cost",
+    "location": "B6",
+    "mess_type": "currency_symbol_text",
+    "description": "Opening cost for IT Equipment stored as text '£38,000.00'.",
+    "teaching_fix": "Strip £ and comma, change type.",
+    "lab": "Lab 5",
+    "evidence": "£38,000.00"
+  },
+  {
+    "file": "data/05_Budget_Assets/Asset_Movements_2026.xlsx",
+    "sheet": "Opening_Cost",
+    "location": "A1",
+    "mess_type": "title_rows_above_header",
+    "description": "Title row and blank row above the header (header on row 3).",
+    "teaching_fix": "Remove Top Rows (2) then promote headers.",
+    "lab": "Lab 5",
+    "evidence": "Opening cost at 1 January 2026 by asset class (GBP)"
+  },
+  {
+    "file": "data/05_Budget_Assets/Asset_Movements_2026.xlsx",
+    "sheet": "Roll_Forward_Template",
+    "location": "C3",
+    "mess_type": "month_11_blank_column",
+    "description": "Template has Month 10 filled and Month 11 left blank - the lab fills it by refreshing with the November drop-in and Period = 11.",
+    "teaching_fix": "Parameter Period + roll-forward query; paste the Month 11 output into column C.",
+    "lab": "Lab 5",
+    "evidence": "Month 11"
+  },
+  {
+    "file": "data/05_Budget_Assets/_Later/Asset_Movements_2026-11.xlsx",
+    "sheet": "Movements",
+    "location": "A6",
+    "mess_type": "subtotal_row_inside_data",
+    "description": "Subtotal row 'Total Plant & Machinery' sits inside the data block (no Period).",
+    "teaching_fix": "Filter out rows where Period is null (after Fill Down).",
+    "lab": "Lab 5",
+    "evidence": "Total Plant & Machinery"
+  },
+  {
+    "file": "data/05_Budget_Assets/_Later/Asset_Movements_2026-11.xlsx",
+    "sheet": "Movements",
+    "location": "A8",
+    "mess_type": "subtotal_row_inside_data",
+    "description": "Subtotal row 'Total Vehicles' sits inside the data block (no Period).",
+    "teaching_fix": "Filter out rows where Period is null (after Fill Down).",
+    "lab": "Lab 5",
+    "evidence": "Total Vehicles"
+  },
+  {
+    "file": "data/05_Budget_Assets/_Later/Asset_Movements_2026-11.xlsx",
+    "sheet": "Movements",
+    "location": "A10",
+    "mess_type": "subtotal_row_inside_data",
+    "description": "Subtotal row 'Total IT Equipment' sits inside the data block (no Period).",
+    "teaching_fix": "Filter out rows where Period is null (after Fill Down).",
+    "lab": "Lab 5",
+    "evidence": "Total IT Equipment"
+  },
+  {
+    "file": "data/05_Budget_Assets/_Later/Asset_Movements_2026-11.xlsx",
+    "sheet": "Movements",
+    "location": "A12",
+    "mess_type": "subtotal_row_inside_data",
+    "description": "Subtotal row 'Total Fixtures & Fittings' sits inside the data block (no Period).",
+    "teaching_fix": "Filter out rows where Period is null (after Fill Down).",
+    "lab": "Lab 5",
+    "evidence": "Total Fixtures & Fittings"
+  },
+  {
+    "file": "data/05_Budget_Assets/_Later/Asset_Movements_2026-11.xlsx",
+    "sheet": "Movements",
+    "location": "A13",
+    "mess_type": "grand_total_row",
+    "description": "Grand Total row at the bottom of the sheet.",
+    "teaching_fix": "Filter out rows where Period is null.",
+    "lab": "Lab 5",
+    "evidence": "Grand Total"
+  },
+  {
+    "file": "data/05_Budget_Assets/_Later/Asset_Movements_2026-11.xlsx",
+    "sheet": "Movements",
+    "location": "A1",
+    "mess_type": "title_rows_above_header",
+    "description": "Title and source rows above the header (header on row 4).",
+    "teaching_fix": "Remove Top Rows (3) and promote headers.",
+    "lab": "Lab 5",
+    "evidence": "Callen-Lenz Associates Limited - Fixed Asset Register: cost movements - November 2026"
+  },
+  {
+    "file": "data/05_Budget_Assets/_Later/Asset_Movements_2026-11.xlsx",
+    "sheet": "Movements",
+    "location": "F4",
+    "mess_type": "blank_column",
+    "description": "Empty spacer column F between data and Comment.",
+    "teaching_fix": "Select only the 5 needed columns.",
+    "lab": "Lab 5",
+    "evidence": "<blank>"
+  },
+  {
+    "file": "data/06_Cards/Card_Statement_2026-01.csv",
+    "sheet": "",
+    "location": "lines 2, 5, 9, 14, 16, 19, 38, 43, ... (9 rows)",
+    "mess_type": "merchant_extra_spaces",
+    "description": "Merchant with leading/trailing or double spaces.",
+    "teaching_fix": "Trim + collapse spaces.",
+    "lab": "Lab 6",
+    "evidence": "01/01/2026,03/01/2026,Posted,Microsoft ,57.20,Software,london,4821,R PATEL,5734,Purchase,BK44662749,57.20,Pound Sterling,GB"
+  },
+  {
+    "file": "data/06_Cards/Card_Statement_2026-01.csv",
+    "sheet": "",
+    "location": "lines 2, 10, 13, 17, 20, 23, 26, 28, ... (15 rows)",
+    "mess_type": "city_case",
+    "description": "City in upper or lower case.",
+    "teaching_fix": "Transform > Format > Capitalize Each Word.",
+    "lab": "Lab 6",
+    "evidence": "01/01/2026,03/01/2026,Posted,Microsoft ,57.20,Software,london,4821,R PATEL,5734,Purchase,BK44662749,57.20,Pound Sterling,GB"
+  },
+  {
+    "file": "data/06_Cards/Card_Statement_2026-01.csv",
+    "sheet": "",
+    "location": "line 4",
+    "mess_type": "blank_amount_foreign",
+    "description": "Amount blank on a non-GBP row (card bank did not convert).",
+    "teaching_fix": "Amount GBP = Original Currency Amount x rate from FX_Rates.xlsx (merge on currency description).",
+    "lab": "Lab 6",
+    "evidence": "03/01/2026,03/01/2026,Posted,Shell,,Fuel,Rotterdam,937,P NAIR,5541,Purchase,BK15661294,69.77,Euro ,NL"
+  },
+  {
+    "file": "data/06_Cards/Card_Statement_2026-01.csv",
+    "sheet": "",
+    "location": "lines 4, 12, 13, 18, 20, 27, 30, 36, ... (21 rows)",
+    "mess_type": "last_four_leading_zero_lost",
+    "description": "Last four stored as a number so the leading 0 is lost (937 instead of 0937).",
+    "teaching_fix": "Text.PadStart(text, 4, \"0\") after converting to text.",
+    "lab": "Lab 6",
+    "evidence": "03/01/2026,03/01/2026,Posted,Shell,,Fuel,Rotterdam,937,P NAIR,5541,Purchase,BK15661294,69.77,Euro ,NL"
+  },
+  {
+    "file": "data/06_Cards/Card_Statement_2026-01.csv",
+    "sheet": "",
+    "location": "lines 4, 5, 12, 15, 17, 23, 26, 27, ... (20 rows)",
+    "mess_type": "currency_description_case",
+    "description": "Currency description in upper case or with trailing space.",
+    "teaching_fix": "Upper + Trim both sides before merging with FX_Rates.",
+    "lab": "Lab 6",
+    "evidence": "03/01/2026,03/01/2026,Posted,Shell,,Fuel,Rotterdam,937,P NAIR,5541,Purchase,BK15661294,69.77,Euro ,NL"
+  },
+  {
+    "file": "data/06_Cards/Card_Statement_2026-01.csv",
+    "sheet": "",
+    "location": "lines 6, 11, 81 (3 rows)",
+    "mess_type": "zero_amount",
+    "description": "Amount is 0.00 although the transaction has a non-zero original amount.",
+    "teaching_fix": "Treat 0 like blank: Original Currency Amount x FX rate.",
+    "lab": "Lab 6",
+    "evidence": "03/01/2026,06/01/2026,Posted,Trainline,0.00,Travel,London,7316,C REID,4011,Purchase,BK25543120,111.00,Pound Sterling,GB"
+  },
+  {
+    "file": "data/06_Cards/Card_Statement_2026-01.csv",
+    "sheet": "",
+    "location": "lines 9, 10, 15, 20, 51 (5 rows)",
+    "mess_type": "status_case",
+    "description": "Status in upper case (POSTED) rather than 'Posted'.",
+    "teaching_fix": "Compare with Text.Upper, or capitalise before filtering.",
+    "lab": "Lab 6",
+    "evidence": "03/01/2026,05/01/2026,POSTED,Pret ,8.21,Subsistence,Birmingham,5502,O HARTLEY,5814,Purchase,BK76439442,8.21,Pound Sterling,GB"
+  },
+  {
+    "file": "data/06_Cards/Card_Statement_2026-01.csv",
+    "sheet": "",
+    "location": "lines 10, 14, 18, 29, 41 (5 rows)",
+    "mess_type": "name_on_card_case",
+    "description": "Name on card in lower or mixed case.",
+    "teaching_fix": "Not needed for the join - match on Last Four (discussion point).",
+    "lab": "Lab 6",
+    "evidence": "03/01/2026,04/01/2026,POSTED,Shell,72.15,Fuel,reading,9047,p danvers,5541,Purchase,BK77628606,72.15,Pound Sterling,GB"
+  },
+  {
+    "file": "data/06_Cards/Card_Statement_2026-01.csv",
+    "sheet": "",
+    "location": "lines 22, 50, 62, 64, 69, 71 (6 rows)",
+    "mess_type": "city_double_space",
+    "description": "City with extra spaces (e.g. 'NEW  YORK', trailing space).",
+    "teaching_fix": "Trim + collapse double spaces, then Capitalize Each Word.",
+    "lab": "Lab 6",
+    "evidence": "08/01/2026,11/01/2026,Posted,Costa Coffee,5.51,Subsistence,Cardiff ,8110,F SUTHERLAND,5814,Purchase,BK29101114,5.51,Pound Sterling,GB"
+  },
+  {
+    "file": "data/06_Cards/Card_Statement_2026-01.csv",
+    "sheet": "",
+    "location": "lines 34, 54, 60, 68 (4 rows)",
+    "mess_type": "currency_symbol_amount",
+    "description": "Amount stored as text with £ and thousands comma ('£1,250.00').",
+    "teaching_fix": "Remove £ and comma, change type to Decimal Number.",
+    "lab": "Lab 6",
+    "evidence": "13/01/2026,13/01/2026,Posted,RS Components,£156.64,Materials,corby,2693,M LOWE,5065,Purchase,BK30685534,156.64,Pound Sterling,GB"
+  },
+  {
+    "file": "data/06_Cards/Card_Statement_2026-01.csv",
+    "sheet": "",
+    "location": "lines 37, 62, 76 (3 rows)",
+    "mess_type": "blank_amount_gbp",
+    "description": "Amount blank on a GBP row.",
+    "teaching_fix": "Amount GBP = Original Currency Amount (GBP rate 1.00).",
+    "lab": "Lab 6",
+    "evidence": "13/01/2026,16/01/2026,Posted,Shell,,Fuel,Exeter,5502,O HARTLEY,5541,Purchase,BK88019167,69.04,Pound Sterling,GB"
+  },
+  {
+    "file": "data/06_Cards/Card_Statement_2026-01.csv",
+    "sheet": "",
+    "location": "line 40",
+    "mess_type": "blank_line",
+    "description": "Blank line (all empty fields).",
+    "teaching_fix": "Remove Blank Rows / filter Bank Ref <> ''.",
+    "lab": "Lab 6",
+    "evidence": ",,,,,,,,,,,,,,"
+  },
+  {
+    "file": "data/06_Cards/Card_Statement_2026-01.csv",
+    "sheet": "",
+    "location": "line 52",
+    "mess_type": "cr_suffix_refund",
+    "description": "Refund amounts written as '45.00 CR' text.",
+    "teaching_fix": "Detect trailing CR, strip it and make the number negative.",
+    "lab": "Lab 6",
+    "evidence": "18/01/2026,19/01/2026,Posted,RS Components,12.86 CR,Materials,Corby,184,A RAHMAN,5065,Refund,BK61087759,-12.86,Pound Sterling,GB"
+  },
+  {
+    "file": "data/06_Cards/Card_Statement_2026-01.csv",
+    "sheet": "",
+    "location": "lines 83, 84, 85, 86, 87 (5 rows)",
+    "mess_type": "pending_status",
+    "description": "Row has Status 'Pending' (not yet posted; no posted date).",
+    "teaching_fix": "Filter Status = Posted.",
+    "lab": "Lab 6",
+    "evidence": "30/01/2026,,Pending,Shell,133.18,Fuel,Poole,937,P NAIR,5541,Purchase,PEND342996,133.18,Pound Sterling,GB"
+  },
+  {
+    "file": "data/06_Cards/Card_Statement_2026-02.csv",
+    "sheet": "",
+    "location": "line 1",
+    "mess_type": "header_case_trailing_space",
+    "description": "Headers have trailing spaces / different case versus other statements (e.g. 'Last four ').",
+    "teaching_fix": "Rename columns by position (all statements have the same 15 columns).",
+    "lab": "Lab 6",
+    "evidence": "Date,Posted date ,Status,Merchant,Amount ,Category,City,Last four ,NAME ON CARD,MCC,Trans Type,Bank Ref,Original Currency Amount,Merchant Currency Description,Merchant Country"
+  },
+  {
+    "file": "data/06_Cards/Card_Statement_2026-02.csv",
+    "sheet": "",
+    "location": "lines 2, 3, 4, 5, 6, 7, 8, 9, ... (86 rows)",
+    "mess_type": "text_date_dd_mon_yyyy",
+    "description": "Dates written as '05-Feb-2026' text in the February statement; others are dd/mm/yyyy.",
+    "teaching_fix": "Date.FromText with en-GB culture handles both; or Change Type Using Locale.",
+    "lab": "Lab 6",
+    "evidence": "29-Jan-2026,31-Jan-2026,Posted,Costa Coffee,6.24,Subsistence,Poole,9047,P DANVERS,5814,Purchase,BK81635658,6.24,Pound Sterling,GB"
+  },
+  {
+    "file": "data/06_Cards/Card_Statement_2026-02.csv",
+    "sheet": "",
+    "location": "lines 2, 4, 5, 7 (4 rows)",
+    "mess_type": "duplicate_across_statements",
+    "description": "Same Bank Ref appears at the end of one statement and the start of the next (month-end overlap).",
+    "teaching_fix": "Remove Duplicates on Bank Ref only (after cleaning it).",
+    "lab": "Lab 6",
+    "evidence": "29-Jan-2026,31-Jan-2026,Posted,Costa Coffee,6.24,Subsistence,Poole,9047,P DANVERS,5814,Purchase,BK81635658,6.24,Pound Sterling,GB"
+  },
+  {
+    "file": "data/06_Cards/Card_Statement_2026-02.csv",
+    "sheet": "",
+    "location": "lines 3, 6, 7, 10, 13, 16, 22, 25, ... (14 rows)",
+    "mess_type": "last_four_leading_zero_lost",
+    "description": "Last four stored as a number so the leading 0 is lost (937 instead of 0937).",
+    "teaching_fix": "Text.PadStart(text, 4, \"0\") after converting to text.",
+    "lab": "Lab 6",
+    "evidence": "29-Jan-2026,29-Jan-2026,Posted,RS Components,193.09,Materials,Corby,184,A RAHMAN,5065,Purchase,bk91391037 ,193.09,Pound Sterling,GB"
+  },
+  {
+    "file": "data/06_Cards/Card_Statement_2026-02.csv",
+    "sheet": "",
+    "location": "lines 3, 6 (2 rows)",
+    "mess_type": "near_duplicate_bank_ref",
+    "description": "Overlapping transaction whose Bank Ref differs only by case/trailing space.",
+    "teaching_fix": "Trim + Upper the Bank Ref first, then Remove Duplicates on Bank Ref.",
+    "lab": "Lab 6",
+    "evidence": "29-Jan-2026,29-Jan-2026,Posted,RS Components,193.09,Materials,Corby,184,A RAHMAN,5065,Purchase,bk91391037 ,193.09,Pound Sterling,GB"
+  },
+  {
+    "file": "data/06_Cards/Card_Statement_2026-02.csv",
+    "sheet": "",
+    "location": "lines 12, 29, 83 (3 rows)",
+    "mess_type": "blank_amount_gbp",
+    "description": "Amount blank on a GBP row.",
+    "teaching_fix": "Amount GBP = Original Currency Amount (GBP rate 1.00).",
+    "lab": "Lab 6",
+    "evidence": "01-Feb-2026,04-Feb-2026,Posted,Screwfix,,Materials,Poole,4821,r patel,5200,Purchase,BK77194656,218.90,Pound Sterling,GB"
+  },
+  {
+    "file": "data/06_Cards/Card_Statement_2026-02.csv",
+    "sheet": "",
+    "location": "lines 12, 41, 47, 59, 66, 72, 78 (7 rows)",
+    "mess_type": "name_on_card_case",
+    "description": "Name on card in lower or mixed case.",
+    "teaching_fix": "Not needed for the join - match on Last Four (discussion point).",
+    "lab": "Lab 6",
+    "evidence": "01-Feb-2026,04-Feb-2026,Posted,Screwfix,,Materials,Poole,4821,r patel,5200,Purchase,BK77194656,218.90,Pound Sterling,GB"
+  },
+  {
+    "file": "data/06_Cards/Card_Statement_2026-02.csv",
+    "sheet": "",
+    "location": "line 14",
+    "mess_type": "blank_amount_refund",
+    "description": "Amount blank on a refund row (no CR amount shown).",
+    "teaching_fix": "Amount GBP = Original Currency Amount (already negative for a refund) x rate 1.00.",
+    "lab": "Lab 6",
+    "evidence": "02-Feb-2026,02-Feb-2026,Posted,Trainline,,Travel,London,3349,S MALLORY,4011,Refund,BK77962263,-114.93,Pound Sterling ,GB"
+  },
+  {
+    "file": "data/06_Cards/Card_Statement_2026-02.csv",
+    "sheet": "",
+    "location": "lines 14, 23, 32, 37, 38, 45, 50, 62, ... (11 rows)",
+    "mess_type": "currency_description_case",
+    "description": "Currency description in upper case or with trailing space.",
+    "teaching_fix": "Upper + Trim both sides before merging with FX_Rates.",
+    "lab": "Lab 6",
+    "evidence": "02-Feb-2026,02-Feb-2026,Posted,Trainline,,Travel,London,3349,S MALLORY,4011,Refund,BK77962263,-114.93,Pound Sterling ,GB"
+  },
+  {
+    "file": "data/06_Cards/Card_Statement_2026-02.csv",
+    "sheet": "",
+    "location": "lines 19, 20, 27, 31, 32, 33, 38, 39, ... (18 rows)",
+    "mess_type": "city_case",
+    "description": "City in upper or lower case.",
+    "teaching_fix": "Transform > Format > Capitalize Each Word.",
+    "lab": "Lab 6",
+    "evidence": "05-Feb-2026,08-Feb-2026,Posted,Pret,7.46,Subsistence,southampton,8110,F SUTHERLAND,5814,Purchase,BK11023758,7.46,Pound Sterling,GB"
+  },
+  {
+    "file": "data/06_Cards/Card_Statement_2026-02.csv",
+    "sheet": "",
+    "location": "lines 23, 25, 55, 81 (4 rows)",
+    "mess_type": "city_double_space",
+    "description": "City with extra spaces (e.g. 'NEW  YORK', trailing space).",
+    "teaching_fix": "Trim + collapse double spaces, then Capitalize Each Word.",
+    "lab": "Lab 6",
+    "evidence": "06-Feb-2026,08-Feb-2026,Posted,Pret,5.94,Subsistence,London ,5502,O HARTLEY,5814,Purchase,BK37568340,5.94,Pound Sterling ,GB"
+  },
+  {
+    "file": "data/06_Cards/Card_Statement_2026-02.csv",
+    "sheet": "",
+    "location": "line 28",
+    "mess_type": "cr_suffix_refund",
+    "description": "Refund amounts written as '45.00 CR' text.",
+    "teaching_fix": "Detect trailing CR, strip it and make the number negative.",
+    "lab": "Lab 6",
+    "evidence": "08-Feb-2026,09-Feb-2026,Posted,RS Components,76.49 CR,Materials,Corby,7316,C REID,5065,Refund,BK66831110,-76.49,Pound Sterling,GB"
+  },
+  {
+    "file": "data/06_Cards/Card_Statement_2026-02.csv",
+    "sheet": "",
+    "location": "line 32",
+    "mess_type": "blank_amount_foreign",
+    "description": "Amount blank on a non-GBP row (card bank did not convert).",
+    "teaching_fix": "Amount GBP = Original Currency Amount x rate from FX_Rates.xlsx (merge on currency description).",
+    "lab": "Lab 6",
+    "evidence": "11-Feb-2026,11-Feb-2026,Posted,Hilton Garden Inn Hamburg,,Accommodation,hamburg,7316,C REID,7011,Purchase,BK82464533,256.92,EURO,DE"
+  },
+  {
+    "file": "data/06_Cards/Card_Statement_2026-02.csv",
+    "sheet": "",
+    "location": "lines 37, 42, 75 (3 rows)",
+    "mess_type": "zero_amount",
+    "description": "Amount is 0.00 although the transaction has a non-zero original amount.",
+    "teaching_fix": "Treat 0 like blank: Original Currency Amount x FX rate.",
+    "lab": "Lab 6",
+    "evidence": "12-Feb-2026,13-Feb-2026,Posted,Brasserie Les Halles,0.00,Subsistence,Paris,8110,F SUTHERLAND,5812,Purchase,BK47828326,38.04,Euro ,FR"
+  },
+  {
+    "file": "data/06_Cards/Card_Statement_2026-02.csv",
+    "sheet": "",
+    "location": "lines 42, 53, 55, 65, 66 (5 rows)",
+    "mess_type": "status_case",
+    "description": "Status in upper case (POSTED) rather than 'Posted'.",
+    "teaching_fix": "Compare with Text.Upper, or capitalise before filtering.",
+    "lab": "Lab 6",
+    "evidence": "13-Feb-2026,16-Feb-2026,POSTED,Trainline,0.00,Travel,London,5502,O HARTLEY,4011,Purchase,BK73987383,177.48,Pound Sterling,GB"
+  },
+  {
+    "file": "data/06_Cards/Card_Statement_2026-02.csv",
+    "sheet": "",
+    "location": "lines 55, 67 (2 rows)",
+    "mess_type": "currency_symbol_amount",
+    "description": "Amount stored as text with £ and thousands comma ('£1,250.00').",
+    "teaching_fix": "Remove £ and comma, change type to Decimal Number.",
+    "lab": "Lab 6",
+    "evidence": "19-Feb-2026,20-Feb-2026,POSTED,Premier Inn,£178.19,Accommodation,Bristol ,3349,S MALLORY,7011,Purchase,BK50338416,178.19,Pound Sterling,GB"
+  },
+  {
+    "file": "data/06_Cards/Card_Statement_2026-02.csv",
+    "sheet": "",
+    "location": "lines 68, 72, 74, 87 (4 rows)",
+    "mess_type": "merchant_extra_spaces",
+    "description": "Merchant with leading/trailing or double spaces.",
+    "teaching_fix": "Trim + collapse spaces.",
+    "lab": "Lab 6",
+    "evidence": "23-Feb-2026,24-Feb-2026,Posted,Greene  King Inn,47.03,Subsistence,Winchester,9047,P DANVERS,5812,Purchase,BK30555510,47.03,Pound Sterling,GB"
+  },
+  {
+    "file": "data/06_Cards/Card_Statement_2026-02.csv",
+    "sheet": "",
+    "location": "line 69",
+    "mess_type": "blank_line",
+    "description": "Blank line (all empty fields).",
+    "teaching_fix": "Remove Blank Rows / filter Bank Ref <> ''.",
+    "lab": "Lab 6",
+    "evidence": ",,,,,,,,,,,,,,"
+  },
+  {
+    "file": "data/06_Cards/Card_Statement_2026-02.csv",
+    "sheet": "",
+    "location": "lines 89, 90, 91, 92, 93 (5 rows)",
+    "mess_type": "pending_status",
+    "description": "Row has Status 'Pending' (not yet posted; no posted date).",
+    "teaching_fix": "Filter Status = Posted.",
+    "lab": "Lab 6",
+    "evidence": "28-Feb-2026,,Pending,Pret,40.69,Subsistence,London,6275,A MCBRIDE,5814,Purchase,PEND858711,40.69,Pound Sterling,GB"
+  },
+  {
+    "file": "data/06_Cards/Card_Statement_2026-03.csv",
+    "sheet": "",
+    "location": "line 1",
+    "mess_type": "title_rows_above_header",
+    "description": "Statement has title lines above the header row (header on line 4).",
+    "teaching_fix": "Skip rows until the row where first cell = 'Date' (or Remove Top Rows).",
+    "lab": "Lab 6",
+    "evidence": "Callen-Lenz Associates Limited - Corporate Card Statement,,,,,,,,,,,,,,"
+  },
+  {
+    "file": "data/06_Cards/Card_Statement_2026-03.csv",
+    "sheet": "",
+    "location": "lines 5, 7, 8, 10 (4 rows)",
+    "mess_type": "duplicate_across_statements",
+    "description": "Same Bank Ref appears at the end of one statement and the start of the next (month-end overlap).",
+    "teaching_fix": "Remove Duplicates on Bank Ref only (after cleaning it).",
+    "lab": "Lab 6",
+    "evidence": "27/02/2026,01/03/2026,Posted,Shell,52.08,Fuel,Southampton,9047,P DANVERS,5541,Purchase,BK91513014,52.08,Pound Sterling,GB"
+  },
+  {
+    "file": "data/06_Cards/Card_Statement_2026-03.csv",
+    "sheet": "",
+    "location": "lines 6, 9 (2 rows)",
+    "mess_type": "near_duplicate_bank_ref",
+    "description": "Overlapping transaction whose Bank Ref differs only by case/trailing space.",
+    "teaching_fix": "Trim + Upper the Bank Ref first, then Remove Duplicates on Bank Ref.",
+    "lab": "Lab 6",
+    "evidence": "28/02/2026,01/03/2026,Posted,Shell,84.64,Fuel,Exeter,4821,R PATEL,5541,Purchase,bk25293079 ,84.64,Pound Sterling,GB"
+  },
+  {
+    "file": "data/06_Cards/Card_Statement_2026-03.csv",
+    "sheet": "",
+    "location": "lines 13, 23, 46 (3 rows)",
+    "mess_type": "blank_amount_gbp",
+    "description": "Amount blank on a GBP row.",
+    "teaching_fix": "Amount GBP = Original Currency Amount (GBP rate 1.00).",
+    "lab": "Lab 6",
+    "evidence": "03/03/2026,06/03/2026,Posted,Trainline,,Travel,London,0937,P NAIR,4011,Purchase,BK25865051,48.77,Pound Sterling,GB"
+  },
+  {
+    "file": "data/06_Cards/Card_Statement_2026-03.csv",
+    "sheet": "",
+    "location": "lines 15, 18, 23, 24, 28, 57, 68, 78, ... (12 rows)",
+    "mess_type": "currency_description_case",
+    "description": "Currency description in upper case or with trailing space.",
+    "teaching_fix": "Upper + Trim both sides before merging with FX_Rates.",
+    "lab": "Lab 6",
+    "evidence": "04/03/2026,04/03/2026,Posted,Trainline,92.73,Travel,London,3349,S MALLORY,4011,Purchase,BK64913017,92.73,Pound Sterling ,GB"
+  },
+  {
+    "file": "data/06_Cards/Card_Statement_2026-03.csv",
+    "sheet": "",
+    "location": "lines 16, 22, 24, 28, 32, 35, 46, 47, ... (14 rows)",
+    "mess_type": "city_case",
+    "description": "City in upper or lower case.",
+    "teaching_fix": "Transform > Format > Capitalize Each Word.",
+    "lab": "Lab 6",
+    "evidence": "04/03/2026,04/03/2026,Posted,Pret,8.63,Subsistence,birmingham,4821,R PATEL,5814,Purchase,BK80015806,8.63,Pound Sterling,GB"
+  },
+  {
+    "file": "data/06_Cards/Card_Statement_2026-03.csv",
+    "sheet": "",
+    "location": "lines 19, 24, 29, 55, 56, 69, 83, 85, ... (9 rows)",
+    "mess_type": "name_on_card_case",
+    "description": "Name on card in lower or mixed case.",
+    "teaching_fix": "Not needed for the join - match on Last Four (discussion point).",
+    "lab": "Lab 6",
+    "evidence": "05/03/2026,05/03/2026,Posted,Travelodge,161.97,Accommodation,Cardiff,4821,r patel,7011,Purchase,BK73369956,161.97,Pound Sterling,GB"
+  },
+  {
+    "file": "data/06_Cards/Card_Statement_2026-03.csv",
+    "sheet": "",
+    "location": "line 20",
+    "mess_type": "blank_amount_foreign",
+    "description": "Amount blank on a non-GBP row (card bank did not convert).",
+    "teaching_fix": "Amount GBP = Original Currency Amount x rate from FX_Rates.xlsx (merge on currency description).",
+    "lab": "Lab 6",
+    "evidence": "06/03/2026,07/03/2026,Posted,Hilton Garden Inn Hamburg,,Accommodation,Hamburg,7316,C REID,7011,Purchase,BK51137346,130.55,Euro,DE"
+  },
+  {
+    "file": "data/06_Cards/Card_Statement_2026-03.csv",
+    "sheet": "",
+    "location": "lines 21, 36, 39, 47, 55, 63, 74 (7 rows)",
+    "mess_type": "status_case",
+    "description": "Status in upper case (POSTED) rather than 'Posted'.",
+    "teaching_fix": "Compare with Text.Upper, or capitalise before filtering.",
+    "lab": "Lab 6",
+    "evidence": "06/03/2026,06/03/2026,POSTED,Shell,61.14,Fuel,Exeter,0937,P NAIR,5541,Purchase,BK89085796,61.14,Pound Sterling,GB"
+  },
+  {
+    "file": "data/06_Cards/Card_Statement_2026-03.csv",
+    "sheet": "",
+    "location": "lines 34, 66 (2 rows)",
+    "mess_type": "zero_amount",
+    "description": "Amount is 0.00 although the transaction has a non-zero original amount.",
+    "teaching_fix": "Treat 0 like blank: Original Currency Amount x FX rate.",
+    "lab": "Lab 6",
+    "evidence": "11/03/2026,13/03/2026,Posted,Trainline,0.00,Travel,London,0184,A RAHMAN,4011,Purchase,BK26296750,124.80,Pound Sterling,GB"
+  },
+  {
+    "file": "data/06_Cards/Card_Statement_2026-03.csv",
+    "sheet": "",
+    "location": "lines 40, 43, 81, 84 (4 rows)",
+    "mess_type": "city_double_space",
+    "description": "City with extra spaces (e.g. 'NEW  YORK', trailing space).",
+    "teaching_fix": "Trim + collapse double spaces, then Capitalize Each Word.",
+    "lab": "Lab 6",
+    "evidence": "12/03/2026,15/03/2026,Posted,Greene King Inn,45.29,Subsistence,Portsmouth ,6275,A MCBRIDE,5812,Purchase,BK90838899,45.29,Pound Sterling,GB"
+  },
+  {
+    "file": "data/06_Cards/Card_Statement_2026-03.csv",
+    "sheet": "",
+    "location": "line 51",
+    "mess_type": "cr_suffix_refund",
+    "description": "Refund amounts written as '45.00 CR' text.",
+    "teaching_fix": "Detect trailing CR, strip it and make the number negative.",
+    "lab": "Lab 6",
+    "evidence": "17/03/2026,17/03/2026,Posted,Screwfix,19.83 CR,Materials,SOUTHAMPTON,0937,P NAIR,5200,Refund,BK21064044,-19.83,Pound Sterling,GB"
+  },
+  {
+    "file": "data/06_Cards/Card_Statement_2026-03.csv",
+    "sheet": "",
+    "location": "lines 52, 91 (2 rows)",
+    "mess_type": "currency_symbol_amount",
+    "description": "Amount stored as text with £ and thousands comma ('£1,250.00').",
+    "teaching_fix": "Remove £ and comma, change type to Decimal Number.",
+    "lab": "Lab 6",
+    "evidence": "17/03/2026,17/03/2026,Posted,Premier Inn,£249.18,Accommodation,Portsmouth,2693,M LOWE,7011,Purchase,BK24871219,249.18,Pound Sterling,GB"
+  },
+  {
+    "file": "data/06_Cards/Card_Statement_2026-03.csv",
+    "sheet": "",
+    "location": "line 62",
+    "mess_type": "blank_line",
+    "description": "Blank line (all empty fields).",
+    "teaching_fix": "Remove Blank Rows / filter Bank Ref <> ''.",
+    "lab": "Lab 6",
+    "evidence": ",,,,,,,,,,,,,,"
+  },
+  {
+    "file": "data/06_Cards/Card_Statement_2026-03.csv",
+    "sheet": "",
+    "location": "lines 76, 83 (2 rows)",
+    "mess_type": "merchant_extra_spaces",
+    "description": "Merchant with leading/trailing or double spaces.",
+    "teaching_fix": "Trim + collapse spaces.",
+    "lab": "Lab 6",
+    "evidence": "25/03/2026,27/03/2026,Posted,Microsoft  ,44.54,Software,London,5502,O HARTLEY,5734,Purchase,BK23719059,44.54,Pound Sterling,GB"
+  },
+  {
+    "file": "data/06_Cards/Card_Statement_2026-03.csv",
+    "sheet": "",
+    "location": "lines 92, 93, 94, 95, 96 (5 rows)",
+    "mess_type": "pending_status",
+    "description": "Row has Status 'Pending' (not yet posted; no posted date).",
+    "teaching_fix": "Filter Status = Posted.",
+    "lab": "Lab 6",
+    "evidence": "31/03/2026,,Pending,Trainline,95.80,Travel,London,7316,C REID,4011,Purchase,PEND495154,95.80,Pound Sterling,GB"
+  },
+  {
+    "file": "data/06_Cards/FX_Rates.xlsx",
+    "sheet": "FX_Rates",
+    "location": "A1",
+    "mess_type": "title_rows_above_header",
+    "description": "Title and source rows above the header (header on row 4).",
+    "teaching_fix": "Remove Top Rows (3), promote headers.",
+    "lab": "Lab 6",
+    "evidence": "FX rates used to restate foreign-currency card spend (fixed for Q1 2026)"
+  },
+  {
+    "file": "data/06_Cards/Employee_Lookup.xlsx",
+    "sheet": "Employees",
+    "location": "A3",
+    "mess_type": "name_spelling_mismatch",
+    "description": "Employee name spelled differently from Employees.xlsx / card file (typo in surname).",
+    "teaching_fix": "Do NOT join on name: join cards to Employees on Last Four (this is a discussion point on why keys beat names).",
+    "lab": "Lab 6",
+    "evidence": "Rajesh Patell"
+  },
+  {
+    "file": "data/06_Cards/Employee_Lookup.xlsx",
+    "sheet": "Employees",
+    "location": "A7",
+    "mess_type": "name_spelling_mismatch",
+    "description": "Employee name spelled differently from Employees.xlsx / card file ('Surname, First' order).",
+    "teaching_fix": "Do NOT join on name: join cards to Employees on Last Four (this is a discussion point on why keys beat names).",
+    "lab": "Lab 6",
+    "evidence": "Reid, Callum"
+  },
+  {
+    "file": "data/06_Cards/Employee_Lookup.xlsx",
+    "sheet": "Employees",
+    "location": "A8",
+    "mess_type": "name_spelling_mismatch",
+    "description": "Employee name spelled differently from Employees.xlsx / card file (initial instead of first name).",
+    "teaching_fix": "Do NOT join on name: join cards to Employees on Last Four (this is a discussion point on why keys beat names).",
+    "lab": "Lab 6",
+    "evidence": "O. Hartley"
+  },
+  {
+    "file": "data/06_Cards/Employee_Lookup.xlsx",
+    "sheet": "Employees",
+    "location": "A16",
+    "mess_type": "name_spelling_mismatch",
+    "description": "Employee name spelled differently from Employees.xlsx / card file (double space).",
+    "teaching_fix": "Do NOT join on name: join cards to Employees on Last Four (this is a discussion point on why keys beat names).",
+    "lab": "Lab 6",
+    "evidence": "Steve  Mallory"
+  },
+  {
+    "file": "data/06_Cards/Employee_Lookup.xlsx",
+    "sheet": "Employees",
+    "location": "A25",
+    "mess_type": "name_spelling_mismatch",
+    "description": "Employee name spelled differently from Employees.xlsx / card file (all lower case).",
+    "teaching_fix": "Do NOT join on name: join cards to Employees on Last Four (this is a discussion point on why keys beat names).",
+    "lab": "Lab 6",
+    "evidence": "paul danvers"
+  },
+  {
+    "file": "data/06_Cards/Employee_Lookup.xlsx",
+    "sheet": "Employees",
+    "location": "D13",
+    "mess_type": "email_upper_case",
+    "description": "Email in upper case.",
+    "teaching_fix": "Transform > Format > lowercase.",
+    "lab": "Lab 6",
+    "evidence": "AISHA.RAHMAN@CALLENLENZ-DEMO.EXAMPLE"
+  }
+]

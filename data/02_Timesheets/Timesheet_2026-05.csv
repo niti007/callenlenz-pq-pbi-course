@@ -1,0 +1,458 @@
+Week Ending,Employee ID,Employee Name,Project Code,Task,Hours
+01/05/2026,6,Callum Reid,CL-P106 ,Admin,7.0
+01/05/2026,6,Callum Reid,cl-p106,Build,8.5
+01/05/2026,6,Callum Reid,CL-P107,Design,12.0
+01/05/2026,6,Callum Reid,CL-P107,Test,10.5
+01/05/2026,7,Oliver Hartley,CL-P103,Design,10.5
+01/05/2026,7,Oliver Hartley,CL-P103,Test,10.0
+01/05/2026,7,Oliver Hartley,CL P106,Admin,7.5
+01/05/2026,7,Oliver Hartley,CL-P106,Test,9.5
+01/05/2026,8,Sophie Marsh,CL-P101,Design,6.5
+01/05/2026,8,Sophie Marsh,CL-P101,Install,15.0
+01/05/2026,8,Sophie Marsh,CL-P105,Design,12.0
+01/05/2026,8,Sophie Marsh,CL-P107,Test,8.0
+01/05/2026,9,Daniel Okafor,cl-p101,Design,8.0
+01/05/2026,9,Daniel Okafor,CL-P101,Test,7.0
+01/05/2026,9,Daniel Okafor,CL-P104,Admin,10.5
+01/05/2026,9,Daniel Okafor,CLP104,Install,5.5
+01/05/2026,9,Daniel Okafor,CL-P105 ,Design,6.5
+01/05/2026,10,Emily Chen,CL-P105 ,Admin,7.5
+01/05/2026,10,Emily Chen,CL P105,Design,8.0
+01/05/2026,10,Emily Chen,CL-P107,Build,9.5
+01/05/2026,10,Emily  Chen,CL-P107,Test,12.5
+01/05/2026,11,Liam Garside,CL-P104,Design,10.5
+01/05/2026,11,Liam Garside,CL P105,Design,11.5
+01/05/2026,11,Liam Garside,CL-P105,Test,7.0
+01/05/2026,11,Liam Garside,CL-P106,Design,9.5
+01/05/2026,12,Aisha Rahman,CL-P102,DESIGN,7.0
+01/05/2026,12,Aisha Rahman,CLP102,install,10.0
+01/05/2026,12,Aisha Rahman,CL-P103,Design,11.5
+01/05/2026,12,Aisha Rahman,CL-P103,Test,9.0
+01/05/2026,13,Ben Thornton,CL-P101,Admin,6.5
+01/05/2026,13,Ben Thornton,CL-P101,Install,6.0
+01/05/2026,13,Ben Thornton,CL-P106,Admin,8.0
+01/05/2026,13,Ben Thornton,CL-P106,design,11.0
+01/05/2026,13,Ben Thornton,CLP106,Test,6.0
+01/05/2026,14,Chloe Davies,CL-P104,Admin,5.5
+01/05/2026,14,Chloe Davies,CL-P104,Build,7.0
+01/05/2026,14,Chloe Davies,CL-P106 ,Design,14.5
+01/05/2026,14,Chloe Davies,CLP106,Install,7.5
+01/05/2026,15,Steve Mallory,CL-P101,Build,9.0
+01/05/2026,15,Steve Mallory,CL-P101 ,Design,8.0
+01/05/2026,15,Steve  Mallory,CL-P102,Build,5.5
+01/05/2026,15,Steve Mallory,CL-P107,Build,10.5
+01/05/2026,16,Karen Fox,CL-P101,Test,12.0
+01/05/2026,16,Karen Fox,CL-P102,Build,7.5
+01/05/2026,16,Karen Fox, CL-P102,Test,8.0
+01/05/2026,16,Karen Fox,CL-P107,Admin,10.0
+01/05/2026,17,Dean  Hollis,CL-P101,Build,9.5
+01/05/2026,17,Dean Hollis,CL-P101,Install,9.0
+01/05/2026,17,Dean Hollis,CL-P103,Install,7.5
+01/05/2026,17,Dean Hollis,CL-P104 ,Test,8.0
+01/05/2026,18,Jamie Walsh,CL-P102 ,Admin,7.5
+01/05/2026,18,Jamie Walsh, CL-P102,Design,7.5
+01/05/2026,18,Jamie Walsh,CL-P102 ,Test,8.5
+01/05/2026,18,Jamie Walsh,CL-P107,Test,8.0
+01/05/2026,19,Nadia Kowalski,CL-P101,Build,6.0
+01/05/2026,19,Nadia Kowalski,CL-P101,Install,6.0
+01/05/2026,19,Nadia Kowalski,CLP103,Install,6.0
+01/05/2026,19,Nadia Kowalski,CL-P103,Test,8.5
+01/05/2026,19,Nadia Kowalski,CL-P107,Build,5.5
+01/05/2026,20,Angus McBride, CL-P101,Install,8.0
+01/05/2026,20,Angus  McBride,CL-P102,Install,9.5
+01/05/2026,20,Angus McBride,CL-P102,Test,13.0
+01/05/2026,20,Angus McBride,CL-P104,Install,7.0
+01/05/2026,21,Fiona Sutherland,CL-P104,Build,5.5
+01/05/2026,21,Fiona Sutherland,CL-P104,Test,6.5
+01/05/2026,21,Fiona Sutherland,CL-P105,Test,7.5
+01/05/2026,21,Fiona Sutherland,CLP106,Install,7.0
+01/05/2026,21,Fiona Sutherland,CL-P106,Test,4.0
+01/05/2026,22,Marcus Lowe,CL-P102,Build,10.0
+01/05/2026,22,Marcus Lowe,CL-P102 ,Test,9.0
+01/05/2026,22,Marcus  Lowe,CL-P103,Install,5.5
+01/05/2026,22,Marcus  Lowe,CL-P103,Test,8.5
+01/05/2026,22,Marcus Lowe ,CL P107,Test,3.0
+01/05/2026,23,Ellie Hargreaves,CL-P102 ,Test,7.0
+01/05/2026,23,Ellie Hargreaves,CL-P105,Admin,7.0
+01/05/2026,23,Ellie  Hargreaves,CL-P105,Build,9.5
+01/05/2026,23,Ellie Hargreaves,Cl-P105,INSTALL,7.5
+01/05/2026,23,Ellie Hargreaves,Cl-P105,Test,7.0
+01/05/2026,24,Paul Danvers, CL-P101,Build,7.5
+01/05/2026,24,Paul Danvers,CL-P102,Admin,9.5
+01/05/2026,24,Paul Danvers,CL-P102,Build,5.5
+01/05/2026,24,Paul Danvers,CL-P103,Admin,8.0
+01/05/2026,24,Paul Danvers,CL-P107,Admin,7.0
+01/05/2026,25,Yasmin Qureshi,CL-P103,Admin,7.0
+01/05/2026,25,Yasmin Qureshi,CL-P103,Install,8.5
+01/05/2026,25,Yasmin Qureshi,CL-P104,Install,9.5
+01/05/2026,25,Yasmin Qureshi,CL-P106,Admin,12.5
+08/05/2026,6,Callum Reid,CL-P102,Admin,8.0
+08/05/2026,6,Callum Reid,CL-P106,Admin,6.5
+08/05/2026,6,Callum Reid,CL-P106,Build,9.5
+08/05/2026,6,Callum Reid,Cl-P106,Test,8.5
+08/05/2026,6,Callum Reid, CL-P107,Build,5.0
+08/05/2026,7,Oliver Hartley,CLP102,Test,10.5
+08/05/2026,7,Oliver Hartley,CL-P103,Build,7.5
+08/05/2026,7,Oliver Hartley ,CL-P106,Admin,10.0
+08/05/2026,7,Oliver Hartley,CL-P106,Design,7.5
+08/05/2026,8,Sophie Marsh,CL-P101 ,Design,6.5
+08/05/2026,8,Sophie Marsh,CL-P101,test,5.5
+08/05/2026,8,Sophie Marsh,CL-P105,Admin,6.0
+08/05/2026,8,Sophie Marsh,CL-P105,Test,10.0
+08/05/2026,8,Sophie Marsh,CL-P107,Test,7.5
+08/05/2026,9,Daniel  Okafor,CL-P101,Test,9.5
+08/05/2026,9,Daniel Okafor,CL-P105,Design,8.5
+08/05/2026,9,Daniel Okafor,CL-P107,Admin,7.5
+08/05/2026,9,Daniel Okafor,CL-P107,Design,7.0
+08/05/2026,9,Daniel Okafor,CLP107,Test,5.0
+08/05/2026,10,Emily Chen,CL-P102,Test,11.0
+08/05/2026,10,Emily Chen,CL-P105,Design,9.0
+08/05/2026,10,Emily Chen,CL-P107,Build,8.0
+08/05/2026,10,Emily Chen,CL-P107,Test,8.0
+08/05/2026,11,Liam Garside,CL-P101,Test,7.5
+08/05/2026,11,Liam Garside,CL-P104,test,9.0
+08/05/2026,11,Liam Garside, CL-P105,design,10.0
+08/05/2026,11,Liam Garside,CL P106,Design,7.0
+08/05/2026,12,Aisha Rahman,Cl-P101,Build,9.0
+08/05/2026,12,Aisha Rahman,CL-P102,Test,5.5
+08/05/2026,12,Aisha Rahman,CL P103,Design,6.0
+08/05/2026,12,Aisha Rahman,CL-P107,Build,11.0
+08/05/2026,13,Ben Thornton,CL-P102,Admin,6.5
+08/05/2026,13,Ben Thornton,CL-P102,Test,5.5
+08/05/2026,13,Ben Thornton,CL-P105,Admin,6.0
+08/05/2026,13,Ben Thornton,CL-P105,BUILD,10.5
+08/05/2026,13,Ben Thornton,CL-P106,Design,9.0
+08/05/2026,14,Chloe Davies,CL-P102,Admin,6.5
+08/05/2026,14,Chloe Davies ,CL-P106,Admin,9.0
+08/05/2026,14,Chloe Davies,CL-P106,BUILD,8.5
+08/05/2026,14,Chloe Davies,CL-P107,Admin,9.5
+08/05/2026,14,Chloe Davies,CL-P107,Design,10.5
+08/05/2026,15,Steve Mallory ,CL-P101 ,Admin,9.0
+08/05/2026,15,Steve Mallory,cl-p102,Admin,4.5
+08/05/2026,15,Steve Mallory,CL-P102,BUILD,7.0
+08/05/2026,15,Steve Mallory,CL-P102,Test,7.5
+08/05/2026,15,Steve Mallory,CL-P107,build,9.5
+08/05/2026,16,Karen Fox,CL-P101,Build,10.0
+08/05/2026,16,Karen Fox,CL-P101,Test,8.0
+08/05/2026,16,Karen Fox, CL-P102,Install,7.5
+08/05/2026,16,Karen Fox,CL-P107,Admin,12.0
+08/05/2026,17,Dean Hollis,CL-P101,Build,7.0
+08/05/2026,17,Dean Hollis,CL-P103,Build,13.0
+08/05/2026,17,Dean Hollis,CL-P103,Test,7.5
+08/05/2026,17,Dean Hollis,Cl-P104,Admin,7.5
+08/05/2026,17,Dean Hollis,CL-P105,Build,8.5
+08/05/2026,12,Aisha Rahman,Cl-P101,Build,9.0
+08/05/2026,18,Jamie Walsh,cl-p102,Admin,6.0
+08/05/2026,18,Jamie Walsh,CL-P102,BUILD,11.5
+08/05/2026,18,Jamie Walsh,CL P102,test,12.0
+08/05/2062,18,Jamie Walsh,CL-P105,Test,8.0
+08/05/2026,18,Jamie Walsh,CL-P107,Design,7.0
+08/05/2026,19,Nadia  Kowalski,CL-P103,Install,5.0
+08/05/2026,19,Nadia Kowalski,CL-P103,Test,8.0
+08/05/2026,19,Nadia Kowalski,Cl-P107,Build,13.5
+08/05/2026,19,Nadia Kowalski,CL-P107,Test,11.0
+08/05/2026,20,Angus McBride,CL-P101,Build,9.5
+08/05/2026,20,Angus McBride,CL P101,Test,11.5
+08/05/2026,20,Angus McBride ,CL-P102,Test,9.0
+08/05/2026,20,Angus McBride,CL-P104,Install,7.5
+08/05/2026,21,Fiona Sutherland,CL-P104,Install,13.0
+08/05/2026,21,Fiona Sutherland,CL-P104,TEST,11.0
+08/05/2026,21,Fiona Sutherland,CL-P106 ,Build,8.5
+08/05/2026,21,Fiona Sutherland,CL-P106,Test,10.0
+08/05/2026,22,Marcus Lowe,CL-P102,Test,8.5
+08/05/2026,22,Marcus Lowe,CLP103,Design,9.5
+08/05/2026,22,Marcus Lowe,CL-P103,Install,6.0
+08/05/2026,22,Marcus Lowe,CL-P103,Test,9.0
+08/05/2026,22,Marcus Lowe,CL-P107,Install,4.5
+08/05/2026,23,Ellie Hargreaves,CL-P102,Design,6.5
+08/05/2026,23,Ellie Hargreaves,CL-P102 ,Install,9.0
+08/05/2026,23,Ellie Hargreaves,CL-P104,Build,8.5
+08/05/2026,23,Ellie Hargreaves,CL-P105,Test,6.0
+08/05/2026,24,Paul Danvers,CL-P101,Design,6.0
+08/05/2026,24,Paul Danvers,CL-P101,Install,7.0
+08/05/2026,24,Paul Danvers,CL-P102,Admin,7.5
+08/05/2026,24,Paul Danvers,CL-P107,Admin,8.0
+08/05/2026,24,Paul Danvers,CL-P107,Install,9.0
+08/05/2026,25,Yasmin Qureshi,CLP103,Install,9.5
+08/05/2026,25,Yasmin Qureshi,CL-P104,Admin,8.5
+08/05/2026,25,Yasmin Qureshi,CL-P104,Test,9.0
+08/05/2026,25,Yasmin Qureshi,CL-P106,Install,10.5
+
+15/05/2026,6,Callum Reid,CL-P102,Test,6.5
+15/05/2026,6,Callum Reid,CL-P106,admin,9.0
+15/05/2026,6,Callum Reid,CL-P106,Test,6.5
+15/05/2026,6,Callum Reid,CL-P107,install,7.5
+15/05/2026,6,Callum Reid,CL-P107,Test,8.0
+15/05/2026,7,Oliver Hartley,CL-P102,Admin,5.5
+15/05/2026,7,Oliver Hartley,cl-p103,Admin,8.0
+15/05/2026,7,Oliver Hartley,CL-P103,Test,8.5
+15/05/2026,7,Oliver Hartley,CL-P106,Admin,6.5
+15/05/2026,7,Oliver Hartley,CL-P106,Design,6.5
+15/05/2026,8,Sophie Marsh,CL-P101,Admin,12.0
+15/05/2026,8,Sophie  Marsh,CLP101,Design,8.5
+15/05/2026,8,Sophie Marsh,CL-P101,Test,8.5
+15/05/2026,8,Sophie Marsh,CL-P105,Build,8.5
+15/05/2026,9,Daniel Okafor,CL-P101,Admin,8.0
+15/05/2026,9,Daniel Okafor,CL-P101,Test,10.0
+15/05/2026,9,Daniel Okafor,CL-P105 ,Design,11.0
+15/05/2026,9,Daniel Okafor,CLP107,TEST,8.5
+15/05/2026,10,Emily Chen,CL-P102,Admin,8.0
+15/05/2026,10,Emily  Chen,CL-P105,DESIGN,11.5
+15/05/2026,10,Emily Chen,CL-P107 ,Admin,10.0
+15/05/2026,10,Emily Chen,CL-P107,Design,11.0
+15/05/2026,11,Liam Garside,CL-P101,Admin,6.0
+15/05/2026,11,Liam Garside,CL-P104,Build,10.5
+15/05/2026,11,Liam Garside,CL-P105,Admin,8.0
+15/05/2026,11,Liam Garside,CL-P105,Test,5.0
+15/05/2026,11,Liam Garside,CL-P106,Admin,8.0
+15/05/2026,12,Aisha  Rahman,CL-P101,Admin,7.5
+15/05/2026,12,Aisha Rahman,CL-P101,Build,7.0
+15/05/2026,12,Aisha Rahman,CL-P102,Design,7.0
+15/05/2026,12,Aisha Rahman,CL-P103,Design,8.5
+15/05/2026,12,Aisha Rahman, CL-P107,Admin,7.0
+15/05/2026,13,Ben Thornton,cl-p101,Admin,7.0
+15/05/2026,13,Ben Thornton,CL-P102,Admin,7.0
+15/05/2026,13,Ben Thornton,CL-P102,Design,4.5
+15/05/2026,13,Ben Thornton,CL-P102,Install,10.0
+15/05/2026,13,Ben Thornton,CL-P106,Test,9.0
+15/05/2026,14,Chloe Davies,Cl-P102,Admin,4.0
+15/05/2026,14,Chloe Davies,CL-P102,Design,6.5
+15/05/2026,14,Chloe Davies,CL-P104,Admin,6.0
+15/05/2026,14,Chloe Davies,CL-P104,design,8.0
+15/05/2026,14,Chloe Davies, CL-P107,Test,6.5
+15/05/2026,15,Steve Mallory,CL-P102,Design,5.5
+15/05/2026,15,Steve Mallory,CL-P104,Admin,6.0
+15/05/2026,15,Steve Mallory,CL-P104,Build,6.0
+15/05/2026,15,Steve Mallory,CL-P104,Test,5.5
+15/05/2026,15,Steve Mallory,CL-P107,TEST,7.0
+15/05/2026,16,Karen Fox,CL-P101 ,Admin,9.0
+15/05/2026,16,Karen Fox,CL-P101,Build,4.5
+15/05/2026,16,Karen Fox,CL-P101,Test,8.5
+15/05/2026,16,Karen Fox,CL-P107,Admin,7.5
+15/05/2026,16,Karen Fox,CL-P107,Test,8.0
+15/05/2026,17,Dean Hollis ,CL-P101,Install,10.0
+15/05/2026,17,Dean Hollis,CL-P103,Test,7.5
+15/05/2026,17,Dean Hollis,CL-P104,Build,6.0
+15/05/2026,17,Dean Hollis,CL-P105,Test,14.0
+15/05/2026,18,Jamie Walsh,CL P105,Admin,11.0
+15/05/2026,18,Jamie Walsh,CL-P105,Design,12.5
+15/05/2026,18,Jamie Walsh, CL-P105,Test,7.5
+15/05/2026,18,Jamie Walsh, CL-P107,Build,10.0
+15/05/2026,19,Nadia Kowalski,CL-P101,Admin,9.0
+15/05/2026,19,Nadia  Kowalski,CL-P101,Install,8.0
+15/05/2026,19,Nadia Kowalski,CL-P103,TEST,11.0
+15/05/2026,19,Nadia Kowalski,CL-P107,Admin,9.5
+15/05/2026,20,Angus McBride,CL-P101,Install,10.5
+15/05/2026,20,Angus McBride,CL-P102,Design,6.5
+15/05/2026,20,Angus McBride,CL P104,design,5.5
+15/05/2026,20,Angus McBride,CL-P104,Install,10.5
+15/05/2026,20,Angus  McBride,CL-P104,Test,9.5
+15/05/2026,21,Fiona Sutherland,CL-P104,Build,5.0
+15/05/2026,21,Fiona Sutherland,CL-P104,Test,6.5
+15/05/2026,21,Fiona Sutherland,CL-P105,Admin,5.0
+15/05/2026,21,Fiona Sutherland,Cl-P105,Design,8.0
+15/05/2026,21,Fiona Sutherland,CL-P105,Install,6.5
+15/05/2026,22,Marcus Lowe,CL-P102,Install,9.5
+15/05/2026,22,Marcus Lowe,CL-P102,Test,5.0
+15/05/2026,22,Marcus Lowe,CL-P103,Test,7.0
+15/05/2026,22,Marcus Lowe,CL-P107,BUILD,8.5
+15/05/2026,22,Marcus Lowe,CL-P107,Install,7.5
+15/05/2026,23,Ellie Hargreaves,CL-P102,Design,7.5
+15/05/2026,23,Ellie Hargreaves,CL-P102,Test,9.0
+15/05/2026,23,Ellie Hargreaves,CL-P104,Admin,6.5
+15/05/2026,23,Ellie Hargreaves,CL-P105,Design,6.0
+15/05/2026,23,Ellie Hargreaves,CL-P105,Install,8.0
+15/05/2026,24,Paul Danvers,CL-P101,Install,7.5
+15/05/2026,24,Paul Danvers,CL-P102,Install,11.0
+15/05/2026,24,Paul Danvers,CL-P107,Install,9.5
+15/05/2026,24,Paul Danvers,CL-P107,Test,9.5
+15/05/2026,25,Yasmin Qureshi,CL-P101,Build,11.0
+15/05/2026,25,Yasmin Qureshi,CL-P103,Build,9.0
+15/05/2026,25,Yasmin Qureshi,CL-P104,Admin,10.0
+15/05/2026,25,Yasmin Qureshi,CL-P106,Build,7.5
+22/05/2026,6,Callum Reid,CL-P102,admin,6.5
+22/05/2026,6,Callum Reid, CL-P102,Design,7.5
+22/05/2026,6,Callum Reid, CL-P102,Install,11.0
+22/05/2026,6,Callum Reid,CL-P106,Admin,8.0
+22/05/2026,6,Callum Reid,CL-P107,Admin,4.5
+22/05/2026,7,Oliver Hartley,CL-P102,Admin,6.5
+22/05/2026,7,Oliver Hartley,CL-P102,Design,12.0
+22/05/2026,7,Oliver Hartley,CL-P103,Admin,10.0
+,,,,,
+22/05/2026,7,Oliver Hartley,CL-P106,install,10.5
+22/05/2026,8,Sophie Marsh,CL-P105,Admin,8.0
+22/05/2026,8,Sophie Marsh,CL P105,Build,8.5
+22/05/2026,8,Sophie Marsh,CL-P105,Test,5.0
+22/05/2026,8,Sophie Marsh,CL-P107,Build,8.5
+22/05/2026,9,Daniel Okafor,CL-P101,Test,7.0
+22/05/2026,9,Daniel Okafor,CL-P104,Admin,7.0
+22/05/2026,9,Daniel Okafor,cl-p104,Design,5.0
+22/05/2026,9,Daniel Okafor,CL-P104,test,9.0
+22/05/2026,9,Daniel  Okafor,CL-P105,Design,9.5
+22/05/2026,10,Emily Chen,CL-P102,Admin,5.5
+22/05/2026,10,Emily Chen, CL-P102,DESIGN,9.5
+22/05/2026,10,Emily Chen,CL-P102,Test,9.0
+22/05/2026,10,Emily Chen,CL-P105,Build,7.0
+22/05/2026,10,Emily Chen,CL-P107,Test,6.5
+22/05/2026,11,Liam Garside,CL-P101,Test,6.0
+22/05/2026,11,Liam Garside,Cl-P105,Design,10.0
+22/05/2026,11,Liam Garside,CL-P105,Test,9.0
+22/05/2026,11,Liam Garside,CL-P106,Admin,6.5
+22/05/2026,11,Liam Garside,CL-P106,Test,6.0
+22/05/2026,12,Aisha Rahman,CL-P103,Admin,8.0
+22/05/2026,12,Aisha Rahman,CL-P103,Test,9.0
+22/05/2026,12,Aisha  Rahman, CL-P107,Admin,8.5
+22/05/2026,12,Aisha Rahman,CL-P107,Test,12.0
+22/05/2026,13,Ben Thornton, CL-P101,Design,7.5
+22/05/2026,13,Ben  Thornton,CL-P105,Test,7.5
+22/05/2026,13,Ben Thornton,cl-p106,Install,7.5
+22/05/2026,13,Ben Thornton,cl-p106,Test,9.0
+22/05/2026,14,Chloe Davies, CL-P102,Admin,7.5
+22/05/2026,14,Chloe Davies,CL-P104,Design,7.0
+22/05/2026,14,Chloe Davies,CL-P104,Install,9.0
+22/05/2026,14,Chloe Davies,CL-P106,admin,6.0
+22/05/2026,14,Chloe Davies,CL P106,Design,9.0
+22/05/2026,15,Steve Mallory,CL-P104,Design,8.0
+22/05/2026,15,Steve Mallory,CL-P107,Admin,7.5
+22/05/2026,15,Steve Mallory,CL-P107,Build,6.5
+22/05/2026,15,Steve Mallory, CL-P107,Design,4.5
+22/05/2026,15,Steve Mallory,CL-P107,Test,11.0
+22/05/2026,16,Karen Fox,CL-P101,Build,9.0
+22/05/2026,16,Karen Fox,CL-P101,Test,10.5
+22/05/2026,16,Karen Fox,CL-P107,Install,8.5
+22/05/2026,16,Karen Fox,CL-P107,Test,6.5
+22/05/2026,17,Dean Hollis,CL-P103,Design,7.5
+22/05/2026,17,Dean Hollis,CL-P105,Build,6.5
+22/05/2026,17,Dean Hollis,CL P105,Design,11.5
+22/05/2026,17,Dean Hollis,cl-p105,Install,5.5
+22/05/2026,18,Jamie Walsh,CL-P102,Test,7.0
+22/05/2026,18,Jamie Walsh,CL-P105,Build,10.0
+22/05/2026,18,Jamie Walsh,CL-P105,Test,7.0
+22/05/2026,18,Jamie Walsh,Cl-P107,Test,6.5
+22/05/2026,19,Nadia Kowalski,CL-P101,Design,11.0
+22/05/2026,19,Nadia Kowalski,CL-P103,Build,8.0
+22/05/2026,19,Nadia Kowalski,CL-P103,INSTALL,9.5
+22/05/2026,19,Nadia Kowalski,CL-P107 ,test,9.0
+22/05/2026,20,Angus McBride,CL-P101,Admin,7.0
+22/05/2026,20,Angus McBride,CL-P101,Install,7.5
+22/05/2026,20,Angus McBride,CL P102,Build,10.0
+22/05/2026,20,Angus McBride,CL-P102,Install,8.0
+22/05/2026,20,Angus McBride,CL-P102 ,Test,6.5
+22/05/2026,21,Fiona Sutherland,CL-P104,Build,12.0
+22/05/2026,21,Fiona Sutherland,CL-P104,Install,8.5
+22/05/2026,21,Fiona  Sutherland,CL-P105,Test,11.0
+22/05/2026,21,Fiona Sutherland,CL P106,Test,6.0
+22/05/2026,22,Marcus Lowe,cl-p102,Test,8.5
+22/05/2026,22,Marcus Lowe,CL-P103,Install,11.0
+22/05/2026,22,Marcus Lowe,CL-P103,Test,8.5
+22/05/2026,22,Marcus Lowe,CL-P107,Install,11.0
+22/05/2026,23,Ellie Hargreaves ,CL-P102,Install,9.0
+22/05/2026,23,Ellie  Hargreaves,CLP102,Test,7.0
+22/05/2026,23,Ellie Hargreaves,CL-P104,Design,5.5
+22/05/2026,23,Ellie Hargreaves,CLP104,install,7.0
+22/05/2026,23,Ellie Hargreaves,CL-P105,Test,9.0
+22/05/2026,24,Paul Danvers,CL P101,ADMIN,7.0
+22/05/2026,24,Paul Danvers,CL-P101,Install,7.5
+22/05/2026,24,Paul  Danvers,CL P102,ADMIN,5.5
+22/05/2026,24,Paul Danvers,CL-P103,Design,5.5
+22/05/2026,24,Paul Danvers,CL P103,Install,9.5
+22/05/2026,25,Yasmin Qureshi,CL-P103,Build,6.5
+22/05/2026,25,Yasmin Qureshi,CL-P103,Install,8.5
+22/05/2026,25,Yasmin Qureshi,CL-P104,Admin,5.0
+22/05/2026,25,Yasmin Qureshi,cl-p104,Build,6.5
+22/05/2026,25,Yasmin Qureshi,CL-P104,Design,9.0
+29/05/2026,6,Callum Reid,CL-P106,Admin,8.0
+29/05/2026,6,Callum Reid,CL-P106,Test,10.5
+29/05/2026,6,Callum Reid,CL-P107,Build,8.5
+29/05/2026,6,Callum Reid ,CL-P107,Test,10.5
+29/05/2026,7,Oliver Hartley,CL-P102 ,DESIGN,6.0
+29/05/2026,7,Oliver Hartley,Cl-P102,Test,9.5
+29/05/2026,7,Oliver Hartley,CL-P103,ADMIN,6.0
+29/05/2026,7,Oliver Hartley,CL-P106,Admin,7.0
+29/05/2026,7,Oliver Hartley,CL-P106,Test,8.5
+29/05/2026,8,Sophie Marsh,CL-P101,Design,8.5
+29/05/2026,8,Sophie Marsh,CL-P105,Test,7.0
+29/05/2026,8,Sophie Marsh,CL-P107,Admin,9.0
+29/05/2026,8,Sophie Marsh,CL-P107,Design,7.0
+29/05/2026,8,Sophie Marsh,CL-P107,Test,6.0
+29/05/2026,9,Daniel Okafor,CL-P104,Design,7.0
+29/05/2026,9,Daniel Okafor,CL-P105,Admin,8.5
+29/05/2026,9,Daniel Okafor,CL-P105,Design,8.5
+29/05/2026,9,Daniel Okafor,CL-P107,Design,8.0
+29/05/2026,9,Daniel Okafor,CL-P107,Test,9.0
+29/05/2026,10,Emily Chen,CL-P102,Install,9.5
+29/05/2026,10,Emily Chen,CL-P105,Admin,12.0
+29/05/2026,10,Emily Chen,CL-P105,Test,13.0
+29/05/2026,10,Emily Chen ,CL-P107,Test,7.5
+29/05/2026,11,Liam Garside,Cl-P101,Design,10.0
+29/05/2026,11,Liam Garside,CL-P104,Design,10.0
+29/05/2026,11,Liam Garside,CL-P105,Admin,8.5
+29/05/2026,11,Liam Garside,CL-P105,Design,9.0
+29/05/2026,12,Aisha Rahman,CL-P101,admin,11.0
+29/05/2026,12,Aisha Rahman,CL-P101,Design,8.0
+29/05/2026,12,Aisha Rahman , CL-P102,Test,9.0
+29/05/2026,12,Aisha Rahman,CL-P103,Design,9.5
+29/05/2026,13,Ben Thornton,Cl-P101,Admin,9.5
+29/05/2026,13,Ben Thornton,CL-P101,Design,6.5
+29/05/2026,13,Ben Thornton,CL-P101,Test,4.5
+29/05/2026,13,Ben Thornton ,cl-p106,Admin,10.5
+29/05/2026,13,Ben Thornton, CL-P106,Design,5.5
+29/05/2026,14,Chloe Davies,CL-P102,Admin,11.0
+29/05/2026,14,Chloe Davies,CL-P102,Build,6.5
+29/05/2026,14,Chloe Davies,cl-p102,Test,6.0
+29/05/2026,14,Chloe Davies,CL-P104,Admin,14.0
+29/05/2026,15,Steve Mallory,CL-P101,Install,8.0
+29/05/2026,15,Steve Mallory,CL-P102,Admin,5.5
+29/05/2026,15,Steve Mallory,CL-P102,Build,8.0
+29/05/2026,15,Steve Mallory,CL-P102,INSTALL,8.5
+29/05/2026,15,Steve Mallory,CL-P104,Test,7.5
+29/05/2026,16,Karen Fox,CL-P101,BUILD,8.5
+29/05/2026,16,Karen Fox,CL-P101,Design,9.0
+29/05/2026,16,Karen Fox,CL-P102,Build,10.0
+29/05/2026,16,Karen Fox,Cl-P107,Install,12.0
+29/05/2026,17,Dean Hollis,CL-P101,Build,6.0
+29/05/2026,17,Dean Hollis,CL P101,Install,5.5
+29/05/2026,17,Dean Hollis,CL-P101,Test,4.5
+29/05/2026,17,Dean Hollis,CL-P104,Test,6.5
+29/05/2026,17,Dean Hollis,CL-P105,Admin,8.0
+29/05/2026,18,Jamie Walsh,CL-P102,Build,9.5
+29/05/2026,18,Jamie Walsh,CL-P102,Test,5.5
+29/05/2026,18,Jamie Walsh,CL-P105,Build,6.5
+29/05/2026,18,Jamie Walsh,CL-P107,Design,9.5
+29/05/2026,18,Jamie Walsh,CL-P107 ,Test,6.5
+29/05/2026,19,Nadia Kowalski,CL-P103,Admin,6.5
+29/05/2026,19,Nadia Kowalski,CL-P103,Build,8.5
+29/05/2026,19,Nadia Kowalski,CL-P103,Design,7.0
+29/05/2026,19,Nadia Kowalski,CL-P107,Admin,6.0
+29/05/2026,19,Nadia Kowalski,CL-P107,Design,9.5
+29/05/2026,20,Angus McBride,CL-P101,build,7.0
+29/05/2026,20,Angus McBride,CL-P101,Install,8.5
+29/05/2026,20,Angus McBride,CL-P102,Design,7.5
+29/05/2026,20,Angus McBride,Cl-P102,Install,6.5
+29/05/2026,20,Angus McBride,CL-P104,Test,8.0
+29/05/2026,21,Fiona Sutherland,CL-P104,Admin,6.0
+29/05/2026,21,Fiona Sutherland,CL P105,Install,8.0
+29/05/2026,21,Fiona Sutherland,CL-P105,Test,6.0
+29/05/2026,21,Fiona  Sutherland,CL-P106,Admin,7.5
+29/05/2026,21,Fiona Sutherland ,CL P106,Install,7.5
+29/05/2026,22,Marcus Lowe,CL P102,test,5.5
+29/05/2026,22,Marcus Lowe,CL-P103,Build,8.5
+29/05/2026,22,Marcus Lowe,CL-P103,Test,11.5
+29/05/2026,22,Marcus Lowe,CL-P107,Admin,12.0
+29/05/2026,23,Ellie Hargreaves,CL-P102,Build,8.5
+29/05/2026,23,Ellie Hargreaves, CL-P102,Test,6.5
+29/05/2026,23,Ellie Hargreaves,CLP104,Test,9.5
+
+29/05/2026,23,Ellie Hargreaves,CL-P105,Install,8.0
+29/05/2026,23,Ellie Hargreaves,CL-P105,Test,5.0
+29/05/2026,24,Paul Danvers,CL-P102,Install,10.0
+29/05/2026,24,Paul Danvers,CL-P103,Admin,6.5
+29/05/2026,24,Paul Danvers,CL P103,Build,6.0
+29/05/2026,24,Paul Danvers ,CL-P103,Install,8.0
+29/05/2026,24,Paul Danvers,CL-P107,Design,7.0
+29/05/2026,25,Yasmin Qureshi,CL-P101,Admin,8.0
+29/05/2026,25,Yasmin Qureshi,cl-p101,DESIGN,8.5
+29/05/2026,25,Yasmin Qureshi,CL-P104,Build,8.0
+29/05/2026,25,Yasmin Qureshi,CL-P104,Test,11.5
+
+Total,,,,,3691.5

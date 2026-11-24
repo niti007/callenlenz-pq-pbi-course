@@ -1,0 +1,87 @@
+Date,Posted date,Status,Merchant,Amount,Category,City,Last four,Name on card,MCC,Trans Type,Bank Ref,Original Currency Amount,Merchant Currency Description,Merchant Country
+01/01/2026,03/01/2026,Posted,Microsoft ,57.20,Software,london,4821,R PATEL,5734,Purchase,BK44662749,57.20,Pound Sterling,GB
+02/01/2026,04/01/2026,Posted,Shell,94.35,Fuel,Bournemouth,6275,A MCBRIDE,5541,Purchase,BK38549802,94.35,Pound Sterling,GB
+03/01/2026,03/01/2026,Posted,Shell,,Fuel,Rotterdam,937,P NAIR,5541,Purchase,BK15661294,69.77,Euro ,NL
+03/01/2026,05/01/2026,Posted,Premier Inn ,186.20,Accommodation,Glasgow,9047,P DANVERS,7011,Purchase,BK22361692,186.20,Pound Sterling ,GB
+03/01/2026,06/01/2026,Posted,Trainline,0.00,Travel,London,7316,C REID,4011,Purchase,BK25543120,111.00,Pound Sterling,GB
+03/01/2026,06/01/2026,Posted,Costa Coffee,10.29,Subsistence,Reading,9047,P DANVERS,5814,Purchase,BK36337148,10.29,Pound Sterling,GB
+03/01/2026,06/01/2026,Posted,Pret,9.35,Subsistence,London,6275,A MCBRIDE,5814,Purchase,BK72978524,9.35,Pound Sterling,GB
+03/01/2026,05/01/2026,POSTED,Pret ,8.21,Subsistence,Birmingham,5502,O HARTLEY,5814,Purchase,BK76439442,8.21,Pound Sterling,GB
+03/01/2026,04/01/2026,POSTED,Shell,72.15,Fuel,reading,9047,p danvers,5541,Purchase,BK77628606,72.15,Pound Sterling,GB
+03/01/2026,04/01/2026,Posted,Trainline,0.00,Travel,London,8110,F SUTHERLAND,4011,Purchase,BK95768453,50.24,Pound Sterling,GB
+04/01/2026,05/01/2026,Posted,Shell,83.86,Fuel,Bournemouth,184,A RAHMAN,5541,Purchase,BK13439753,83.86,Pound Sterling ,GB
+04/01/2026,06/01/2026,Posted,RS Components,299.97,Materials,CORBY,937,P NAIR,5065,Purchase,BK40636614,299.97,Pound Sterling,GB
+05/01/2026,08/01/2026,Posted, Shell,76.13,Fuel,Exeter,3349,s mallory,5541,Purchase,BK54473447,76.13,Pound Sterling,GB
+05/01/2026,06/01/2026,POSTED,Premier Inn,270.09,Accommodation,Manchester,5502,O HARTLEY,7011,Purchase,BK78450829,270.09,POUND STERLING,GB
+05/01/2026,07/01/2026,Posted, Screwfix,220.69,Materials,Christchurch,4821,R PATEL,5200,Purchase,BK80529578,220.69,Pound Sterling,GB
+06/01/2026,07/01/2026,Posted,Screwfix,186.98,Materials,CHRISTCHURCH,8110,F SUTHERLAND,5200,Purchase,BK13891836,186.98,Pound Sterling ,GB
+06/01/2026,09/01/2026,Posted,Shell,89.35,Fuel,Bournemouth,937,P Nair,5541,Purchase,BK15034726,89.35,Pound Sterling,GB
+07/01/2026,08/01/2026,Posted,Screwfix ,93.22,Materials,Poole,4821,R PATEL,5200,Purchase,BK20361134,93.22,Pound Sterling,GB
+07/01/2026,07/01/2026,POSTED,Premier Inn,143.17,Accommodation,leeds,937,P NAIR,7011,Purchase,BK58208498,143.17,Pound Sterling,GB
+07/01/2026,07/01/2026,Posted,Trainline,80.25,Travel,London,7316,C REID,4011,Purchase,BK70906439,80.25,Pound Sterling,GB
+08/01/2026,11/01/2026,Posted,Costa Coffee,5.51,Subsistence,Cardiff ,8110,F SUTHERLAND,5814,Purchase,BK29101114,5.51,Pound Sterling,GB
+08/01/2026,09/01/2026,Posted,RS Components,251.18,Materials,CORBY,3349,S MALLORY,5065,Purchase,BK31916493,251.18,Pound Sterling ,GB
+08/01/2026,10/01/2026,Posted,Pret,7.23,Subsistence,Bristol,3349,S MALLORY,5814,Purchase,BK37512783,7.23,Pound Sterling,GB
+08/01/2026,10/01/2026,Posted,RS Components,226.30,Materials,Corby,7316,C REID,5065,Purchase,BK39687852,226.30,Pound Sterling,GB
+08/01/2026,11/01/2026,Posted,Premier Inn,131.34,Accommodation,GLASGOW,4821,R PATEL,7011,Purchase,BK45395703,131.34,POUND STERLING,GB
+08/01/2026,09/01/2026,Posted,Costa Coffee,3.71,Subsistence,Poole,937,P NAIR,5814,Purchase,BK77680101,3.71,Pound Sterling ,GB
+09/01/2026,11/01/2026,Posted,Delta Air Lines,428.98,Travel,ATLANTA,5502,O HARTLEY,3058,Purchase,BK10539449,543.01,US Dollar,US
+10/01/2026,12/01/2026,Posted,RS Components,78.48,Materials,Corby,6275,a mcbride,5065,Purchase,BK55571790,78.48,Pound Sterling,GB
+11/01/2026,13/01/2026,Posted,Pret,13.89,Subsistence,Southampton,184,A RAHMAN,5814,Purchase,BK16383055,13.89,Pound Sterling,GB
+11/01/2026,13/01/2026,Posted,Screwfix,133.21,Materials,Christchurch,5502,O HARTLEY,5200,Purchase,BK55498150,133.21,Pound Sterling,GB
+12/01/2026,13/01/2026,Posted,Travelodge,83.17,Accommodation,Southampton,3349,S MALLORY,7011,Purchase,BK85376962,83.17,Pound Sterling,GB
+12/01/2026,14/01/2026,Posted,Screwfix,138.21,Materials,Poole,5502,O HARTLEY,5200,Purchase,BK87408350,138.21,Pound Sterling,GB
+13/01/2026,13/01/2026,Posted,RS Components,£156.64,Materials,corby,2693,M LOWE,5065,Purchase,BK30685534,156.64,Pound Sterling,GB
+13/01/2026,16/01/2026,Posted,Trainline,78.56,Travel,London,3349,S MALLORY,4011,Purchase,BK62335551,78.56,POUND STERLING,GB
+13/01/2026,13/01/2026,Posted,Premier Inn,105.40,Accommodation,Manchester,184,A RAHMAN,7011,Purchase,BK80003297,105.40,Pound Sterling,GB
+13/01/2026,16/01/2026,Posted,Shell,,Fuel,Exeter,5502,O HARTLEY,5541,Purchase,BK88019167,69.04,Pound Sterling,GB
+14/01/2026,14/01/2026,Posted,Greene King Inn ,16.02,Subsistence,PORTSMOUTH,9047,P DANVERS,5812,Purchase,BK24250280,16.02,Pound Sterling,GB
+14/01/2026,16/01/2026,Posted,Travelodge,63.07,Accommodation,newcastle,5502,O HARTLEY,7011,Purchase,BK63162187,63.07,Pound Sterling,GB
+,,,,,,,,,,,,,,
+14/01/2026,16/01/2026,Posted,Pret,6.48,Subsistence,Birmingham,5502,O Hartley,5814,Purchase,BK75116413,6.48,Pound Sterling,GB
+14/01/2026,17/01/2026,Posted,Costa Coffee,5.96,Subsistence,READING,937,P NAIR,5814,Purchase,BK77824307,5.96,Pound Sterling,GB
+14/01/2026,16/01/2026,Posted, Premier Inn,214.74,Accommodation,Glasgow,937,P NAIR,7011,Purchase,BK84853049,214.74,Pound Sterling,GB
+16/01/2026,18/01/2026,Posted,Microsoft,42.48,Software,London,3349,S MALLORY,5734,Purchase,BK27948693,42.48,Pound Sterling,GB
+16/01/2026,17/01/2026,Posted,Shell,86.88,Fuel,Poole,9047,P DANVERS,5541,Purchase,BK64183196,86.88,Pound Sterling,GB
+17/01/2026,17/01/2026,Posted,Premier Inn,229.09,Accommodation,Manchester,8110,F SUTHERLAND,7011,Purchase,BK53279618,229.09,Pound Sterling,GB
+17/01/2026,17/01/2026,Posted,Costa Coffee,9.83,Subsistence,poole,3349,S MALLORY,5814,Purchase,BK89954689,9.83,POUND STERLING,GB
+18/01/2026,20/01/2026,Posted,Shell,76.56,Fuel,Poole,184,A RAHMAN,5541,Purchase,BK33414999,76.56,POUND STERLING,GB
+18/01/2026,21/01/2026,Posted,Premier Inn,83.16,Accommodation,Portsmouth,8110,F SUTHERLAND,7011,Purchase,BK34239876,83.16,Pound Sterling ,GB
+18/01/2026,21/01/2026,Posted,Shell,40.57,Fuel,Bournemouth ,937,P NAIR,5541,Purchase,BK40875722,40.57,Pound Sterling,GB
+18/01/2026,20/01/2026,POSTED,Travelodge,78.35,Accommodation,Plymouth,5502,O HARTLEY,7011,Purchase,BK59071672,78.35,Pound Sterling,GB
+18/01/2026,19/01/2026,Posted,RS Components,12.86 CR,Materials,Corby,184,A RAHMAN,5065,Refund,BK61087759,-12.86,Pound Sterling,GB
+19/01/2026,21/01/2026,Posted,Screwfix,131.01,Materials,Christchurch,4821,R PATEL,5200,Purchase,BK87632331,131.01,Pound Sterling,GB
+20/01/2026,20/01/2026,Posted,Trainline,£102.85,Travel,London,3349,S MALLORY,4011,Purchase,BK44266449,102.85,Pound Sterling,GB
+20/01/2026,20/01/2026,Posted,Shell,92.43,Fuel,Southampton,7316,C REID,5541,Purchase,BK57971745,92.43,POUND STERLING,GB
+20/01/2026,22/01/2026,Posted,Premier Inn,134.09,Accommodation,Glasgow,3349,S MALLORY,7011,Purchase,BK66037982,134.09,Pound Sterling ,GB
+20/01/2026,21/01/2026,Posted,Premier Inn,235.32,Accommodation,bristol,9047,P DANVERS,7011,Purchase,BK80756319,235.32,Pound Sterling,GB
+21/01/2026,21/01/2026,Posted,Shell,94.39,Fuel,Reading,184,A RAHMAN,5541,Purchase,BK20466317,94.39,Pound Sterling,GB
+21/01/2026,24/01/2026,Posted,Trainline,54.24,Travel,London,8110,F SUTHERLAND,4011,Purchase,BK78624902,54.24,Pound Sterling ,GB
+22/01/2026,22/01/2026,Posted,RS Components,£119.75,Materials,Corby,9047,P DANVERS,5065,Purchase,BK26212872,119.75,Pound Sterling,GB
+22/01/2026,22/01/2026,Posted,RS Components,256.73,Materials,Corby,8110,F SUTHERLAND,5065,Purchase,BK39160718,256.73,Pound Sterling,GB
+22/01/2026,24/01/2026,Posted,Shell,,Fuel,Poole ,3349,S MALLORY,5541,Purchase,BK77539489,77.79,Pound Sterling,GB
+23/01/2026,25/01/2026,Posted,Greene King Inn,49.60,Subsistence,Winchester,937,P NAIR,5812,Purchase,BK22973993,49.60,Pound Sterling,GB
+23/01/2026,24/01/2026,Posted,Greene King Inn,44.75,Subsistence,Salisbury ,184,A RAHMAN,5812,Purchase,BK34376644,44.75,Pound Sterling,GB
+23/01/2026,25/01/2026,Posted,Screwfix,26.57,Materials,Southampton,6275,A MCBRIDE,5200,Purchase,BK37357186,26.57,Pound Sterling,GB
+23/01/2026,26/01/2026,Posted,Shell,67.96,Fuel,Exeter,8110,F SUTHERLAND,5541,Purchase,BK67549822,67.96,Pound Sterling ,GB
+23/01/2026,26/01/2026,Posted,Shell,41.24,Fuel,Southampton,8110,F SUTHERLAND,5541,Purchase,BK98301808,41.24,Pound Sterling,GB
+25/01/2026,27/01/2026,Posted,Premier Inn,£106.95,Accommodation,Birmingham,7316,C REID,7011,Purchase,BK27685060,106.95,Pound Sterling,GB
+25/01/2026,28/01/2026,Posted,Screwfix,28.93,Materials,Southampton ,937,P NAIR,5200,Purchase,BK54455665,28.93,Pound Sterling,GB
+25/01/2026,27/01/2026,Posted,Trainline,43.38,Travel,London,9047,P DANVERS,4011,Purchase,BK59173149,43.38,Pound Sterling,GB
+25/01/2026,28/01/2026,Posted,Shell,47.56,Fuel,Southampton ,5502,O HARTLEY,5541,Purchase,BK71892196,47.56,Pound Sterling ,GB
+28/01/2026,28/01/2026,Posted,Pret,10.87,Subsistence,Bristol,3349,S MALLORY,5814,Purchase,BK24316812,10.87,Pound Sterling,GB
+28/01/2026,30/01/2026,Posted,Travelodge,213.42,Accommodation,Southampton,4821,R PATEL,7011,Purchase,BK53324220,213.42,Pound Sterling,GB
+28/01/2026,30/01/2026,Posted,Shell,48.79,Fuel,Reading,2693,M LOWE,5541,Purchase,BK72353503,48.79,Pound Sterling,GB
+28/01/2026,29/01/2026,Posted,Shell,82.26,Fuel,Southampton,6275,A MCBRIDE,5541,Purchase,BK99024245,82.26,Pound Sterling,GB
+29/01/2026,29/01/2026,Posted,RS Components,,Materials,Corby,9047,P DANVERS,5065,Purchase,BK30289202,233.51,Pound Sterling,GB
+29/01/2026,31/01/2026,Posted,Costa Coffee ,6.24,Subsistence,POOLE,9047,P DANVERS,5814,Purchase,BK81635658,6.24,Pound Sterling,GB
+29/01/2026,29/01/2026,Posted,RS Components,193.09,Materials,Corby,184,A RAHMAN,5065,Purchase,BK91391037,193.09,POUND STERLING,GB
+30/01/2026,31/01/2026,Posted,Trainline,89.51,Travel,London,184,A RAHMAN,4011,Purchase,BK43364340,89.51,Pound Sterling,GB
+30/01/2026,31/01/2026,Posted,Pret,3.26,Subsistence,Bristol,4821,R PATEL,5814,Purchase,BK55419123,3.26,POUND STERLING,GB
+30/01/2026,31/01/2026,Posted,Ibis Rotterdam Centrum,0.00,Accommodation,Rotterdam,937,P NAIR,7011,Purchase,BK88674487,140.46,Euro ,NL
+31/01/2026,03/02/2026,Posted,Pret,7.20,Subsistence,London,184,A RAHMAN,5814,Purchase,BK61429879,7.20,Pound Sterling,GB
+30/01/2026,,Pending,Shell,133.18,Fuel,Poole,937,P NAIR,5541,Purchase,PEND342996,133.18,Pound Sterling,GB
+30/01/2026,,Pending,Pret,74.91,Subsistence,London,2693,M LOWE,5814,Purchase,PEND861461,74.91,Pound Sterling,GB
+29/01/2026,,Pending,Pret,133.67,Subsistence,London,4821,R PATEL,5814,Purchase,PEND402476,133.67,Pound Sterling,GB
+29/01/2026,,Pending,Premier Inn,127.34,Accommodation,Leeds,7316,C REID,7011,Purchase,PEND489916,127.34,Pound Sterling,GB
+29/01/2026,,Pending,Screwfix,144.95,Materials,Southampton,2693,M LOWE,5200,Purchase,PEND556090,144.95,Pound Sterling,GB
